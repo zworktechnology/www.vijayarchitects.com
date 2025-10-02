@@ -29,6 +29,10 @@ Route::get('/service', [FrontendController::class, 'service'])->name('service');
 Route::get('/service-details', [FrontendController::class, 'servicedetails'])->name('servicedetails');
 
 Route::get('/projects', [FrontendController::class, 'projects'])->name('projects');
+Route::get('/project-details', [FrontendController::class, 'projectdetails'])->name('projectdetails');
+
+Route::get('/blogs', [FrontendController::class, 'blogs'])->name('blogs');
+Route::get('/blog-details', [FrontendController::class, 'blogdetails'])->name('blogdetails');
 
 Route::get('/amc-plans', [FrontendController::class, 'amcplans'])->name('amcplans');
 

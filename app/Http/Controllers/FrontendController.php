@@ -66,4 +66,26 @@ class FrontendController extends Controller
 
         return view('pages.frontend.service-details', compact('metaog'));
     }
+
+     public function projectdetails()
+    {
+        $metaog = Meta::where('page_id', '=', 8)->first();
+
+        return view('pages.frontend.project-details', compact('metaog'));
+    }
+
+    
+    public function blogs()
+    {
+        $metaog = Meta::where('page_id', '=', 9)->first();
+
+        return view('pages.frontend.blogs', compact('metaog'));
+    }
+
+         public function blogdetails()
+    {
+        $metaog = Meta::where('page_id', '=', 10)->first();
+
+        return view('pages.frontend.blog-details', compact('metaog'));
+    }
 }
