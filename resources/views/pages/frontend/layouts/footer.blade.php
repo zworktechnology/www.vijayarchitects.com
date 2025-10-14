@@ -4,10 +4,12 @@
          <div class="container">
              <div class="row">
                  <div class="col-md-4 mb-30">
-                     <div class="sub-title border-footer-light">Vijay Architects</div>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi distinctio dolorem
-                         adipisci atque dolor. Aliquid, libero, nihil voluptatem eaque officiis cumque maxime
-                         asperiores debitis sed nesciunt vitae commodi dicta hic.</p>
+                     <div class="sub-title border-footer-light mb-2">Vijay Architects</div>
+                     <p>At Vijay Architects, we don’t just design buildings; we transform ideas into spaces that
+                         inspire, captivate, and endure. Every project begins with a vision, and we bring it to life
+                         through innovation, precision, and passion. Our approach is deeply thoughtful — blending
+                         creativity with functionality, aesthetics with purpose.
+                     </p>
                  </div>
                  <div class="col-md-4">
                      <div class="item footer-links">
@@ -53,7 +55,8 @@
                      <p>© 2025 Architect. All right reserved.</p>
                  </div>
                  <div class="col-md-8">
-                     <p class="right">Crafted by <a href="https://www.zworktechnology.com" target="_blank">Zworktechnology</a></p>
+                     <p class="right">Crafted by <a href="https://www.zworktechnology.com"
+                             target="_blank">Zworktechnology</a></p>
                  </div>
              </div>
          </div>
