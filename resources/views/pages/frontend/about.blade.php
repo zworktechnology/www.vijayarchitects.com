@@ -19,12 +19,13 @@
 
         @include('pages.frontend.layouts.header')
         <!-- Header Banner -->
-        <div class="banner-header valign bg-img bg-fixed" data-overlay-dark="4" data-background="{{ asset('assets/frontend/img/slider/2.jpg') }}">
+        <div class="banner-header valign bg-img bg-fixed" data-overlay-dark="4"
+            data-background="{{ asset('assets/frontend/img/slider/2.jpg') }}">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 caption mt-60">
                         <div class="subtitle">About Us</div>
-                        <div class="title">ArchSan <span>Architecture</span></div>
+                        <div class="title">VIJAY <span>ARCHITECTS</span></div>
                     </div>
                 </div>
             </div>
@@ -37,14 +38,15 @@
                         <div class="sub-title border-bot-light">About</div>
                     </div>
                     <div class="col-lg-4 col-md-8 animate-box" data-animate-effect="fadeInUp">
-                        <div class="section-title">ArchSan <span>About</span></div>
-                        <p>Architecture viverra tristique justo duis vitae iaminte neque nivamus aestan ateuene artines
-                            aringianu the ateliten finibus viverra nec lacus in the nedana mis erodino setlie suscipe no
-                            curabit tristue.</p>
-                        <p>Design nila iman the finise viverra nec a lacus themo the seneoice misuscipit non sagie the
-                            fermen.</p>
-                        <p>Planner inilla duiman at elit finibus viverra nec a acus themo the drudea seneoice misuscipit
-                            nonie the fermen miverra the ivite dianne onen nivam.</p>
+                        <div class="section-title">VIJAY <span>ARCHITECTS</span></div>
+                        <p>At Vijay Architect, we believe architecture is more than design — it’s the art of giving form
+                            to imagination. Based in Trichy, Tamil Nadu, our award-winning team of architects and
+                            designers specialize in creating luxurious residences, contemporary commercial spaces, and
+                            sustainable developments that redefine modern living. </p>
+
+                        <p>Every project we design reflects a fusion of functionality, aesthetics, and cultural essence,
+                            crafted with precision to deliver timeless elegance. From initial concept to final detail,
+                            we ensure your vision transforms into a masterpiece that stands as a landmark.</p>
                         <div class="states">
                             <ul class="flex">
                                 <li class="flex">
@@ -62,14 +64,16 @@
                     </div>
                     <div class="col-lg-4 col-md-6 animate-box" data-animate-effect="fadeInUp">
                         <div class="wrap">
-                            <div class="con"> <img src="{{ asset('assets/frontend/img/about.jpg') }}" class="img-fluid" alt="">
+                            <div class="con"> <img src="{{ asset('assets/frontend/img/about.jpg') }}"
+                                    class="img-fluid" alt="">
                                 <div class="info">
                                     <h4 class="name">Stella Athena</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="wrap">
-                            <div class="con"> <img src="{{ asset('assets/frontend/img/about2.jpg') }}" class="img-fluid" alt="">
+                            <div class="con"> <img src="{{ asset('assets/frontend/img/about2.jpg') }}"
+                                    class="img-fluid" alt="">
                                 <div class="info">
                                     <h4 class="name">Martin Dan</h4>
                                 </div>
@@ -96,9 +100,11 @@
                             </div>
                             <div class="cont">
                                 <h3>Concept Design</h3>
-                                <p>Architecture viverra tristique justo duis vitae diam neque nivamus aestan ateuene
-                                    artines aringianu the ateliten finibus viverra nec lacus. Nedana theme erodino
-                                    setlie suscipe no curabit tristique.</p>
+                                <p>Every great structure begins with a story.</p>
+                                <p>At Vijay Architect, we start by understanding your vision, lifestyle, and site
+                                    potential. Our architects in Trichy create initial concepts and sketches that
+                                    capture your aspirations while blending aesthetics, function, and local context —
+                                    the first step toward timeless architecture</p>
                             </div>
                         </div>
                     </div>
@@ -111,9 +117,10 @@
                             </div>
                             <div class="cont">
                                 <h3>Preliminary Plans & Pricing</h3>
-                                <p>Architecture viverra tristique justo duis vitae diam neque nivamus aestan ateuene
-                                    artines aringianu the ateliten finibus viverra nec lacus. Nedana theme erodino
-                                    setlie suscipe no curabit tristique.</p>
+                                <p>Once the concept is refined, we move into space planning and feasibility. Detailed
+                                    preliminary drawings help visualize the design flow, while transparent pricing
+                                    ensures your project aligns with both budget and expectation. It’s how we bring
+                                    clarity and confidence to every design decision.</p>
                             </div>
                         </div>
                     </div>
@@ -136,9 +143,11 @@
                             </div>
                             <div class="cont">
                                 <h3>Working Drawings & Consents</h3>
-                                <p>Architecture viverra tristique justo duis vitae diam neque nivamus aestan ateuene
-                                    artines aringianu the ateliten finibus viverra nec lacus. Nedana theme erodino
-                                    setlie suscipe no curabit tristique.</p>
+                                <p>Precision meets execution here.</p>
+                                <p>Our team prepares complete architectural drawings, structural details, and technical
+                                    documentation — ensuring smooth coordination with engineers, builders, and local
+                                    authorities across Tamil Nadu. Every line drawn reflects accuracy, compliance, and
+                                    creative brilliance</p>
                             </div>
                         </div>
                     </div>
@@ -151,9 +160,11 @@
                             </div>
                             <div class="cont">
                                 <h3>Chosing Your Builder</h3>
-                                <p>Architecture viverra tristique justo duis vitae diam neque nivamus aestan ateuene
-                                    artines aringianu the ateliten finibus viverra nec lacus. Nedana theme erodino
-                                    setlie suscipe no curabit tristique.</p>
+                                <p>We help you connect with the right construction partner who understands both design
+                                    integrity and premium quality. With our expert guidance, you can choose a builder
+                                    who executes your dream home or commercial space exactly as envisioned — flawlessly
+                                    and on time.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -174,64 +185,167 @@
                     </div>
                     <div class="col-md-8">
                         <div class="section-title">Frequently <span>Asked Questions</span></div>
-                        <p>Architecture viverra tristique justo duis vitae diaminte neque nivamus aestan ateuene artines
-                            ariianu the ateliten finibus viverra nec lacus in the nedana mis erodino.</p>
+                        
                     </div>
                 </div>
                 <div class="row mb-5 animate-box" data-animate-effect="fadeInUp">
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                         <ul class="accordion-box clearfix">
                             <li class="accordion block">
-                                <div class="acc-btn">Modern Architectural Structures</div>
+                                <div class="acc-btn">What makes Vijay Architect one of the best architects in Trichy?
+                                </div>
                                 <div class="acc-content">
                                     <div class="content">
-                                        <div class="text">Architecture viverra tristique justo duis vitae diam
-                                            neque nivamus aestan ateuene artines aringianu atelit finibus
-                                            viverra nec lacus. Nedana theme erodino setlie suscipe no tristique.
+                                        <div class="text">Vijay Architect is known for combining creativity with
+                                            precision. Our designs balance aesthetics, functionality, and sustainability
+                                            — making us a preferred architecture firm in Trichy and across Tamil Nadu.
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="accordion block">
-                                <div class="acc-btn">Modern Building Structures</div>
+                                <div class="acc-btn">What types of projects do you handle?</div>
                                 <div class="acc-content">
                                     <div class="content">
-                                        <div class="text">Architecture viverra tristique justo duis vitae diam
-                                            neque nivamus aestan ateuene artines aringianu atelit finibus
-                                            viverra nec lacus. Nedana theme erodino setlie suscipe no tristique.
+                                        <div class="text">We specialize in residential villas, commercial buildings,
+                                            institutional spaces, and interior design. From concept to completion, our
+                                            team ensures every project reflects the client’s vision and lifestyle.
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="accordion block">
-                                <div class="acc-btn">Modern Design Structures</div>
+                                <div class="acc-btn">Do you provide complete architecture and interior solutions?</div>
                                 <div class="acc-content">
                                     <div class="content">
-                                        <div class="text">Architecture viverra tristique justo duis vitae diam
-                                            neque nivamus aestan ateuene artines aringianu atelit finibus
-                                            viverra nec lacus. Nedana theme erodino setlie suscipe no tristique.
+                                        <div class="text">Yes. We offer end-to-end services including architecture,
+                                            interior design, 3D visualization, planning, and project supervision —
+                                            ensuring consistency and quality throughout.
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="accordion block">
-                                <div class="acc-btn">Modern Urban Structures</div>
+                                <div class="acc-btn">How do I start my project with Vijay Architect?</div>
                                 <div class="acc-content">
                                     <div class="content">
-                                        <div class="text">Architecture viverra tristique justo duis vitae diam
-                                            neque nivamus aestan ateuene artines aringianu atelit finibus
-                                            viverra nec lacus. Nedana theme erodino setlie suscipe no tristique.
+                                        <div class="text">You can contact us through our website or visit our Trichy
+                                            office. We begin with an initial consultation to understand your needs,
+                                            site, and budget before starting the design process.
                                         </div>
                                     </div>
                                 </div>
                             </li>
                             <li class="accordion block">
-                                <div class="acc-btn">Modern Interior Structures</div>
+                                <div class="acc-btn">Do you provide architectural services outside Trichy?</div>
                                 <div class="acc-content">
                                     <div class="content">
-                                        <div class="text">Architecture viverra tristique justo duis vitae diam
-                                            neque nivamus aestan ateuene artines aringianu atelit finibus
-                                            viverra nec lacus. Nedana theme erodino setlie suscipe no tristique.
+                                        <div class="text">Absolutely. While we’re based in Trichy, our projects
+                                            extend across Tamil Nadu — including Madurai, Coimbatore, Salem, Karur, and
+                                            Chennai.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion block">
+                                <div class="acc-btn">How long does it take to design a home or commercial space?
+                                </div>
+                                <div class="acc-content">
+                                    <div class="content">
+                                        <div class="text">The timeline depends on project size and complexity.
+                                            Typically, design and planning take 4–8 weeks, followed by execution support
+                                            based on your schedule.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion block">
+                                <div class="acc-btn">Can you design according to Vastu principles?</div>
+                                <div class="acc-content">
+                                    <div class="content">
+                                        <div class="text">Yes. Our architects are experienced in Vastu-compliant
+                                            design, ensuring harmony, energy balance, and comfort without compromising
+                                            aesthetics.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="accordion-box clearfix">
+
+                            <li class="accordion block">
+                                <div class="acc-btn">What is the cost of architectural design in Trichy?</div>
+                                <div class="acc-content">
+                                    <div class="content">
+                                        <div class="text">Design costs vary based on project scale and requirements.
+                                            We provide customized quotations after the initial consultation to match
+                                            your vision and budget.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion block">
+                                <div class="acc-btn">Do you offer 3D design and visualization services?</div>
+                                <div class="acc-content">
+                                    <div class="content">
+                                        <div class="text">Yes, we provide high-quality 3D renderings and walkthroughs
+                                            so you can visualize your dream home before construction begins.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion block">
+                                <div class="acc-btn">How involved will I be during the design process?</div>
+                                <div class="acc-content">
+                                    <div class="content">
+                                        <div class="text">You’ll be an integral part of the journey. We involve
+                                            clients at every stage — from concept sketches to material selection —
+                                            ensuring the outcome reflects your personality.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion block">
+                                <div class="acc-btn">Can you work with builders or contractors of our choice?</div>
+                                <div class="acc-content">
+                                    <div class="content">
+                                        <div class="text">Yes. We collaborate smoothly with client-appointed
+                                            contractors to ensure that our designs are executed with accuracy and
+                                            quality.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion block">
+                                <div class="acc-btn">Do you provide site supervision or only design services?</div>
+                                <div class="acc-content">
+                                    <div class="content">
+                                        <div class="text">We offer both. Our architects can monitor site execution to
+                                            maintain design integrity and ensure timely completion.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion block">
+                                <div class="acc-btn">What makes your designs stand out from others in Tamil Nadu?</div>
+                                <div class="acc-content">
+                                    <div class="content">
+                                        <div class="text">Our signature lies in luxury, precision, and innovation.
+                                            Each design is customized — blending local culture, modern aesthetics, and
+                                            sustainable practices to create timeless spaces.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion block">
+                                <div class="acc-btn">How can I contact Vijay Architect for consultation?</div>
+                                <div class="acc-content">
+                                    <div class="content">
+                                        <div class="text">You can reach us via our website contact form, phone, or
+                                            visit our Trichy office. Our team will schedule a detailed consultation to
+                                            discuss your dream project.
                                         </div>
                                     </div>
                                 </div>
@@ -243,8 +357,8 @@
         </section>
         <!-- Lets-Talk -->
         <section class="lets-talk">
-            <div class="background bg-img bg-fixed section-padding" data-background="{{ asset('assets/frontend/img/slider/1.jpg') }}"
-                data-overlay-dark="6">
+            <div class="background bg-img bg-fixed section-padding"
+                data-background="{{ asset('assets/frontend/img/slider/1.jpg') }}" data-overlay-dark="6">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 mb-30">
