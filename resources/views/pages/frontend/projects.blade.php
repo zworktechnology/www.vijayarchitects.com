@@ -38,80 +38,16 @@
                         <div class="items mb-4">
                             <div class="con">
                                 <div class="img">
-                                    <img src="{{ asset('assets/frontend/img/projects/07.jpg') }}" alt="">
+                                    <img src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/05.jpg') }}" alt="">
                                 </div>
                                 <div class="info">
                                     <span class="category mb-0">Project P.01</span>
-                                    <h6><a href="{{route('projectdetails')}}">Intermediate Hall</a></h6>
+                                    <h6><a href="{{route('projectdetails')}}">ARULMANI RESIDENCE</a></h6>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="items mb-4">
-                            <div class="con">
-                                <div class="img">
-                                    <img src="{{ asset('assets/frontend/img/projects/12.jpg') }}" alt="">
-                                </div>
-                                <div class="info">
-                                    <span class="category mb-0">Project P.02</span>
-                                    <h6><a href="project-page.html">Modern Loft Kitchen</a></h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="items mb-4">
-                            <div class="con">
-                                <div class="img">
-                                    <img src="{{ asset('assets/frontend/img/projects/10.jpg') }}" alt="">
-                                </div>
-                                <div class="info">
-                                    <span class="category mb-0">Project P.03</span>
-                                    <h6><a href="project-page.html">Unique Stair Designs</a></h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="items mb-4">
-                            <div class="con">
-                                <div class="img">
-                                    <img src="{{ asset('assets/frontend/img/projects/11.jpg') }}" alt="">
-                                </div>
-                                <div class="info">
-                                    <span class="category mb-0">Project P.04</span>
-                                    <h6><a href="project-page.html">Best Kitchen Design</a></h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="items mb-4">
-                            <div class="con">
-                                <div class="img">
-                                    <img src="{{ asset('assets/frontend/img/projects/08.jpg') }}" alt="">
-                                </div>
-                                <div class="info">
-                                    <span class="category mb-0">Project P.05</span>
-                                    <h6><a href="project-page.html">Farm House Bedroom</a></h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="items mb-4">
-                            <div class="con">
-                                <div class="img">
-                                    <img src="{{ asset('assets/frontend/img/projects/09.jpg') }}" alt="">
-                                </div>
-                                <div class="info">
-                                    <span class="category mb-0">Project P.06</span>
-                                    <h6><a href="project-page.html">Lighting At Home</a></h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
         </section>
