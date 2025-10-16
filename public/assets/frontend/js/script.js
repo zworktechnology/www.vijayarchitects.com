@@ -51,10 +51,10 @@
             logo = $(".navbar .logo> img");
         if(bodyScroll > 100){
             navbar.addClass("nav-scroll");
-            logo.attr('src', 'images/logo-dark.png');
+            logo.attr('src', 'assets/frontend/img/logo-main.png');
         }else{
             navbar.removeClass("nav-scroll");
-            logo.attr('src', 'images/logo.png');
+            logo.attr('src', 'assets/frontend/img/logo-main.png');
         }
     });
 

@@ -32,7 +32,7 @@
                                     <h1>The Signature of Luxury Living</h1>
                                     <p>From contemporary villas to iconic commercial spaces — we design environments
                                         that speak sophistication and comfort in every detail.</p>
-                                    <a href="{{route('contact')}}" class="button-light">Contact Know</a>
+                                    <a href="{{ route('contact') }}" class="button-light">Contact Know</a>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                                         Trichy’s skyline with timeless architectural mastery.
 
                                     </p>
-                                     <a href="{{route('contact')}}" class="button-light">Contact Know</a>
+                                    <a href="{{ route('contact') }}" class="button-light">Contact Know</a>
                                 </div>
                             </div>
                         </div>
@@ -68,13 +68,13 @@
                                     <p> Where design meets precision, and imagination shapes reality — creating spaces
                                         that inspire awe and admiration.
                                     </p>
-                                     <a href="{{route('contact')}}" class="button-light">Contact Know</a>
+                                    <a href="{{ route('contact') }}" class="button-light">Contact Know</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                 <div class="text-left item bg-img" data-overlay-dark="4"
+                <div class="text-left item bg-img" data-overlay-dark="4"
                     data-background="{{ asset('assets/frontend/img/slider/2.jpg') }}">
                     <div class="v-middle caption">
                         <div class="container">
@@ -86,7 +86,7 @@
                                         Trichy’s skyline with timeless architectural mastery.
 
                                     </p>
-                                   <a href="{{route('contact')}}" class="button-light">Contact Know</a>
+                                    <a href="{{ route('contact') }}" class="button-light">Contact Know</a>
                                 </div>
                             </div>
                         </div>
@@ -163,69 +163,40 @@
                             <div class="items mb-4">
                                 <div class="con">
                                     <div class="img">
-                                        <img src="{{ asset('assets/frontend/img/projects/07.jpg') }}" alt="">
+                                        <img src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/05.jpg') }}"
+                                            alt="" style="height: 400px">
                                     </div>
                                     <div class="info">
                                         <span class="category mb-0">Project P.01</span>
-                                        <h6><a href="project-page.html">Intermediate Hall</a></h6>
+                                        <h6><a href="project-page.html">ARULMANI RESIDENCE</a></h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="items mb-4">
                                 <div class="con">
                                     <div class="img">
-                                        <img src="{{ asset('assets/frontend/img/projects/12.jpg') }}" alt="">
+                                        <img src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/03.JPG') }}"
+                                            alt="" style="height: 400px">
                                     </div>
                                     <div class="info">
-                                        <span class="category mb-0">Project P.02</span>
-                                        <h6><a href="project-page.html">Modern Loft Kitchen</a></h6>
+                                        <span class="category mb-0">Project P.01</span>
+                                        <h6><a href="project-page.html">ARULMANI RESIDENCE</a></h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="items mb-4">
                                 <div class="con">
                                     <div class="img">
-                                        <img src="{{ asset('assets/frontend/img/projects/10.jpg') }}" alt="">
+                                        <img src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/07.jpg') }}"
+                                            alt="" style="height: 400px">
                                     </div>
                                     <div class="info">
-                                        <span class="category mb-0">Project P.03</span>
-                                        <h6><a href="project-page.html">Unique Stair Designs</a></h6>
+                                        <span class="category mb-0">Project P.01</span>
+                                        <h6><a href="project-page.html">ARULMANI RESIDENCE</a></h6>
                                     </div>
                                 </div>
                             </div>
-                            <div class="items mb-4">
-                                <div class="con">
-                                    <div class="img">
-                                        <img src="{{ asset('assets/frontend/img/projects/11.jpg') }}" alt="">
-                                    </div>
-                                    <div class="info">
-                                        <span class="category mb-0">Project P.04</span>
-                                        <h6><a href="project-page.html">Best Kitchen Design</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="items mb-4">
-                                <div class="con">
-                                    <div class="img">
-                                        <img src="{{ asset('assets/frontend/img/projects/08.jpg') }}" alt="">
-                                    </div>
-                                    <div class="info">
-                                        <span class="category mb-0">Project P.05</span>
-                                        <h6><a href="project-page.html">Farm House Bedroom</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="items mb-4">
-                                <div class="con">
-                                    <div class="img">
-                                        <img src="{{ asset('assets/frontend/img/projects/09.jpg') }}" alt="">
-                                    </div>
-                                    <div class="info">
-                                        <span class="category mb-0">Project P.06</span>
-                                        <h6><a href="project-page.html">Lighting At Home</a></h6>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -411,7 +382,7 @@
             </div>
         </section>
         <!-- Blog -->
-        <section class="blog-home section-padding">
+        {{-- <section class="blog-home section-padding">
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-md-4">
@@ -469,9 +440,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
-        <section class="blog-home">
+        <section class="blog-home  section-padding">
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-md-4">
@@ -651,52 +622,7 @@
             </div>
         </section>
         <!-- Lets Talk -->
-        <section class="lets-talk">
-            <div class="background bg-img bg-fixed section-padding"
-                data-background="{{ asset('assets/frontend/img/slider/1.jpg') }}" data-overlay-dark="6">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 mb-30">
-                            <div class="sub-title border-bot-dark">Contact Us</div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="section-title">Let's discuss your project</div>
-                            <p>Fill out the form and our manager will contact you for consultation.</p>
-                            <form method="post" class="contact__form" action="mail.php">
-                                <!-- Form message -->
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg" style="display: none"
-                                            role="alert"> Your message was sent successfully. </div>
-                                    </div>
-                                </div>
-                                <!-- Form elements -->
-                                <div class="row">
-                                    <div class="col-md-6 form-group">
-                                        <input class="line-gray" name="name" type="text"
-                                            placeholder="Full Name *" required="">
-                                    </div>
-                                    <div class="col-md-3 form-group">
-                                        <input class="line-gray" name="phone" type="text" placeholder="Phone *"
-                                            required="">
-                                    </div>
-                                    <div class="col-md-2">
-                                        <input class="line-gray" name="submit" type="submit" value="Send">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12 mt-3">
-                                        <input type="checkbox" class="line-gray">
-                                        <label>I agree with the <a href="#0" class="underline line-gray">privacy
-                                                policy</a></label>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      @include('pages.frontend.layouts.cta')
 
     </div>
     @include('pages.frontend.layouts.footer')
