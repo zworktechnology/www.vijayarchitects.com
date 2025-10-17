@@ -42,45 +42,45 @@
 
                                 <img class="img-fluid"
                                     src="{{ asset('assets\frontend\img\projects\ARULMANI_RESIDENCE\birds paradise -1.jpg') }}"
-                                    alt="" width="auto" style="height: 500px !important;">
+                                    alt="" width="auto">
 
                             </div>
                             <div class="portfolio-item row">
-                                <div class="col-md-6">
+                                <div class="col-6">
                                     <img class="img-fluid"
                                         src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/01.JPG') }}"
-                                        alt="" width="auto" style="height: 500px !important;">
+                                        alt="" width="auto">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-6">
                                     <img class="img-fluid"
                                         src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/02.jpeg') }}"
-                                        alt="" style="height: 500px !important;">
+                                        alt="">
                                 </div>
                             </div>
 
                             <div class="portfolio-item row">
-                                <div class="col-md-6">
+                                <div class="col-6">
                                     <img class="img-fluid"
                                         src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/04.JPG') }}"
-                                        alt="" width="auto" style="height: 500px !important;">
+                                        alt="" width="auto">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-6">
                                     <img class="img-fluid"
                                         src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/06.jpeg') }}"
-                                        alt="" style="height: 500px !important;">
+                                        alt="" style="">
                                 </div>
                             </div>
 
                             <div class="portfolio-item row">
-                                <div class="col-md-6">
+                                <div class="col-6">
                                     <img class="img-fluid"
                                         src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/09.jpg') }}"
-                                        alt="" width="auto" style="height: 500px !important;">
+                                        alt="" width="auto" >
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-6">
                                     <img class="img-fluid"
                                         src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/14..JPG') }}"
-                                        alt="" style="height: 500px !important;">
+                                        alt="" >
                                 </div>
                             </div>
 

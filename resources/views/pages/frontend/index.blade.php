@@ -32,7 +32,7 @@
                                     <h1>The Signature of Luxury Living</h1>
                                     <p>From contemporary villas to iconic commercial spaces — we design environments
                                         that speak sophistication and comfort in every detail.</p>
-                                    <a href="{{ route('contact') }}" class="button-light">Contact Know</a>
+                                    <a href="{{ route('contact') }}" class="button-light">Contact Now</a>
                                 </div>
                             </div>
                         </div>
@@ -46,11 +46,11 @@
                                 <div class="col-lg-7 col-md-12">
                                     <h4>02</h4>
                                     <h1>Crafting Landmarks, Not Just Buildings</h1>
-                                    <p>At Vijay Architect, every line we draw becomes a symbol of elegance — redefining
+                                    <p>At Vijay Architects, every line we draw becomes a symbol of elegance — redefining
                                         Trichy’s skyline with timeless architectural mastery.
 
                                     </p>
-                                    <a href="{{ route('contact') }}" class="button-light">Contact Know</a>
+                                    <a href="{{ route('contact') }}" class="button-light">Contact Now</a>
                                 </div>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                                     <p> Where design meets precision, and imagination shapes reality — creating spaces
                                         that inspire awe and admiration.
                                     </p>
-                                    <a href="{{ route('contact') }}" class="button-light">Contact Know</a>
+                                    <a href="{{ route('contact') }}" class="button-light">Contact Now</a>
                                 </div>
                             </div>
                         </div>
@@ -82,11 +82,11 @@
                                 <div class="col-lg-7 col-md-12">
                                     <h4>04</h4>
                                     <h1>Crafting Landmarks, Not Just Buildings</h1>
-                                    <p>At Vijay Architect, every line we draw becomes a symbol of elegance — redefining
+                                    <p>At Vijay Architects, every line we draw becomes a symbol of elegance — redefining
                                         Trichy’s skyline with timeless architectural mastery.
 
                                     </p>
-                                    <a href="{{ route('contact') }}" class="button-light">Contact Know</a>
+                                    <a href="{{ route('contact') }}" class="button-light">Contact Now</a>
                                 </div>
                             </div>
                         </div>
@@ -104,8 +104,8 @@
                         <div class="sub-title border-bot-light">Who are we?</div>
                     </div>
                     <div class="col-md-8 animate-box" data-animate-effect="fadeInUp">
-                        <div class="section-title"><span>About</span> VIJAY ARCHITECT</div>
-                        <p>At Vijay Architect, we believe architecture is more than design — it’s the art of giving form
+                        <div class="section-title"><span>About</span> VIJAY ARCHITECTS</div>
+                        <p>At Vijay Architects, we believe architecture is more than design — it’s the art of giving form
                             to imagination. Based in Trichy, Tamil Nadu, our award-winning team of architects and
                             designers specialize in creating luxurious residences, contemporary commercial spaces, and
                             sustainable developments that redefine modern living.</p>
@@ -150,7 +150,7 @@
                     </div>
                     <div class="col-md-8 animate-box" data-animate-effect="fadeInUp">
                         <div class="section-title"><span>Creative</span> Projects</div>
-                        <p>Each project at Vijay Architect tells a story of creativity and craftsmanship. From
+                        <p>Each project at Vijay Architects tells a story of creativity and craftsmanship. From
                             ultra-luxury villas in Trichy to innovative commercial spaces across Tamil Nadu, we redefine
                             what modern architecture can achieve. Explore our curated portfolio — a celebration of
                             refined design, innovative materials, and enduring beauty that inspires both emotion and
@@ -218,7 +218,7 @@
                                     <div class="item"> <span class="quote"><img
                                                 src="{{ asset('assets/frontend/img/quot.png') }}"
                                                 alt=""></span>
-                                        <p>Vijay Architect transformed our Trichy plot into a stunning villa. Every
+                                        <p>Vijay Architects transformed our Trichy plot into a stunning villa. Every
                                             space reflects luxury and warmth — they truly are the best architects in
                                             Trichy.</p>
                                         <div class="info">
@@ -236,7 +236,7 @@
                                             <img src="{{ asset('assets/frontend/img/quot.png') }}" alt="">
                                         </span>
                                         <p>We wanted a blend of modern and traditional design for our family home. Vijay
-                                            Architect understood our vision perfectly and delivered beyond expectations.
+                                            Architects understood our vision perfectly and delivered beyond expectations.
                                         </p>
                                         <div class="info">
                                             <div class="author-img"> <img
@@ -313,7 +313,7 @@
                                             <img src="{{ asset('assets/frontend/img/quot.png') }}" alt="">
                                         </span>
                                         <p>Our boutique resort project in Kodaikanal came alive because of their
-                                            sustainable yet luxurious design approach. Highly recommend Vijay Architect.
+                                            sustainable yet luxurious design approach. Highly recommend Vijay Architects.
                                         </p>
                                         <div class="info">
                                             <div class="author-img"> <img
@@ -344,7 +344,7 @@
                                     <div class="item"> <span class="quote">
                                             <img src="{{ asset('assets/frontend/img/quot.png') }}" alt="">
                                         </span>
-                                        <p>We hired Vijay Architect for our office interiors in Trichy. The design
+                                        <p>We hired Vijay Architects for our office interiors in Trichy. The design
                                             boosts productivity while maintaining a premium corporate feel.
                                         </p>
                                         <div class="info">
@@ -458,11 +458,11 @@
                     <div class="col-md-6">
                         <ul class="accordion-box clearfix">
                             <li class="accordion block">
-                                <div class="acc-btn">What makes Vijay Architect one of the best architects in Trichy?
+                                <div class="acc-btn">What makes Vijay Architects one of the best architects in Trichy?
                                 </div>
                                 <div class="acc-content">
                                     <div class="content">
-                                        <div class="text">Vijay Architect is known for combining creativity with
+                                        <div class="text">Vijay Architects is known for combining creativity with
                                             precision. Our designs balance aesthetics, functionality, and sustainability
                                             — making us a preferred architecture firm in Trichy and across Tamil Nadu.
                                         </div>
@@ -492,7 +492,7 @@
                                 </div>
                             </li>
                             <li class="accordion block">
-                                <div class="acc-btn">How do I start my project with Vijay Architect?</div>
+                                <div class="acc-btn">How do I start my project with Vijay Architects?</div>
                                 <div class="acc-content">
                                     <div class="content">
                                         <div class="text">You can contact us through our website or visit our Trichy
@@ -606,7 +606,7 @@
                                 </div>
                             </li>
                             <li class="accordion block">
-                                <div class="acc-btn">How can I contact Vijay Architect for consultation?</div>
+                                <div class="acc-btn">How can I contact Vijay Architects for consultation?</div>
                                 <div class="acc-content">
                                     <div class="content">
                                         <div class="text">You can reach us via our website contact form, phone, or

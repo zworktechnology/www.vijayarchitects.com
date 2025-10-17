@@ -3,7 +3,7 @@
             <div class="container">
                 <!-- Logo -->
                 <div class="logo-wrapper">
-                    <a class="logo" href="{{ route('index') }}"> <img src="{{ asset('assets/frontend/img/logo-main.png') }}"
+                    <a class="logo" href="{{ route('index') }}"> <img src="{{ asset('assets/frontend/img/v2.png') }}"
                             class="logo-img" alt=""> </a>
                     <!-- <a class="logo" href="index.html"> <h2>ArchSan <span>Architecture</span></h2> </a> -->
                 </div>

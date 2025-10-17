@@ -36,14 +36,19 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <!-- Contact Info -->
-                        <h4 class="mb-4">New York <span>Office</span></h4>
-                        <p>1616 Broadway NY, New York 10001<br>United States of America.</p>
-                        <div class="phone">+1 203-123-0606</div>
-                        <div class="mail mb-3">info@architect.com</div>
+                        <h4 class="mb-4">Vijay <span>Architects</span></h4>
+                        <p>Vijay Architects,
+                            No. 14, Alexandria Road,<br>
+                            Cantonment,
+                            Trichy -620001</p>
+                        <div class="phone">9171711513, 8903493280.</div>
+                        <div class="mail mb-3">vijayarchitects@hotmail.com.</div>
                         <div class="social mt-2">
-                            <a href="index.html"><i class="ti-twitter"></i></a>
-                            <a href="index.html"><i class="ti-instagram"></i></a>
-                            <a href="index.html"><i class="ti-linkedin"></i></a>
+
+                            <a href="https://www.instagram.com/vijayarchitects?igsh=bWV2ZDJ1endnaDc3" target="_blank"><i
+                                    class="ti-instagram"></i></a>
+                            <a href="https://www.facebook.com/share/1CMP1sZigT/" target="_blank"><i
+                                    class="ti-facebook"></i></a>
                         </div>
                     </div>
 
@@ -102,12 +107,12 @@
         <!-- Maps -->
         <div class="google-maps">
             <iframe id="gmap_canvas"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3587.4094242759998!2d78.68060361012749!3d10.803310658653817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf51c5a5da421%3A0xd3f525c52f26be8d!2sVIJAY%20ARCHITECTS!5e1!3m2!1sen!2smy!4v1760504354556!5m2!1sen!2smy"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3587.4094242759998!2d78.68060361012749!3d10.803310658653817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf51c5a5da421%3A0xd3f525c52f26be8d!2sVIJAY%20ARCHITECTS!5e1!3m2!1sen!2smy!4v1760504354556!5m2!1sen!2smy"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <!-- Lets Talk -->
-     @include('pages.frontend.layouts.cta')
+        @include('pages.frontend.layouts.cta')
     </div>
     @include('pages.frontend.layouts.footer')
     @include('pages.frontend.layouts.script')

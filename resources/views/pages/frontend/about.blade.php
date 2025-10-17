@@ -350,7 +350,7 @@
                                     </div>
                                 </div>
                             </li>
-                        </ul> @include('pages.frontend.layouts.cta')
+                        </ul>
                     </div>
                 </div>
             </div>

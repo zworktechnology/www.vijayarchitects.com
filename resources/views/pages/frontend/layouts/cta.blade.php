@@ -10,9 +10,9 @@
                       <div class="section-title">Let's discuss your project</div>
                       <p>From initial concept to final detail, we ensure your vision transforms into a masterpiece that
                           stands as a landmark.</p>
-                      <div class="d-flex">
-                          <a href="" class="btn-cta px-4 py-2">Contact Now</a>
-                          <a href="tel:" class="btn-cta-2 px-4 py-2 mx-3">Call : </a>
+                      <div class="d-flex flex-md-row flex-column">
+                          <a href="{{route('contact')}}" class="text-center btn-cta px-4 py-2">Contact Now</a>
+                          <a href="tel:9171711513" class="text-center btn-cta-2 px-4 py-2 mx-3 mt-md-0 mt-3">Call : +91 9171711513</a>
                       </div>
                   </div>
               </div>
