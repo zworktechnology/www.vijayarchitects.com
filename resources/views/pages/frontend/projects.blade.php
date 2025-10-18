@@ -34,11 +34,11 @@
         <section class="projects section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-5 col-md-6">
                         <div class="items mb-4">
                             <div class="con">
                                 <div class="img">
-                                    <img src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/05.jpg') }}" alt="">
+                                    <img src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/01.JPG') }}" alt="">
                                 </div>
                                 <div class="info">
                                     <span class="category mb-0">Project P.01</span>

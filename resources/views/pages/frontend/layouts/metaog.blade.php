@@ -10,5 +10,5 @@
 <meta property="og:title" content="{{ $metaog ? $metaog->og_title : 'Vijay Architects' }}">
 <meta property="og:description" content="{{ $metaog ? $metaog->og_description : 'Vijay Architects' }}">
 <meta property="og:image"
-    content="{{ $metaog ? asset('assets/backend/ogimage/' . $metaog->og_image) : asset('assets/frontend/img/logo/favicon.webp') }}"
+    content="{{ $metaog ? asset('assets/backend/ogimage/' . $metaog->og_image) : asset('assets/frontend/img/fav.png') }}"
     alt="{{ $metaog ? $metaog->og_alt : 'Vijay Architects' }}">

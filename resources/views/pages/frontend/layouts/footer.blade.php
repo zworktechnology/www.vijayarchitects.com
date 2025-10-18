@@ -5,7 +5,7 @@
              <div class="row">
                  <div class="col-md-4 mb-30">
                      <a class="logo" href="{{ route('index') }}"> <img src="{{ asset('assets/frontend/img/v1.png') }}"
-                             class="logo-img" alt="" style="width:100% !important;height:150px"> </a>
+                             class="logo-img" alt="" style="width:250px !important;height:120px"> </a>
                      <div class="sub-title border-footer-light mb-2">Vijay Architects</div>
                      <p>At Vijay Architects, we don’t just design buildings; we transform ideas into spaces that
                          inspire, captivate, and endure. Every project begins with a vision, and we bring it to life
