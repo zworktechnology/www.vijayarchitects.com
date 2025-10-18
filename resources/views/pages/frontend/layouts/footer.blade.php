@@ -18,16 +18,16 @@
                          <h3 class="px-4">Quick <span>Links</span></h3>
                          <div class="row">
                              <ul class="col-md-6 navbar-nav ms-auto px-5">
-                                 <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
-                                 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                                 <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                                 <li class="nav-item "><a class="nav-link" href="{{route('index')}}">Home</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="{{route('about')}}">About</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="{{route('service')}}">Services</a></li>
 
                              </ul>
 
                              <ul class="col-md-6 navbar-nav ms-auto px-md-0 px-5">
-                                 <li class="nav-item "><a class="nav-link" href="projects.html">Projects</a></li>
+                                 <li class="nav-item "><a class="nav-link" href="{{route('projects')}}">Projects</a></li>
                                  {{-- <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li> --}}
-                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="{{route('index')}}">contact</a></li>
                              </ul>
                          </div>
 
