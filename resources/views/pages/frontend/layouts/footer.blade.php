@@ -27,7 +27,7 @@
                              <ul class="col-md-6 navbar-nav ms-auto px-md-0 px-5">
                                  <li class="nav-item "><a class="nav-link" href="{{route('projects')}}">Projects</a></li>
                                  {{-- <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li> --}}
-                                 <li class="nav-item"><a class="nav-link" href="{{route('index')}}">contact</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="{{route('contact')}}">Contact</a></li>
                              </ul>
                          </div>
 
@@ -54,7 +54,7 @@
          <div class="container">
              <div class="row">
                  <div class="col-md-4">
-                     <p>© 2025 Architect. All right reserved.</p>
+                     <p>© 2025 Vijay Architects. All right reserved.</p>
                  </div>
                  <div class="col-md-8">
                      <p class="right">Crafted by <a href="https://www.zworktechnology.com"

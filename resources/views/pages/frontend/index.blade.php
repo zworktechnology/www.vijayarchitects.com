@@ -22,7 +22,7 @@
         <header id="slider-area" class="header slider-fade">
             <div class="owl-carousel owl-theme">
                 <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
-                <div class="text-left item bg-img" data-overlay-dark="4"
+                <div class="text-left item bg-img" data-overlay-dark="1"
                     data-background="{{ asset('assets/frontend/img/slider/1.jpg') }}">
                     <div class="v-middle caption">
                         <div class="container">
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-left item bg-img" data-overlay-dark="3"
+                <div class="text-left item bg-img" data-overlay-dark="2"
                     data-background="{{ asset('assets/frontend/img/slider/2.jpg') }}">
                     <div class="v-middle caption">
                         <div class="container">
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-left item bg-img" data-overlay-dark="4"
+                <div class="text-left item bg-img" data-overlay-dark="3"
                     data-background="{{ asset('assets/frontend/img/slider/3.jpg') }}">
                     <div class="v-middle caption">
                         <div class="container">
