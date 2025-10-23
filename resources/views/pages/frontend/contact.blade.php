@@ -15,9 +15,11 @@
 
 <body>
     <div class="content-wrapper">
+
         @include('pages.frontend.layouts.preloader')
 
         @include('pages.frontend.layouts.header')
+
         <!-- Header Banner -->
         <div class="banner-header valign bg-img bg-fixed" data-overlay-dark="4"
             data-background="{{ asset('assets/frontend/img/slider/2.jpg') }}">
@@ -30,6 +32,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Contact -->
         <div class="contact section-padding">
             <div class="container">
@@ -104,6 +107,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Maps -->
         <div class="google-maps">
             <iframe id="gmap_canvas"
@@ -111,10 +115,11 @@
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <!-- Lets Talk -->
-        @include('pages.frontend.layouts.cta')
+
     </div>
+    
     @include('pages.frontend.layouts.footer')
+
     @include('pages.frontend.layouts.script')
 </body>
 

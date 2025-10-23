@@ -12,7 +12,7 @@
                           stands as a landmark.</p>
                       <div class="d-flex flex-md-row flex-column">
                           <a href="{{route('contact')}}" class="text-center btn-cta px-4 py-2">Contact Now</a>
-                          <a href="tel:9171711513" class="text-center btn-cta-2 px-4 py-2 mx-3 mt-md-0 mt-3">Call : +91 9171711513</a>
+                          <a href="https://api.whatsapp.com/send/?phone=%2B919171711513&text&type=phone_number&app_absent=0" target="_blank" class="text-center btn-cta-2 px-4 py-2 mx-3 mt-md-0 mt-3">Chat on Whatsapp</a>
                       </div>
                   </div>
               </div>

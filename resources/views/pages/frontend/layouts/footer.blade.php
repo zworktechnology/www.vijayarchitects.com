@@ -5,12 +5,10 @@
              <div class="row">
                  <div class="col-md-4 mb-30">
                      <a class="logo" href="{{ route('index') }}"> <img src="{{ asset('assets/frontend/img/v1.png') }}"
-                             class="logo-img" alt="" style="width:250px !important;height:120px"> </a>
-                     <div class="sub-title border-footer-light mb-2">Vijay Architects</div>
-                     <p>At Vijay Architects, we don’t just design buildings; we transform ideas into spaces that
+                             class="logo-img" alt="" style="width:200px !important;height:100px"> </a>
+                     <p>We transform ideas into spaces that
                          inspire, captivate, and endure. Every project begins with a vision, and we bring it to life
-                         through innovation, precision, and pasion. Our approach is deeply thoughtful — blending
-                         creativity with functionality, aesthetics with purpose.
+                         through innovation, precision, and passion.
                      </p>
                  </div>
                  <div class="col-md-4">
@@ -36,14 +34,14 @@
                  <div class="col-md-4 px-md-0 px-4 mt-md-0 mt-4">
                      <div class="item">
                          <h3>Vijay <span>Architects,</span></h3>
-                         <p>No. 14, Alexandria Road,Cantonment,<br>
-                             Trichy -620001.</p>
-                         <a href="tel:9171711513" class="phone"  target="_blank">9171711513, 8903493280.</a>
-                         <a href="mailto:vijayarchitects@hotmail.com" class="mail"  target="_blank">vijayarchitects@hotmail.com.</a>
+                         <p>No.14, Alexandria Road, Cantonment,<br>
+                             Tiruchirappalli, Tamil Nadu, India - 620001</p>
+                         <a href="tel:9171711513" class="phone"  target="_blank">+91 89034 93280</a>
+                         <a href="mailto:vijayarchitects@hotmail.com" class="mail"  target="_blank">vijayarchitects@hotmail.com</a>
                          <div class="social mt-2">
                              <a href="https://www.facebook.com/share/1CMP1sZigT/" target="_blank"><i class="ti-facebook"></i></a>
                              <a href="https://www.instagram.com/vijayarchitects?igsh=bWV2ZDJ1endnaDc3"  target="_blank"><i class="ti-instagram"></i></a>
-                             
+
                          </div>
                      </div>
                  </div>

@@ -9,15 +9,18 @@
     @include('pages.frontend.layouts.metaog')
 
     @include('pages.frontend.layouts.headerstyle')
+    
     @turnstileScripts()
 
 </head>
 
 <body>
     <div class="content-wrapper">
+
         @include('pages.frontend.layouts.preloader')
 
         @include('pages.frontend.layouts.header')
+
         <!-- Header Banner -->
         <div class="banner-header valign bg-img bg-fixed" data-overlay-dark="4"
             data-background="{{ asset('assets/frontend/img/slider/2.jpg') }}">
@@ -185,7 +188,7 @@
                     </div>
                     <div class="col-md-8">
                         <div class="section-title">Frequently <span>Asked Questions</span></div>
-                        
+
                     </div>
                 </div>
                 <div class="row mb-5 animate-box" data-animate-effect="fadeInUp">
@@ -355,10 +358,192 @@
                 </div>
             </div>
         </section>
-        <!-- Lets-Talk -->
-        @include('pages.frontend.layouts.cta')
+        <!-- Testiominals -->
+        <section class="testimonials">
+            <div class="background bg-img bg-fixed section-padding"
+                data-background="{{ asset('assets/frontend/img/slider/4.jpg') }}" data-overlay-dark="6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 mb-30">
+                            <h3 class="sub-title border-bot-dark">Testiominals</h3>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="section-title">What Client's Say?</div>
+                            <div class="wrap">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item"> <span class="quote"><img
+                                                src="{{ asset('assets/frontend/img/quot.png') }}"
+                                                alt=""></span>
+                                        <p>Vijay Architects transformed our Trichy plot into a stunning villa. Every
+                                            space reflects luxury and warmth — they truly are the best architects in
+                                            Trichy.</p>
+                                        <div class="info">
+                                            <div class="author-img"> <img
+                                                    src="{{ asset('assets/frontend/img/team/1.jpg') }}"
+                                                    alt="">
+                                            </div>
+                                            <div class="cont">
+                                                <h6>Aravind Raman</h6> <span>Cantonment Trichy
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item"> <span class="quote">
+                                            <img src="{{ asset('assets/frontend/img/quot.png') }}" alt="">
+                                        </span>
+                                        <p>We wanted a blend of modern and traditional design for our family home. Vijay
+                                            Architects understood our vision perfectly and delivered beyond
+                                            expectations.
+                                        </p>
+                                        <div class="info">
+                                            <div class="author-img"> <img
+                                                    src="{{ asset('assets/frontend/img/team/2.jpg') }}"
+                                                    alt="">
+                                            </div>
+                                            <div class="cont">
+                                                <h6>Mrs. Priya S</h6> <span>Woraiyur Trichy</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item"> <span class="quote">
+                                            <img src="{{ asset('assets/frontend/img/quot.png') }}" alt="">
+                                        </span>
+                                        <p>Our commercial building in Karur stands out because of their elegant façade
+                                            and efficient layout. Vijay Architect’s design sense is world-class.</p>
+                                        <div class="info">
+                                            <div class="author-img"> <img
+                                                    src="{{ asset('assets/frontend/img/team/4.jpg') }}"
+                                                    alt="">
+                                            </div>
+                                            <div class="cont">
+                                                <h6>S. Naveen Kumar</h6> <span>Karur</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item"> <span class="quote">
+                                            <img src="{{ asset('assets/frontend/img/quot.png') }}" alt="">
+                                        </span>
+                                        <p>From the first concept to final handover, the experience was seamless. The
+                                            team’s professionalism and creativity make them one of Tamil Nadu’s top
+                                            architecture firms.</p>
+                                        <div class="info">
+                                            <div class="author-img"> <img
+                                                    src="{{ asset('assets/frontend/img/team/4.jpg') }}"
+                                                    alt="">
+                                            </div>
+                                            <div class="cont">
+                                                <h6>Meenakshi Raj</h6> <span>Madurai</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item"> <span class="quote">
+                                            <img src="{{ asset('assets/frontend/img/quot.png') }}" alt="">
+                                        </span>
+                                        <p>We built our dream villa near Srirangam, and the detailing left us
+                                            speechless. Every corner reflects thoughtful planning and premium finish</p>
+                                        <div class="info">
+                                            <div class="author-img"> <img
+                                                    src="{{ asset('assets/frontend/img/team/4.jpg') }}"
+                                                    alt="">
+                                            </div>
+                                            <div class="cont">
+                                                <h6>Dr. Karthik Balaji</h6> <span>Srirangam</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item"> <span class="quote">
+                                            <img src="{{ asset('assets/frontend/img/quot.png') }}" alt="">
+                                        </span>
+                                        <p>Their 3D visualizations helped us see our future home clearly. The final
+                                            outcome matched it perfectly — pure architectural brilliance.</p>
+                                        <div class="info">
+                                            <div class="author-img"> <img
+                                                    src="{{ asset('assets/frontend/img/team/4.jpg') }}"
+                                                    alt="">
+                                            </div>
+                                            <div class="cont">
+                                                <h6>Mr. Vignesh & Family</h6> <span>Tiruchirappalli</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item"> <span class="quote">
+                                            <img src="{{ asset('assets/frontend/img/quot.png') }}" alt="">
+                                        </span>
+                                        <p>Our boutique resort project in Kodaikanal came alive because of their
+                                            sustainable yet luxurious design approach. Highly recommend Vijay
+                                            Architects.
+                                        </p>
+                                        <div class="info">
+                                            <div class="author-img"> <img
+                                                    src="{{ asset('assets/frontend/img/team/4.jpg') }}"
+                                                    alt="">
+                                            </div>
+                                            <div class="cont">
+                                                <h6>R. Divya Menon</h6> <span>Kodaikanal</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item"> <span class="quote">
+                                            <img src="{{ asset('assets/frontend/img/quot.png') }}" alt="">
+                                        </span>
+                                        <p>What I loved most was their balance between aesthetics and practicality. Our
+                                            home in Namakkal feels spacious, elegant, and timeless.
+                                        </p>
+                                        <div class="info">
+                                            <div class="author-img"> <img
+                                                    src="{{ asset('assets/frontend/img/team/4.jpg') }}"
+                                                    alt="">
+                                            </div>
+                                            <div class="cont">
+                                                <h6>Mohan Krishnan</h6> <span>Namakkal</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item"> <span class="quote">
+                                            <img src="{{ asset('assets/frontend/img/quot.png') }}" alt="">
+                                        </span>
+                                        <p>We hired Vijay Architects for our office interiors in Trichy. The design
+                                            boosts productivity while maintaining a premium corporate feel.
+                                        </p>
+                                        <div class="info">
+                                            <div class="author-img"> <img
+                                                    src="{{ asset('assets/frontend/img/team/4.jpg') }}"
+                                                    alt="">
+                                            </div>
+                                            <div class="cont">
+                                                <h6>Harish Sundar</h6> <span>Thillai Nagar Trichy</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item"> <span class="quote">
+                                            <img src="{{ asset('assets/frontend/img/quot.png') }}" alt="">
+                                        </span>
+                                        <p>Vijay Architect’s designs are more than beautiful — they’re intelligent.
+                                            Every inch of space in our house is used efficiently without losing luxury.
+
+                                        </p>
+                                        <div class="info">
+                                            <div class="author-img"> <img
+                                                    src="{{ asset('assets/frontend/img/team/4.jpg') }}"
+                                                    alt="">
+                                            </div>
+                                            <div class="cont">
+                                                <h6> Mrs. Anitha Vel</h6> <span>Coimbatore</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
+
     @include('pages.frontend.layouts.footer')
+
     @include('pages.frontend.layouts.script')
 </body>
 
