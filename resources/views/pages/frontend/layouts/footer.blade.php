@@ -56,7 +56,7 @@
                  </div>
                  <div class="col-md-8">
                      <p class="right">Crafted by <a href="https://www.zworktechnology.com"
-                             target="_blank">Zworktechnology</a></p>
+                             target="_blank">zworktechnology.com</a></p>
                  </div>
              </div>
          </div>
