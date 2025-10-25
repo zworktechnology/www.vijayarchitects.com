@@ -1,6 +1,6 @@
   <section class="lets-talk">
       <div class="background bg-img bg-fixed section-padding"
-          data-background="{{ asset('assets/frontend/img/slider/1.jpg') }}" data-overlay-dark="6">
+          data-background="{{ asset('assets/frontend/img/5.jpg') }}" data-overlay-dark="6">
           <div class="container">
               <div class="row">
                   <div class="col-md-4 mb-30">

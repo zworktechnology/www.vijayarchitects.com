@@ -1343,7 +1343,7 @@ input[type="checkbox"] {
 }
 
 .owl-theme .owl-nav [class*=owl-] {
-    background:#fff ;
+    background: #fff;
     color: #000;
     font-size: 20px;
     margin-right: 3px;
@@ -1351,7 +1351,7 @@ input[type="checkbox"] {
     transition: all 0.2s ease-in-out;
     transform: scale(1.0);
     border-radius: 100%;
-    background:#fff ;
+    background: #fff;
     width: 60px;
     height: 60px;
     line-height: 32px;
@@ -2616,7 +2616,7 @@ input[type="checkbox"] {
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: center;
-    object-position:left center;
+    object-position: left center;
     -webkit-transition: all .5s;
     transition: all .5s;
 }
@@ -4158,7 +4158,7 @@ input[type="checkbox"] {
     left: 0;
     right: 0;
     height: 1px;
-   
+
     content: "";
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
@@ -4443,17 +4443,18 @@ input[type="checkbox"] {
     .portfolio-item img {
         height: auto !important;
     }
+
     .header .caption h1 {
-    position: relative;
-    margin-bottom: 20px;
-    font-size: 24px !important; 
-    text-transform: uppercase;
-    line-height: 1.2em;
-    -webkit-animation-delay: .4s;
-    animation-delay: .4s;
-    color: #fff;
-    font-weight: 400;
-    letter-spacing: 3px;
-}
+        position: relative;
+        margin-bottom: 20px;
+        font-size: 24px !important;
+        text-transform: uppercase;
+        line-height: 1.2em;
+        -webkit-animation-delay: .4s;
+        animation-delay: .4s;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 3px;
+    }
 
 }

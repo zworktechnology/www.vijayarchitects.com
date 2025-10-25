@@ -25,8 +25,8 @@
         <header id="slider-area" class="header slider-fade">
             <div class="owl-carousel owl-theme">
                 <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
-                <div class="text-left item bg-img" data-overlay-dark="1"
-                    data-background="{{ asset('assets/frontend/img/slider/1.jpg') }}">
+                <div class="text-left item bg-img" data-overlay-dark="4"
+                      data-background="{{ asset('assets/frontend/img/02.jpg') }}" style="background-position: top center">
                     <div class="v-middle caption">
                         <div class="container">
                             <div class="row">
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="text-left item bg-img" data-overlay-dark="2"
-                    data-background="{{ asset('assets/frontend/img/slider/2.jpg') }}">
+                    data-background="{{ asset('assets/frontend/img/3.jpg') }}">
                     <div class="v-middle caption">
                         <div class="container">
                             <div class="row">
@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="text-left item bg-img" data-overlay-dark="3"
-                    data-background="{{ asset('assets/frontend/img/slider/3.jpg') }}">
+                    data-background="{{ asset('assets/frontend/img/4.jpg') }}">
                     <div class="v-middle caption">
                         <div class="container">
                             <div class="row">
@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <div class="text-left item bg-img" data-overlay-dark="4"
-                    data-background="{{ asset('assets/frontend/img/slider/2.jpg') }}">
+                    data-background="{{ asset('assets/frontend/img/SIVAGAMIARKNAGAR.jpg') }}" style="background-position: top center">
                     <div class="v-middle caption">
                         <div class="container">
                             <div class="row">

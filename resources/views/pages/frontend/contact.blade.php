@@ -21,8 +21,8 @@
         @include('pages.frontend.layouts.header')
 
         <!-- Header Banner -->
-        <div class="banner-header valign bg-img bg-fixed" data-overlay-dark="4"
-            data-background="{{ asset('assets/frontend/img/slider/2.jpg') }}">
+        <div class="banner-header valign bg-img" data-overlay-dark="4"
+            data-background="{{ asset('assets/frontend/img/4.jpg') }}" style="background-size: cover">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 caption mt-60">
@@ -44,8 +44,8 @@
                             No. 14, Alexandria Road,<br>
                             Cantonment,
                             Trichy -620001</p>
-                        <div class="phone">9171711513, 8903493280.</div>
-                        <div class="mail mb-3">vijayarchitects@hotmail.com.</div>
+                        <a href="tel:+919171711513" class="phone">9171711513, 8903493280.</a>
+                        <a href="mailto:vijayarchitects@hotmail.com" class="mail mb-3">vijayarchitects@hotmail.com</a>
                         <div class="social mt-2">
 
                             <a href="https://www.instagram.com/vijayarchitects?igsh=bWV2ZDJ1endnaDc3" target="_blank"><i

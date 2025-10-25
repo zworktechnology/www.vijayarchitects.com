@@ -20,7 +20,7 @@
         @include('pages.frontend.layouts.header')
         <!-- Header Banner -->
         <div class="banner-header valign bg-img bg-fixed" data-overlay-dark="4"
-            data-background="{{ asset('assets/frontend/img/slider/2.jpg') }}">
+            data-background="{{ asset('assets/frontend/img/3.jpg') }}" style="background-position: bottom center">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 caption mt-60">

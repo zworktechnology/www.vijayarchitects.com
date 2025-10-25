@@ -43,7 +43,7 @@ class ContactController extends Controller
         // live
         //$admin_number = 9677442152;
         // lcoal
-        $admin_number = 9171711513;
+        $admin_number = 7402182523;
 
         $name = $request->get('name');
         $clinet_phone = $request->get('phone');
@@ -62,7 +62,7 @@ class ContactController extends Controller
         if ($response->successful()) {
             return view('pages.frontend.layouts.redirect');
         } else {
-            return redirect()->route('contactus');
+            return redirect()->route('contact');
         }
     }
 }

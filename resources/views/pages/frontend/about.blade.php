@@ -23,7 +23,7 @@
 
         <!-- Header Banner -->
         <div class="banner-header valign bg-img bg-fixed" data-overlay-dark="4"
-            data-background="{{ asset('assets/frontend/img/slider/2.jpg') }}">
+            data-background="{{ asset('assets/frontend/img/02.jpg') }}">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 caption mt-60">
@@ -67,21 +67,14 @@
                     </div>
                     <div class="col-lg-4 col-md-6 animate-box" data-animate-effect="fadeInUp">
                         <div class="wrap">
-                            <div class="con"> <img src="{{ asset('assets/frontend/img/about.jpg') }}"
+                            <div class="con"> <img src="{{ asset('assets/frontend/img/vijay.jpg') }}"
                                     class="img-fluid" alt="">
                                 <div class="info">
-                                    <h4 class="name">Stella Athena</h4>
+                                    <h4 class="name">Mr. VIJAY</h4>
                                 </div>
                             </div>
                         </div>
-                        <div class="wrap">
-                            <div class="con"> <img src="{{ asset('assets/frontend/img/about2.jpg') }}"
-                                    class="img-fluid" alt="">
-                                <div class="info">
-                                    <h4 class="name">Martin Dan</h4>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
 
