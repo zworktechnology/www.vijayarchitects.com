@@ -18,12 +18,11 @@
     <div class="content-wrapper">
 
         @include('pages.frontend.layouts.preloader')
-
         @include('pages.frontend.layouts.header')
 
         <!-- Header Banner -->
         <div class="banner-header valign bg-img bg-fixed" data-overlay-dark="4"
-            data-background="{{ asset('assets/frontend/img/02.jpg') }}">
+            data-background="{{ asset('assets/frontend/img/SIVAGAMIARKNAGAR.jpg') }}" style="background-position: top top">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 caption mt-60">
@@ -70,14 +69,12 @@
                             <div class="con"> <img src="{{ asset('assets/frontend/img/vijay.jpg') }}"
                                     class="img-fluid" alt="">
                                 <div class="info">
-                                    <h4 class="name">Mr. VIJAY</h4>
+                                    <h4 class="name">Ar. VIJAY</h4>
                                 </div>
                             </div>
-                        </div>
-                        
+                        </div> 
                     </div>
                 </div>
-
             </div>
         </section>
         <!-- Process -->
@@ -354,7 +351,7 @@
         <!-- Testiominals -->
         <section class="testimonials">
             <div class="background bg-img bg-fixed section-padding"
-                data-background="{{ asset('assets/frontend/img/slider/4.jpg') }}" data-overlay-dark="6">
+                data-background="{{ asset('assets/frontend/img/4.jpg') }}" data-overlay-dark="6">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 mb-30">
