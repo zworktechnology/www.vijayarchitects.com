@@ -79,7 +79,7 @@
             </div>
         </section>
         <!-- Process -->
-        <section class="process section-padding">
+        <!--<section class="process section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 animate-box" data-animate-effect="fadeInLeft">
@@ -169,6 +169,60 @@
                     </div>
                 </div>
             </div>
+        </section>-->
+
+         <!-- Services -->
+        <section class="services section-padding">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <div class="sub-title border-bot-light">SERVICES</div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="section-title">Our <span>Services</span></div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-5 animate-box" data-animate-effect="fadeInUp">
+                        <div class="item bg-1">
+                            <div class="con">
+                                <a href="services-page.html">
+                                    <div class="numb">01</div>
+                                    <h5>Architecture</h5>
+                                    <p>We craft spaces that inspire — blending modern design, structural precision, and
+                                        timeless aesthetics to create iconic residential and commercial landmarks.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-5 animate-box" data-animate-effect="fadeInUp">
+                        <div class="item bg-2">
+                            <div class="con">
+                                <a href="services-page.html">
+                                    <div class="numb">02</div>
+                                    <h5>Interior Design</h5>
+                                    <p>From concept to finishing touches, our interiors reflect your personality —
+                                        merging elegance, functionality, and luxury in every corner.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-5 animate-box" data-animate-effect="fadeInUp">
+                        <div class="item bg-3">
+                            <div class="con">
+                                <a href="services-page.html">
+                                    <div class="numb">03</div>
+                                    <h5>Public Projects</h5>
+                                    <p>We shape vibrant urban environments through thoughtful planning, sustainable
+                                        layouts, and human-centered architectural vision.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
         </section>
         <!-- Team -->
         <section class="team section-padding">
@@ -190,7 +244,7 @@
             </div>
         </section>
         <!-- FAQ -->
-        <section class="team">
+        {{-- <section class="team">
             <div class="container">
                 <div class="row mb-4">
                     <div class="col-md-4">
@@ -367,7 +421,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- Testiominals -->
         <section class="testimonials">
             <div class="background bg-img bg-fixed section-padding"
@@ -388,10 +442,7 @@
                                             space reflects luxury and warmth — they truly are the best architects in
                                             Trichy.</p>
                                         <div class="info">
-                                            <div class="author-img"> <img
-                                                    src="{{ asset('assets/frontend/img/team/1.jpg') }}"
-                                                    alt="">
-                                            </div>
+                                           
                                             <div class="cont">
                                                 <h6>Aravind Raman</h6> <span>Cantonment Trichy
                                                 </span>
@@ -406,10 +457,7 @@
                                             expectations.
                                         </p>
                                         <div class="info">
-                                            <div class="author-img"> <img
-                                                    src="{{ asset('assets/frontend/img/team/2.jpg') }}"
-                                                    alt="">
-                                            </div>
+                                           
                                             <div class="cont">
                                                 <h6>Mrs. Priya S</h6> <span>Woraiyur Trichy</span>
                                             </div>
@@ -421,10 +469,7 @@
                                         <p>Our commercial building in Karur stands out because of their elegant façade
                                             and efficient layout. Vijay Architect’s design sense is world-class.</p>
                                         <div class="info">
-                                            <div class="author-img"> <img
-                                                    src="{{ asset('assets/frontend/img/team/4.jpg') }}"
-                                                    alt="">
-                                            </div>
+                                           
                                             <div class="cont">
                                                 <h6>S. Naveen Kumar</h6> <span>Karur</span>
                                             </div>
@@ -437,10 +482,7 @@
                                             team’s professionalism and creativity make them one of Tamil Nadu’s top
                                             architecture firms.</p>
                                         <div class="info">
-                                            <div class="author-img"> <img
-                                                    src="{{ asset('assets/frontend/img/team/4.jpg') }}"
-                                                    alt="">
-                                            </div>
+                                           
                                             <div class="cont">
                                                 <h6>Meenakshi Raj</h6> <span>Madurai</span>
                                             </div>
@@ -452,10 +494,7 @@
                                         <p>We built our dream villa near Srirangam, and the detailing left us
                                             speechless. Every corner reflects thoughtful planning and premium finish</p>
                                         <div class="info">
-                                            <div class="author-img"> <img
-                                                    src="{{ asset('assets/frontend/img/team/4.jpg') }}"
-                                                    alt="">
-                                            </div>
+                                           
                                             <div class="cont">
                                                 <h6>Dr. Karthik Balaji</h6> <span>Srirangam</span>
                                             </div>
@@ -467,10 +506,7 @@
                                         <p>Their 3D visualizations helped us see our future home clearly. The final
                                             outcome matched it perfectly — pure architectural brilliance.</p>
                                         <div class="info">
-                                            <div class="author-img"> <img
-                                                    src="{{ asset('assets/frontend/img/team/4.jpg') }}"
-                                                    alt="">
-                                            </div>
+                                           
                                             <div class="cont">
                                                 <h6>Mr. Vignesh & Family</h6> <span>Tiruchirappalli</span>
                                             </div>
@@ -484,10 +520,7 @@
                                             Architects.
                                         </p>
                                         <div class="info">
-                                            <div class="author-img"> <img
-                                                    src="{{ asset('assets/frontend/img/team/4.jpg') }}"
-                                                    alt="">
-                                            </div>
+                                            
                                             <div class="cont">
                                                 <h6>R. Divya Menon</h6> <span>Kodaikanal</span>
                                             </div>
@@ -500,10 +533,7 @@
                                             home in Namakkal feels spacious, elegant, and timeless.
                                         </p>
                                         <div class="info">
-                                            <div class="author-img"> <img
-                                                    src="{{ asset('assets/frontend/img/team/4.jpg') }}"
-                                                    alt="">
-                                            </div>
+                                           
                                             <div class="cont">
                                                 <h6>Mohan Krishnan</h6> <span>Namakkal</span>
                                             </div>
@@ -516,10 +546,7 @@
                                             boosts productivity while maintaining a premium corporate feel.
                                         </p>
                                         <div class="info">
-                                            <div class="author-img"> <img
-                                                    src="{{ asset('assets/frontend/img/team/4.jpg') }}"
-                                                    alt="">
-                                            </div>
+                                            
                                             <div class="cont">
                                                 <h6>Harish Sundar</h6> <span>Thillai Nagar Trichy</span>
                                             </div>
@@ -533,10 +560,8 @@
 
                                         </p>
                                         <div class="info">
-                                            <div class="author-img"> <img
-                                                    src="{{ asset('assets/frontend/img/team/4.jpg') }}"
-                                                    alt="">
-                                            </div>
+                                            
+                                         
                                             <div class="cont">
                                                 <h6> Mrs. Anitha Vel</h6> <span>Coimbatore</span>
                                             </div>

@@ -18,13 +18,13 @@
                              <ul class="col-md-6 navbar-nav ms-auto px-5">
                                  <li class="nav-item "><a class="nav-link" href="{{route('index')}}">Home</a></li>
                                  <li class="nav-item"><a class="nav-link" href="{{route('about')}}">About</a></li>
-                                 <li class="nav-item"><a class="nav-link" href="{{route('service')}}">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{route('blogs')}}">Blog</a></li>
 
                              </ul>
 
                              <ul class="col-md-6 navbar-nav ms-auto px-md-0 px-5">
                                  <li class="nav-item "><a class="nav-link" href="{{route('projects')}}">Projects</a></li>
-                                 {{-- <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li> --}}
+                                
                                  <li class="nav-item"><a class="nav-link" href="{{route('contact')}}">Contact</a></li>
                              </ul>
                          </div>

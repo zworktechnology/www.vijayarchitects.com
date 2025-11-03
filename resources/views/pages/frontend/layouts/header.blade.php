@@ -3,8 +3,13 @@
             <div class="container">
                 <!-- Logo -->
                 <div class="logo-wrapper">
-                    <a class="logo" href="{{ route('index') }}"> <img src="{{ asset('assets/frontend/img/v2.png') }}"
+                            @if (request()->routeIs('index'))
+                                 <a class="logo" href="{{ route('index') }}"> <img src="{{ asset('assets/frontend/img/v2.png') }}"
                             class="logo-img" alt=""> </a>
+                            @else
+                                 <a class="logo" href="{{ route('index') }}"> <img src="{{ asset('assets/frontend/img/fav.png') }}"
+                            class="logo-img-2" alt=""> </a>
+                            @endif
                     <!-- <a class="logo" href="index.html"> <h2>ArchSan <span>Architecture</span></h2> </a> -->
                 </div>
                 <!-- Button -->
@@ -18,11 +23,11 @@
                                 href="{{ route('index') }}">Home</a></li>
                         <li class="nav-item"><a class="nav-link {{ request()->routeIs('about') ? 'active' : '' }}"
                                 href="{{ route('about') }}">About</a></li>
-                        <li class="nav-item"><a class="nav-link {{ request()->routeIs('service') ? 'active' : '' }}"
-                                href="{{ route('service') }}">Services</a></li>
+                        {{-- <li class="nav-item"><a class="nav-link {{ request()->routeIs('service') ? 'active' : '' }}"
+                                href="{{ route('service') }}">Services</a></li> --}}
                         <li class="nav-item "><a class="nav-link {{ request()->routeIs('projects','projectdetails') ? 'active' : '' }}"
                                 href="{{ route('projects') }}">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link {{ request()->routeIs('blogs','blogdetails') ? 'active' : '' }}"
+                        <li class="nav-item"><a class="nav-link {{ request()->routeIs('blogs','blog.info') ? 'active' : '' }}"
                                 href="{{ route('blogs') }}">Blog</a></li>
                         <li class="nav-item"><a class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }}"
                                 href="{{ route('contact') }}">Contact</a></li>

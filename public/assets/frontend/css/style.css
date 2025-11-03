@@ -779,7 +779,7 @@ input[type="checkbox"] {
 
 .navbar .navbar-toggler-icon,
 .navbar .icon-bar {
-    color: #FFF;
+    color: #000;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -809,7 +809,7 @@ input[type="checkbox"] {
 
 .navbar .navbar-nav .active i {
     color: #e9912c;
-     font-weight: 700;
+    font-weight: 700;
 }
 
 .nav-scroll {
@@ -931,6 +931,13 @@ input[type="checkbox"] {
     height: 100px;
 }
 
+.logo-img-2 {
+    padding: 20px 0;
+    width: auto;
+    text-align: center;
+    height: 100px;
+}
+
 .dropdown .nav-link i {
     padding-left: 0px;
     font-size: 8px;
@@ -973,7 +980,7 @@ input[type="checkbox"] {
 .navbar .dropdown-menu .dropdown-item.active,
 .navbar .dropdown-menu .dropdown-item:hover {
     color: #ffe600;
-     font-weight: 700;
+    font-weight: 700;
 }
 
 .navbar .dropdown-toggle::after {
@@ -1030,7 +1037,7 @@ input[type="checkbox"] {
     .navbar {
         padding-left: 0px;
         padding-right: 0px;
-        background: transparent;
+        background: #fff;
         padding-top: 0px;
         padding-bottom: 0px;
     }
@@ -1064,6 +1071,13 @@ input[type="checkbox"] {
     .logo-img {
         margin-bottom: 0px;
         width: 165px;
+        height: 50px;
+        padding: 2px;
+    }
+
+    .logo-img-2 {
+        margin-bottom: 0px;
+        /* width: 165px; */
         height: 50px;
         padding: 2px;
     }
@@ -2444,7 +2458,7 @@ input[type="checkbox"] {
 }
 
 .testimonials .wrap .item .info .cont {
-    margin-left: 70px;
+    margin-left: 10px;
 }
 
 .testimonials .wrap .item .info h6 {
@@ -3538,10 +3552,11 @@ input[type="checkbox"] {
 
 .blog-home .item .post-img .img {
     overflow: hidden;
-   
+
 }
-.blog-home .item .post-img .img img{
- min-height: 400px;
+
+.blog-home .item .post-img .img img {
+    min-height: 400px;
 }
 
 .blog-home .item .post-img:hover img {

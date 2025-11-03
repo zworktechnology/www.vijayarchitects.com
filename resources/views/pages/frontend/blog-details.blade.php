@@ -20,11 +20,11 @@
         @include('pages.frontend.layouts.header')
         <!-- Header Banner -->
         <div class="banner-header valign bg-img bg-fixed" data-overlay-dark="4"
-            data-background="{{ asset('assets/frontend/img/slider/1.jpg') }}">
+            data-background="{{ asset('assets/frontend/img/SIVAGAMIARKNAGAR.jpg') }}">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 caption mt-60">
-                        <div class="subtitle"><a href="blog.html">Blog</a></div>
+                        <div class="subtitle"><a href="#">Blog</a></div>
                         <div class="title">{{ $blogs->title }}</div>
                         <div class="wrap">
                             <div class="author">{{ $blogs->writer_name }}</div>
