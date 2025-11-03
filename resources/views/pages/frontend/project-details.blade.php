@@ -37,66 +37,24 @@
                 <!-- project slider -->
                 <div class="row justify-content-center">
                     <div class="col-md-12">
-                        <div class="owl-carousel owl-theme">
-                            <div class="portfolio-item">
-
-                                <img class="img-fluid"
-                                    src="{{ asset('assets\frontend\img\projects\ARULMANI_RESIDENCE\birds paradise -1.jpg') }}"
-                                    alt="" width="auto">
-
-                            </div>
-                            <div class="portfolio-item row">
-                                <div class="col-6">
-                                    <img class="img-fluid"
-                                        src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/01.JPG') }}"
-                                        alt="" width="auto">
-                                </div>
-                                <div class="col-6">
-                                    <img class="img-fluid"
-                                        src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/02.jpeg') }}"
-                                        alt="">
-                                </div>
-                            </div>
-
-                            <div class="portfolio-item row">
-                                <div class="col-6">
-                                    <img class="img-fluid"
-                                        src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/04.JPG') }}"
-                                        alt="" width="auto">
-                                </div>
-                                <div class="col-6">
-                                    <img class="img-fluid"
-                                        src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/06.jpeg') }}"
-                                        alt="" style="">
-                                </div>
-                            </div>
-
-                            <div class="portfolio-item row">
-                                <div class="col-6">
-                                    <img class="img-fluid"
-                                        src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/09.jpg') }}"
-                                        alt="" width="auto" >
-                                </div>
-                                <div class="col-6">
-                                    <img class="img-fluid"
-                                        src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/14..JPG') }}"
-                                        alt="" >
-                                </div>
-                            </div>
-
+                        <div class="">
+                            <img class="img-fluid"
+                                src="{{ asset('assets\frontend\img\projects\ARULMANI_RESIDENCE\birds paradise -1.jpg') }}"
+                                alt="" width="auto">
                         </div>
+
                         <div class="row">
                             <div class="col-md-8">
                                 <div class="project-bar">
                                     <div class="row justify-content-between align-items-center text-left text-lg-start">
-                                        <div class="col-md-3 mb-3">
+                                        {{-- <div class="col-md-3 mb-3">
                                             <h5>Project</h5>
                                             <h6>Arulmani House</h6>
                                         </div>
                                         <div class="col-md-3 mb-3">
                                             <h5>Client</h5>
                                             <h6>Mr. Arulmani.</h6>
-                                        </div>
+                                        </div> --}}
                                         <div class="col-md-3 mb-3">
                                             <h5>Location</h5>
                                             <h6>Coimbatore</h6>
@@ -125,16 +83,19 @@
                                             <h5>Structural Consultant</h5>
                                             <h6>Ram Kumar.,<br> Rays Consulting Engineers.</h6>
                                         </div>
-                                        <div class="col-md-6 mb-3">
+                                        <div class="col-md-3 mb-3">
                                             <h5>Electrical Consultant</h5>
                                             <h6>D. Nagarajan.,<br> DNR consultants.</h6>
                                         </div>
 
 
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-6 mb-3">
                                             <h5>Design Team</h5>
                                             <h6>Vijaykumar, Senthil Kumar, Ashok, Shanthi, Anitha, Kavitha.
                                             </h6>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+
                                         </div>
                                     </div>
                                 </div>
@@ -142,7 +103,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="portfolio-item row">
+                    <div class="col-6">
+                        <img class="img-fluid"
+                            src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/01.JPG') }}"
+                            alt="" width="auto">
+                    </div>
+                    <div class="col-6">
+                        <img class="img-fluid"
+                            src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/02.jpeg') }}"
+                            alt="">
+                    </div>
+                </div>
+                <div class="row mt-5">
                     <div class="col-md-12">
                         <div class="row mb-5">
                             <div class="col-md-4">
@@ -251,6 +224,40 @@
                                 </div>
                             </li>
                         </ul>
+
+                        <div class="row mb-5">
+                            <div class="col-md-4">
+                                <div class="sub-title border-bot-light">Gallery
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="portfolio-item row">
+                                <div class="col-6">
+                                    <img class="img-fluid"
+                                        src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/04.JPG') }}"
+                                        alt="" width="auto">
+                                </div>
+                                <div class="col-6">
+                                    <img class="img-fluid"
+                                        src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/06.jpeg') }}"
+                                        alt="" style="">
+                                </div>
+                            </div>
+
+                            <div class="portfolio-item row mt-4">
+                                <div class="col-6">
+                                    <img class="img-fluid"
+                                        src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/09.jpg') }}"
+                                        alt="" width="auto">
+                                </div>
+                                <div class="col-6">
+                                    <img class="img-fluid"
+                                        src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/14..JPG') }}"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

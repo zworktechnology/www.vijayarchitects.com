@@ -67,25 +67,37 @@ class FrontendController extends Controller
         return view('pages.frontend.service-details', compact('metaog'));
     }
 
-     public function projectdetails()
+    public function projectdetails()
     {
         $metaog = Meta::where('page_id', '=', 8)->first();
 
         return view('pages.frontend.project-details', compact('metaog'));
     }
 
-    
+
     public function blogs()
     {
         $metaog = Meta::where('page_id', '=', 9)->first();
+        $blogs = Blog::where('soft_delete', '=', Null)->orderBy('id', 'desc')->get();
 
-        return view('pages.frontend.blogs', compact('metaog'));
+        $categories = Blogmaster::where('soft_delete', '=', Null)->orderBy('id', 'desc')->get();
+        foreach ($categories as $key => $categor) {
+            $count_Blog = Blog::where('soft_delete', '=', Null)->where('blog_master_id', '=', $categor->id)->get();
+            $categor->totalBlog = count(collect($count_Blog));
+        }
+        return view('pages.frontend.blogs', compact('metaog', 'blogs', 'categories'));
     }
 
-         public function blogdetails()
+    public function blogdetails($blog_id)
     {
         $metaog = Meta::where('page_id', '=', 10)->first();
-
-        return view('pages.frontend.blog-details', compact('metaog'));
+        $blogs = Blog::where('soft_delete', '=', Null)->where('id', '=', $blog_id)->first();
+        $randomBlogs = Blog::where('id', '!=', $blog_id)->inRandomOrder()->limit(3)->get();
+        $categories = Blogmaster::where('soft_delete', '=', Null)->orderBy('id', 'desc')->get();
+        foreach ($categories as $key => $categor) {
+            $count_Blog = Blog::where('soft_delete', '=', Null)->where('blog_master_id', '=', $categor->id)->get();
+            $categor->totalBlog = count(collect($count_Blog));
+        }
+        return view('pages.frontend.blog-details', compact('metaog', 'blogs', 'categories', 'randomBlogs'));
     }
 }

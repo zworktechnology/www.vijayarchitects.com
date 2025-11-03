@@ -9,7 +9,7 @@
     @include('pages.frontend.layouts.metaog')
 
     @include('pages.frontend.layouts.headerstyle')
-    
+
     @turnstileScripts()
 
 </head>
@@ -22,7 +22,8 @@
 
         <!-- Header Banner -->
         <div class="banner-header valign bg-img bg-fixed" data-overlay-dark="4"
-            data-background="{{ asset('assets/frontend/img/SIVAGAMIARKNAGAR.jpg') }}" style="background-position: top top">
+            data-background="{{ asset('assets/frontend/img/SIVAGAMIARKNAGAR.jpg') }}"
+            style="background-position: top top">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 caption mt-60">
@@ -72,7 +73,7 @@
                                     <h4 class="name">Ar. VIJAY</h4>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -170,6 +171,25 @@
             </div>
         </section>
         <!-- Team -->
+        <section class="team section-padding">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <div class="sub-title border-bot-light">TEAMS</div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="section-title">Our <span>Teams</span></div>
+
+                    </div>
+                </div>
+                <div class="row mb-5 animate-box" data-animate-effect="fadeInUp">
+                    <div class="col-md-4">
+                        <div class="card py-5 shadow-sm"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ -->
         <section class="team">
             <div class="container">
                 <div class="row mb-4">

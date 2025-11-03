@@ -25,17 +25,17 @@
         <header id="slider-area" class="header slider-fade">
             <div class="owl-carousel owl-theme">
                 <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
-                <div class="text-left item bg-img" data-overlay-dark="4"
-                      data-background="{{ asset('assets/frontend/img/02.jpg') }}" style="background-position: top center">
+                <div class="text-left item bg-img" data-overlay-dark="0"
+                    data-background="{{ asset('assets/frontend/img/02.jpg') }}" style="background-position: top center">
                     <div class="v-middle caption">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7 col-md-12">
-                                    <h4>01</h4>
+                                    {{-- <h4>01</h4>
                                     <h1>The Signature of Luxury Living</h1>
                                     <p>From contemporary villas to iconic commercial spaces — we design environments
                                         that speak sophistication and comfort in every detail.</p>
-                                    <a href="{{ route('contact') }}" class="button-light">Contact Now</a>
+                                    <a href="{{ route('contact') }}" class="button-light">Contact Now</a> --}}
                                 </div>
                             </div>
                         </div>
@@ -47,13 +47,13 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7 col-md-12">
-                                    <h4>02</h4>
+                                    {{-- <h4>02</h4>
                                     <h1>Crafting Landmarks, Not Just Buildings</h1>
                                     <p>At Vijay Architects, every line we draw becomes a symbol of elegance — redefining
                                         Trichy’s skyline with timeless architectural mastery.
 
                                     </p>
-                                    <a href="{{ route('contact') }}" class="button-light">Contact Now</a>
+                                    <a href="{{ route('contact') }}" class="button-light">Contact Now</a> --}}
                                 </div>
                             </div>
                         </div>
@@ -65,38 +65,39 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7 col-md-12">
-                                    <h4>03</h4>
+                                    {{-- <h4>03</h4>
                                     <h1>Redefining Modern Architecture in Tamil Nadu
                                     </h1>
                                     <p> Where design meets precision, and imagination shapes reality — creating spaces
                                         that inspire awe and admiration.
                                     </p>
-                                    <a href="{{ route('contact') }}" class="button-light">Contact Now</a>
+                                    <a href="{{ route('contact') }}" class="button-light">Contact Now</a> --}}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="text-left item bg-img" data-overlay-dark="4"
-                    data-background="{{ asset('assets/frontend/img/SIVAGAMIARKNAGAR.jpg') }}" style="background-position: top center">
+                    data-background="{{ asset('assets/frontend/img/SIVAGAMIARKNAGAR.jpg') }}"
+                    style="background-position: top center">
                     <div class="v-middle caption">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-7 col-md-12">
-                                    <h4>04</h4>
+                                    {{-- <h4>04</h4>
                                     <h1>Crafting Landmarks, Not Just Buildings</h1>
                                     <p>At Vijay Architects, every line we draw becomes a symbol of elegance — redefining
                                         Trichy’s skyline with timeless architectural mastery.
 
                                     </p>
-                                    <a href="{{ route('contact') }}" class="button-light">Contact Now</a>
+                                    <a href="{{ route('contact') }}" class="button-light">Contact Now</a> --}}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="slide-num" id="snh-1"></div>
+            {{-- <div class="slide-num" id="snh-1"></div> --}}
             <div class="slider__progress"><span></span></div>
         </header>
 
@@ -109,7 +110,8 @@
                     </div>
                     <div class="col-md-8 animate-box" data-animate-effect="fadeInUp">
                         <div class="section-title"><span>About</span> VIJAY ARCHITECTS</div>
-                        <p>At Vijay Architects, we believe architecture is more than design — it’s the art of giving form
+                        <p>At Vijay Architects, we believe architecture is more than design — it’s the art of giving
+                            form
                             to imagination. Based in Trichy, Tamil Nadu, our award-winning team of architects and
                             designers specialize in creating luxurious residences, contemporary commercial spaces, and
                             sustainable developments that redefine modern living.</p>
@@ -135,7 +137,7 @@
                                 <div class="about-box">
                                     <img src="{{ asset('assets/frontend/img/icon-3.png') }}" class="icon"
                                         alt="">
-                                    <h5>Planing</h5>
+                                    <h5>Public Projects</h5>
                                 </div>
                             </div>
                         </div>
@@ -165,39 +167,45 @@
                 <div class="row">
                     <div class="col-md-12 animate-box" data-animate-effect="fadeInUp">
                         <div class="owl-carousel owl-theme">
+
                             <div class="items mb-4">
                                 <div class="con">
                                     <div class="img">
-                                        <img src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/05.jpg') }}"
-                                            alt="" style="height: 400px">
+                                        <a href="{{ route('projectdetails') }}"><img
+                                                src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/05.jpg') }}"
+                                                alt="" style="height: 400px">
+                                        </a>
                                     </div>
                                     <div class="info">
                                         <span class="category mb-0">Project P.01</span>
-                                        <h6><a href="project-page.html">ARULMANI RESIDENCE</a></h6>
+                                        <h6><a href="{{ route('projectdetails') }}">ARULMANI RESIDENCE</a></h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="items mb-4">
+                                <div class="con">
+                                    <div class="img">
+                                        <a href="{{ route('projectdetails') }}"><img
+                                                src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/03.JPG') }}"
+                                                alt="" style="height: 400px"></a>
+                                    </div>
+                                    <div class="info">
+                                        <span class="category mb-0">Project P.01</span>
+                                        <h6><a href="{{ route('projectdetails') }}">ARULMANI RESIDENCE</a></h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="items mb-4">
                                 <div class="con">
                                     <div class="img">
-                                        <img src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/03.JPG') }}"
-                                            alt="" style="height: 400px">
+                                        <a href="{{ route('projectdetails') }}"><img
+                                                src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/07.jpg') }}"
+                                                alt="" style="height: 400px"></a>
                                     </div>
                                     <div class="info">
                                         <span class="category mb-0">Project P.01</span>
-                                        <h6><a href="project-page.html">ARULMANI RESIDENCE</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="items mb-4">
-                                <div class="con">
-                                    <div class="img">
-                                        <img src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/07.jpg') }}"
-                                            alt="" style="height: 400px">
-                                    </div>
-                                    <div class="info">
-                                        <span class="category mb-0">Project P.01</span>
-                                        <h6><a href="project-page.html">ARULMANI RESIDENCE</a></h6>
+                                        <h6><a href="{{ route('projectdetails') }}">ARULMANI RESIDENCE</a></h6>
                                     </div>
                                 </div>
                             </div>
@@ -269,7 +277,7 @@
             </div>
         </section> --}}
 
-      @include('pages.frontend.layouts.cta')
+        @include('pages.frontend.layouts.cta')
 
     </div>
 

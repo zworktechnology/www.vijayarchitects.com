@@ -13,7 +13,7 @@
     </style>
     <link rel="stylesheet" href="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/default_thank_you.css">
 
-    <meta http-equiv="refresh" content="3; url=https://www.kannaasandco.com/" />
+    <meta http-equiv="refresh" content="3; url=https://vijayarchitects.zworktechnology.in/" />
 </head>
 
 <body>
@@ -34,8 +34,7 @@
 
         <p class="main-content__body" data-lead-id="main-content-body">Thank you For Contacting Us. We Will be get Back
             to you soon.</p>
-        <p class="main-content__body" data-lead-id="main-content-body">For Quick Call & Details Reach Us On +91 89255
-            11901</p>
+        <p class="main-content__body" data-lead-id="main-content-body">For Quick Call & Details Reach Us On +91 91717 11513</p>
 
     </div>
     <br><br>

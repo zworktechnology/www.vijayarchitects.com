@@ -35,6 +35,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 col-md-6">
+                        <a href="{{ route('projectdetails') }}">
                         <div class="items mb-4">
                             <div class="con">
                                 <div class="img">
@@ -47,6 +48,7 @@
                                 </div>
                             </div>
                         </div>
+                        </a>
                     </div>
 
                 </div>

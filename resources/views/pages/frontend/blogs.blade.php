@@ -34,96 +34,24 @@
         <section class="blog-home section-padding">
             <div class="container">
                 <div class="row">
+                    @foreach ($blogs as $keydata => $blogsarr)
                     <div class="col-lg-4 col-md-6">
                         <div class="item mb-5">
                             <div class="post-img">
-                                <a href="{{route('blogdetails')}}">
-                                    <div class="img"> <img src="{{ asset('assets/frontend/img/blog/1.jpg') }}"
+                                <a href="{{ route('blog.info', ['blog_id' => $blogsarr->id]) }}">
+                                    <div class="img"> <img src="{{ asset('assets/backend/blogimage/'.$blogsarr->blog_image) }}"
                                             alt=""> </div>
                                 </a>
                             </div>
                             <div class="cont">
-                                <h4><a href="{{route('blogdetails')}}">5 Best Villa ideas in 2025</a></h4>
-                                <div class="info"> <a href="{{route('blogdetails')}}"><span>Exterior Design</span></a> <a
-                                        href="{{route('blogdetails')}}">Dec, 24</a> </div>
+                                <h4><a href="{{ route('blog.info', ['blog_id' => $blogsarr->id]) }}">{{ \Illuminate\Support\Str::words($blogsarr->title, 5, '...') }}</a></h4>
+                                <div class="info"> <a href="{{ route('blog.info', ['blog_id' => $blogsarr->id]) }}"><span>Exterior Design{{$blogsarr->blogmaster->master_name}}</span></a> <a
+                                        href="{{ route('blog.info', ['blog_id' => $blogsarr->id]) }}">{{$blogsarr->created_at->format('d M Y') }}</a> </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="item mb-5">
-                            <div class="post-img">
-                                <a href="post.html">
-                                    <div class="img"> <img src="{{ asset('assets/frontend/img/blog/2.jpg') }}"
-                                            alt=""> </div>
-                                </a>
-                            </div>
-                            <div class="cont">
-                                <h4><a href="post.html">Luxury kitchen ideas</a></h4>
-                                <div class="info"> <a href="blog.html"><span>Interior Design</span></a> <a
-                                        href="blog.html">Dec, 21</a> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="item mb-5">
-                            <div class="post-img">
-                                <a href="post.html">
-                                    <div class="img"> <img src="{{ asset('assets/frontend/img/blog/3.jpg') }}"
-                                            alt=""> </div>
-                                </a>
-                            </div>
-                            <div class="cont">
-                                <h4><a href="post.html">Home Decorating Inspiration</a></h4>
-                                <div class="info"> <a href="blog.html"><span>Interior Design</span></a> <a
-                                        href="blog.html">Dec, 18</a> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="post-img">
-                                <a href="post.html">
-                                    <div class="img"> <img src="{{ asset('assets/frontend/img/blog/7.jpg') }}"
-                                            alt=""> </div>
-                                </a>
-                            </div>
-                            <div class="cont">
-                                <h4><a href="post.html">Kitchen ideas in 2025</a></h4>
-                                <div class="info"> <a href="blog.html"><span>Interior Design</span></a> <a
-                                        href="blog.html">Dec, 16</a> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="post-img">
-                                <a href="post.html">
-                                    <div class="img"> <img src="{{ asset('assets/frontend/img/blog/10.jpg') }}"
-                                            alt=""> </div>
-                                </a>
-                            </div>
-                            <div class="cont">
-                                <h4><a href="post.html">Luxury House ideas</a></h4>
-                                <div class="info"> <a href="blog.html"><span>Interior Design</span></a> <a
-                                        href="blog.html">Dec, 13</a> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="post-img">
-                                <a href="post.html">
-                                    <div class="img"> <img src="{{ asset('assets/frontend/img/blog/9.jpg') }}"
-                                            alt=""> </div>
-                                </a>
-                            </div>
-                            <div class="cont">
-                                <h4><a href="#0">Decorating Inspiration</a></h4>
-                                <div class="info"> <a href="blog.html"><span>Interior Design</span></a> <a
-                                        href="blog.html">Dec, 10</a> </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+                  
                 </div>
             </div>
         </section>
