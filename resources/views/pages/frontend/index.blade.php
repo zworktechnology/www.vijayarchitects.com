@@ -41,7 +41,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-left item bg-img" data-overlay-dark="2"
+                <div class="text-left item bg-img" data-overlay-dark="0"
                     data-background="{{ asset('assets/frontend/img/3.jpg') }}">
                     <div class="v-middle caption">
                         <div class="container">
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-left item bg-img" data-overlay-dark="3"
+                <div class="text-left item bg-img" data-overlay-dark="0"
                     data-background="{{ asset('assets/frontend/img/4.jpg') }}">
                     <div class="v-middle caption">
                         <div class="container">
@@ -77,7 +77,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-left item bg-img" data-overlay-dark="4"
+                <div class="text-left item bg-img" data-overlay-dark="0"
                     data-background="{{ asset('assets/frontend/img/SIVAGAMIARKNAGAR.jpg') }}"
                     style="background-position: top center">
                     <div class="v-middle caption">
