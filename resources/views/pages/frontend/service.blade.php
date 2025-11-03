@@ -63,14 +63,14 @@
                             <div class="con">
                                 <a href="services-page.html">
                                     <div class="numb">03</div>
-                                    <h5>Urban Design</h5>
+                                    <h5>Public Projects</h5>
                                     <p>We shape vibrant urban environments through thoughtful planning, sustainable
                                         layouts, and human-centered architectural vision.</p>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-5 animate-box" data-animate-effect="fadeInUp">
+                    {{-- <div class="col-lg-4 col-md-6 mb-5 animate-box" data-animate-effect="fadeInUp">
                         <div class="item bg-4">
                             <div class="con">
                                 <a href="services-page.html">
@@ -105,7 +105,7 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </section>
