@@ -1779,8 +1779,8 @@ input[type="checkbox"] {
 
 /* ======= Page Banner Header style ======= */
 .banner-header {
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding-top: 320px;
+    padding-bottom: 50px;
 }
 
 .banner-header .title {
@@ -4456,7 +4456,7 @@ input[type="checkbox"] {
 }
 
 .portfolio-item img {
-    height: 500px !important;
+    height: 350px !important;
 }
 
 @media all and (max-width: 767px) {

@@ -26,7 +26,7 @@
             style="background-position: top top">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 caption mt-60">
+                    <div class="col-md-12 caption mt-60 text-end">
                         <div class="subtitle">About Us</div>
                         <div class="title">VIJAY <span>ARCHITECTS</span></div>
                     </div>
@@ -187,7 +187,7 @@
                     <div class="col-lg-4 col-md-6 mb-5 animate-box" data-animate-effect="fadeInUp">
                         <div class="item bg-1">
                             <div class="con">
-                                <a href="services-page.html">
+                                <a href="#">
                                     <div class="numb">01</div>
                                     <h5>Architecture</h5>
                                     <p>We craft spaces that inspire — blending modern design, structural precision, and
@@ -199,7 +199,7 @@
                     <div class="col-lg-4 col-md-6 mb-5 animate-box" data-animate-effect="fadeInUp">
                         <div class="item bg-2">
                             <div class="con">
-                                <a href="services-page.html">
+                                <a href="#">
                                     <div class="numb">02</div>
                                     <h5>Interior Design</h5>
                                     <p>From concept to finishing touches, our interiors reflect your personality —
@@ -211,7 +211,7 @@
                     <div class="col-lg-4 col-md-6 mb-5 animate-box" data-animate-effect="fadeInUp">
                         <div class="item bg-3">
                             <div class="con">
-                                <a href="services-page.html">
+                                <a href="#">
                                     <div class="numb">03</div>
                                     <h5>Public Projects</h5>
                                     <p>We shape vibrant urban environments through thoughtful planning, sustainable

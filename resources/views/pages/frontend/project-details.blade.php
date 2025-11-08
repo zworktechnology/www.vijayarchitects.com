@@ -10,7 +10,74 @@
 
     @include('pages.frontend.layouts.headerstyle')
     @turnstileScripts()
+    <style>
+               .fullscreen-overlay {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
 
+        .fullscreen-overlay.active {
+            display: flex;
+        }
+
+        .fullscreen-overlay img {
+            max-width: auto;
+            max-height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            z-index: 10000;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            padding: 5px 10px;
+            line-height: 1;
+        }
+
+      
+        .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+            z-index: 10000;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 50%;
+            padding: 8px 14px;
+            user-select: none;
+        }
+
+        .nav-arrow:hover,
+        .close-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .nav-left {
+            left: 30px;
+        }
+
+        .nav-right {
+            right: 30px;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,7 +90,7 @@
             data-background="{{ asset('assets/frontend/img/slider/2.jpg') }}">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 caption mt-60">
+                    <div class="col-md-12 caption mt-60 text-end">
                         <div class="subtitle"><a href="projects.html">Projects</a></div>
                         <div class="title">Ultra-Modern House Design</div>
                     </div>
@@ -47,14 +114,7 @@
                             <div class="col-md-8">
                                 <div class="project-bar">
                                     <div class="row justify-content-between align-items-center text-left text-lg-start">
-                                        {{-- <div class="col-md-3 mb-3">
-                                            <h5>Project</h5>
-                                            <h6>Arulmani House</h6>
-                                        </div>
-                                        <div class="col-md-3 mb-3">
-                                            <h5>Client</h5>
-                                            <h6>Mr. Arulmani.</h6>
-                                        </div> --}}
+                                        
                                         <div class="col-md-3 mb-3">
                                             <h5>Location</h5>
                                             <h6>Coimbatore</h6>
@@ -103,21 +163,60 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item row">
-                    <div class="col-6">
-                        <img class="img-fluid"
-                            src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/01.JPG') }}"
-                            alt="" width="auto">
+
+                <div class="row mb-5">
+                    <div class="col-md-4">
+                        <div class="sub-title border-bot-light">Gallery
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <img class="img-fluid"
-                            src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/02.jpeg') }}"
-                            alt="">
+                </div>
+                <div>
+                    <div class="portfolio-item row">
+                        <div class="col-md-4 col-6 p-md-2 p-2">
+                            <img class="img-fluid enlargeable"
+                                src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/01.JPG') }}"
+                                alt="" width="auto">
+                        </div>
+                        <div class="col-md-4 col-6 p-md-2 p-2">
+                            <img class="img-fluid enlargeable"
+                                src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/02.jpeg') }}"
+                                alt="">
+                        </div>
+                        <div class="col-md-4 col-6 p-md-2 p-2">
+                            <img class="img-fluid enlargeable"
+                                src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/04.JPG') }}"
+                                alt="" width="auto">
+                        </div>
                     </div>
+                    <div class="portfolio-item row">
+                        <div class="col-md-4 col-6 p-md-2 p-2">
+                            <img class="img-fluid enlargeable"
+                                src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/09.jpg') }}"
+                                alt="" width="auto">
+                        </div>
+                        <div class="col-md-4 col-6 p-md-2 p-2">
+                            <img class="img-fluid enlargeable"
+                                src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/14..JPG') }}"
+                                alt="">
+                        </div>
+                        <div class="col-md-4 col-6 p-md-2 p-2">
+                            <img class="img-fluid enlargeable"
+                                src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/06.jpeg') }}"
+                                alt="" style="">
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Fullscreen Overlay -->
+                <div class="fullscreen-overlay" id="imageOverlay">
+                    <span class="close-btn" id="closeOverlay">&times;</span>
+                    <span class="nav-arrow nav-left" id="prevImage">&#10094;</span>
+                    <img src="" alt="" id="overlayImage">
+                    <span class="nav-arrow nav-right" id="nextImage">&#10095;</span>
                 </div>
                 <div class="row mt-5">
                     <div class="col-md-12">
-                        <div class="row mb-5">
+                        {{-- <div class="row mb-5">
                             <div class="col-md-4">
                                 <div class="sub-title border-bot-light">DESIGN BRIEF:
                                 </div>
@@ -142,7 +241,7 @@
                                         few stay in relatives and guests, young and old!</p>
                                 </div>
                             </li>
-                        </ul>
+                        </ul> --}}
 
                         <div class="row mb-5">
                             <div class="col-md-4">
@@ -202,7 +301,7 @@
                             </li>
                         </ul>
 
-                        <div class="row mb-5">
+                        {{-- <div class="row mb-5">
                             <div class="col-md-4">
                                 <div class="sub-title border-bot-light">Connectivity with nature:
                                 </div>
@@ -223,41 +322,9 @@
                                         a garden that is either a part of the interior or exterior!</p>
                                 </div>
                             </li>
-                        </ul>
+                        </ul> --}}
 
-                        <div class="row mb-5">
-                            <div class="col-md-4">
-                                <div class="sub-title border-bot-light">Gallery
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="portfolio-item row">
-                                <div class="col-6">
-                                    <img class="img-fluid"
-                                        src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/04.JPG') }}"
-                                        alt="" width="auto">
-                                </div>
-                                <div class="col-6">
-                                    <img class="img-fluid"
-                                        src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/06.jpeg') }}"
-                                        alt="" style="">
-                                </div>
-                            </div>
 
-                            <div class="portfolio-item row mt-4">
-                                <div class="col-6">
-                                    <img class="img-fluid"
-                                        src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/09.jpg') }}"
-                                        alt="" width="auto">
-                                </div>
-                                <div class="col-6">
-                                    <img class="img-fluid"
-                                        src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/14..JPG') }}"
-                                        alt="">
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -352,6 +419,61 @@
     </div>
     @include('pages.frontend.layouts.footer')
     @include('pages.frontend.layouts.script')
+    <script>
+        const overlay = document.getElementById('imageOverlay');
+        const overlayImg = document.getElementById('overlayImage');
+        const closeBtn = document.getElementById('closeOverlay');
+        const prevBtn = document.getElementById('prevImage');
+        const nextBtn = document.getElementById('nextImage');
+
+        const images = [...document.querySelectorAll('.enlargeable')];
+        let currentIndex = 0;
+
+
+        images.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                currentIndex = index;
+                showImage();
+            });
+        });
+
+        function showImage() {
+            overlayImg.src = images[currentIndex].src;
+            overlay.classList.add('active');
+        }
+
+       
+        closeBtn.addEventListener('click', () => {
+            overlay.classList.remove('active');
+        });
+
+    
+        prevBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage();
+        });
+
+        nextBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage();
+        });
+
+       
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) overlay.classList.remove('active');
+        });
+
+        
+        document.addEventListener('keydown', (e) => {
+            if (!overlay.classList.contains('active')) return;
+            if (e.key === 'ArrowLeft') currentIndex = (currentIndex - 1 + images.length) % images.length;
+            if (e.key === 'ArrowRight') currentIndex = (currentIndex + 1) % images.length;
+            if (e.key === 'Escape') overlay.classList.remove('active');
+            showImage();
+        });
+    </script>
 </body>
 
 </html>

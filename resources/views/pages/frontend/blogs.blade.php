@@ -23,7 +23,7 @@
             data-background="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/birdsparadise-2.jpg') }}">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 caption mt-60">
+                    <div class="col-md-12 caption mt-60 text-end">
                         <div class="subtitle">Blog</div>
                         <div class="title">Latest News</div>
                     </div>
