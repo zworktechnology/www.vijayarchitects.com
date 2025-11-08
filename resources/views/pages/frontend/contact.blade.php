@@ -25,7 +25,7 @@
             data-background="{{ asset('assets/frontend/img/4.jpg') }}" style="background-size: cover">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 caption mt-60">
+                    <div class="col-md-12 caption mt-60 text-end">
                         <div class="subtitle">Contact</div>
                         <div class="title">Get in touch</div>
                     </div>
