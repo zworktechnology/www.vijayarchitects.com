@@ -11,7 +11,22 @@
     @include('pages.frontend.layouts.headerstyle')
 
     @turnstileScripts()
+    <style>
+        .video-bg {
+           
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+           
+        }
 
+        .video-bg video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* ensures full screen */
+        }
+    </style>
 </head>
 
 <body>
@@ -23,82 +38,12 @@
 
         <!-- Slider -->
         <header id="slider-area" class="header slider-fade">
-            <div class="owl-carousel owl-theme">
-                <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
-                <div class="text-left item bg-img" data-overlay-dark="0"
-                    data-background="{{ asset('assets/frontend/img/02.jpg') }}" style="background-position: top center">
-                    <div class="v-middle caption">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-7 col-md-12">
-                                    {{-- <h4>01</h4>
-                                    <h1>The Signature of Luxury Living</h1>
-                                    <p>From contemporary villas to iconic commercial spaces — we design environments
-                                        that speak sophistication and comfort in every detail.</p>
-                                    <a href="{{ route('contact') }}" class="button-light">Contact Now</a> --}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-left item bg-img" data-overlay-dark="0"
-                    data-background="{{ asset('assets/frontend/img/3.jpg') }}">
-                    <div class="v-middle caption">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-7 col-md-12">
-                                    {{-- <h4>02</h4>
-                                    <h1>Crafting Landmarks, Not Just Buildings</h1>
-                                    <p>At Vijay Architects, every line we draw becomes a symbol of elegance — redefining
-                                        Trichy’s skyline with timeless architectural mastery.
-
-                                    </p>
-                                    <a href="{{ route('contact') }}" class="button-light">Contact Now</a> --}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-left item bg-img" data-overlay-dark="0"
-                    data-background="{{ asset('assets/frontend/img/4.jpg') }}">
-                    <div class="v-middle caption">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-7 col-md-12">
-                                    {{-- <h4>03</h4>
-                                    <h1>Redefining Modern Architecture in Tamil Nadu
-                                    </h1>
-                                    <p> Where design meets precision, and imagination shapes reality — creating spaces
-                                        that inspire awe and admiration.
-                                    </p>
-                                    <a href="{{ route('contact') }}" class="button-light">Contact Now</a> --}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-left item bg-img" data-overlay-dark="0"
-                    data-background="{{ asset('assets/frontend/img/SIVAGAMIARKNAGAR.jpg') }}"
-                    style="background-position: top center">
-                    <div class="v-middle caption">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-7 col-md-12">
-                                    {{-- <h4>04</h4>
-                                    <h1>Crafting Landmarks, Not Just Buildings</h1>
-                                    <p>At Vijay Architects, every line we draw becomes a symbol of elegance — redefining
-                                        Trichy’s skyline with timeless architectural mastery.
-
-                                    </p>
-                                    <a href="{{ route('contact') }}" class="button-light">Contact Now</a> --}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="video-bg">
+                <video autoplay muted loop playsinline>
+                    <source src="{{ asset('assets/frontend/img/banner.mp4') }}" type="video/mp4">
+                    Your browser does not support the video.
+                </video>
             </div>
-            {{-- <div class="slide-num" id="snh-1"></div> --}}
-            <div class="slider__progress"><span></span></div>
         </header>
 
         <!-- About -->
