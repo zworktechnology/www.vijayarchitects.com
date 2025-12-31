@@ -4,7 +4,7 @@
          <div class="container">
              <div class="row">
                  <div class="col-md-4 mb-30">
-                     <a class="logo" href="{{ route('index') }}"> <img src="{{ asset('assets/frontend/img/v1.png') }}"
+                     <a class="logo" href="{{ route('index') }}"> <img src="{{ asset('assets/frontend/img/logo-new-2.jpg') }}"
                              class="logo-img" alt="" style="width:200px !important;height:100px"> </a>
                      <p>We transform ideas into spaces that
                          inspire, captivate, and endure. Every project begins with a vision, and we bring it to life

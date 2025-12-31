@@ -171,7 +171,7 @@
             </div>
         </section>-->
 
-         <!-- Services -->
+        <!-- Services -->
         <section class="services section-padding">
             <div class="container">
                 <div class="row mb-4">
@@ -184,7 +184,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-5 animate-box" data-animate-effect="fadeInUp">
+                    <div class="col-lg-4 col-md-6 mb-2 animate-box" data-animate-effect="fadeInUp">
                         <div class="item bg-1">
                             <div class="con">
                                 <a href="#">
@@ -196,7 +196,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-5 animate-box" data-animate-effect="fadeInUp">
+                    <div class="col-lg-4 col-md-6 mb-2 animate-box" data-animate-effect="fadeInUp">
                         <div class="item bg-2">
                             <div class="con">
                                 <a href="#">
@@ -208,7 +208,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-5 animate-box" data-animate-effect="fadeInUp">
+                    <div class="col-lg-4 col-md-6 mb-2 animate-box" data-animate-effect="fadeInUp">
                         <div class="item bg-3">
                             <div class="con">
                                 <a href="#">
@@ -220,7 +220,7 @@
                             </div>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
         </section>
@@ -238,8 +238,109 @@
                 </div>
                 <div class="row mb-5 animate-box" data-animate-effect="fadeInUp">
                     <div class="col-md-4">
-                        <div class="card py-5 shadow-sm"></div>
+                        <div class="card shadow-sm">
+                            <img src="{{ asset('assets\frontend\img\teams\01_VIJAYKUMAR SENGOTTUVELAN.jpg') }}"
+                                class="" alt="w-100 h-100 rounded-sm" />
+                        </div>
                     </div>
+                    <div class="col-md-4 mt-md-0 mt-4">
+                        <div class="card shadow-sm ">
+                            <img src="{{ asset('assets\frontend\img\teams\01A_R.BASKER.jpg') }}" class=""
+                                alt="w-100 h-100 rounded-sm" />
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-md-0 mt-4">
+                        <div class="card shadow-sm">
+                            <img src="{{ asset('assets\frontend\img\teams\02_K.SHANTHI.jpg') }}" class=""
+                                alt="w-100 h-100 rounded-sm" />
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 mt-4">
+                        <div class="card shadow-sm">
+                            <img src="{{ asset('assets\frontend\img\teams\03_K.SHIVAKUMAR.jpg') }}" class=""
+                                alt="w-100 h-100 rounded-sm" />
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <div class="card shadow-sm">
+                            <img src="{{ asset('assets\frontend\img\teams\04_ANITHA CATHERINE.jpg') }}"
+                                class="" alt="w-100 h-100 rounded-sm" />
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <div class="card shadow-sm">
+                            <img src="{{ asset('assets\frontend\img\teams\05_SUDHAMAN ARPUTHAVEL.jpg') }}"
+                                class="" alt="w-100 h-100 rounded-sm" />
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 mt-4">
+                        <div class="card shadow-sm">
+                            <img src="{{ asset('assets\frontend\img\teams\06_R. RAMESHWARI.jpg') }}" class=""
+                                alt="w-100 h-100 rounded-sm" />
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <div class="card shadow-sm">
+                            <img src="{{ asset('assets\frontend\img\teams\07_D. SELVI.jpg') }}" class=""
+                                alt="w-100 h-100 rounded-sm" />
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <div class="card shadow-sm">
+                            <img src="{{ asset('assets\frontend\img\teams\08_THEISHINYAA EMPERUMAL.jpg') }}"
+                                class="" alt="w-100 h-100 rounded-sm" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mt-4">
+                        <div class="card shadow-sm">
+                            <img src="{{ asset('assets\frontend\img\teams\09_DEEPAK KUMAR.jpg') }}" class=""
+                                alt="w-100 h-100 rounded-sm" />
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <div class="card shadow-sm">
+                            <img src="{{ asset('assets\frontend\img\teams\11_M. SATHIYA MOORTHY.jpg') }}"
+                                class="" alt="w-100 h-100 rounded-sm" />
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <div class="card shadow-sm">
+                            <img src="{{ asset('assets\frontend\img\teams\13_K.MOHAN BALAJI.jpg') }}" class=""
+                                alt="w-100 h-100 rounded-sm" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mt-4">
+                        <div class="card shadow-sm">
+                            <img src="{{ asset('assets\frontend\img\teams\14_SAHAYARAJ.jpg') }}" class=""
+                                alt="w-100 h-100 rounded-sm" />
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <div class="card shadow-sm">
+                            <img src="{{ asset('assets\frontend\img\teams\15_DIXON.jpg') }}" class=""
+                                alt="w-100 h-100 rounded-sm" />
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <div class="card shadow-sm">
+                            <img src="{{ asset('assets\frontend\img\teams\16_SASIKUMAR.jpg') }}" class=""
+                                alt="w-100 h-100 rounded-sm" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mt-4">
+                        <div class="card shadow-sm">
+                            <img src="{{ asset('assets\frontend\img\teams\17.PEPPER.jpg') }}" class=""
+                                alt="w-100 h-100 rounded-sm" />
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -442,7 +543,7 @@
                                             space reflects luxury and warmth — they truly are the best architects in
                                             Trichy.</p>
                                         <div class="info">
-                                           
+
                                             <div class="cont">
                                                 <h6>Aravind Raman</h6> <span>Cantonment Trichy
                                                 </span>
@@ -457,7 +558,7 @@
                                             expectations.
                                         </p>
                                         <div class="info">
-                                           
+
                                             <div class="cont">
                                                 <h6>Mrs. Priya S</h6> <span>Woraiyur Trichy</span>
                                             </div>
@@ -469,7 +570,7 @@
                                         <p>Our commercial building in Karur stands out because of their elegant façade
                                             and efficient layout. Vijay Architect’s design sense is world-class.</p>
                                         <div class="info">
-                                           
+
                                             <div class="cont">
                                                 <h6>S. Naveen Kumar</h6> <span>Karur</span>
                                             </div>
@@ -482,7 +583,7 @@
                                             team’s professionalism and creativity make them one of Tamil Nadu’s top
                                             architecture firms.</p>
                                         <div class="info">
-                                           
+
                                             <div class="cont">
                                                 <h6>Meenakshi Raj</h6> <span>Madurai</span>
                                             </div>
@@ -494,7 +595,7 @@
                                         <p>We built our dream villa near Srirangam, and the detailing left us
                                             speechless. Every corner reflects thoughtful planning and premium finish</p>
                                         <div class="info">
-                                           
+
                                             <div class="cont">
                                                 <h6>Dr. Karthik Balaji</h6> <span>Srirangam</span>
                                             </div>
@@ -506,7 +607,7 @@
                                         <p>Their 3D visualizations helped us see our future home clearly. The final
                                             outcome matched it perfectly — pure architectural brilliance.</p>
                                         <div class="info">
-                                           
+
                                             <div class="cont">
                                                 <h6>Mr. Vignesh & Family</h6> <span>Tiruchirappalli</span>
                                             </div>
@@ -520,7 +621,7 @@
                                             Architects.
                                         </p>
                                         <div class="info">
-                                            
+
                                             <div class="cont">
                                                 <h6>R. Divya Menon</h6> <span>Kodaikanal</span>
                                             </div>
@@ -533,7 +634,7 @@
                                             home in Namakkal feels spacious, elegant, and timeless.
                                         </p>
                                         <div class="info">
-                                           
+
                                             <div class="cont">
                                                 <h6>Mohan Krishnan</h6> <span>Namakkal</span>
                                             </div>
@@ -546,7 +647,7 @@
                                             boosts productivity while maintaining a premium corporate feel.
                                         </p>
                                         <div class="info">
-                                            
+
                                             <div class="cont">
                                                 <h6>Harish Sundar</h6> <span>Thillai Nagar Trichy</span>
                                             </div>
@@ -560,8 +661,8 @@
 
                                         </p>
                                         <div class="info">
-                                            
-                                         
+
+
                                             <div class="cont">
                                                 <h6> Mrs. Anitha Vel</h6> <span>Coimbatore</span>
                                             </div>

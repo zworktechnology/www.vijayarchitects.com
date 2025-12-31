@@ -1,5 +1,5 @@
  <!-- Place favicon.ico in the root directory -->
- <link rel="shortcut icon" type="image/x-icon" href="assets/frontend/img/fav.png" />
+ <link rel="shortcut icon" type="image/x-icon" href="assets/frontend/img/logo-new.JPG" />
 
  <!-- CSS here -->
  <link rel="stylesheet" href="{{ asset('assets/frontend/css/bootstrap.min.css') }}" />
