@@ -24,7 +24,7 @@
 
                              <ul class="col-md-6 navbar-nav ms-auto px-md-0 px-5">
                                  <li class="nav-item "><a class="nav-link" href="{{route('projects')}}">Projects</a></li>
-                                
+
                                  <li class="nav-item"><a class="nav-link" href="{{route('contact')}}">Contact</a></li>
                              </ul>
                          </div>
@@ -33,7 +33,7 @@
                  </div>
                  <div class="col-md-4 px-md-0 px-4 mt-md-0 mt-4">
                      <div class="item">
-                         <h3>Vijay <span>Architects,</span></h3>
+                         <h3>Vijay <span>Architects</span></h3>
                          <p>No.14, Alexandria Road, Cantonment,<br>
                              Tiruchirappalli, Tamil Nadu, India - 620001</p>
                          <a href="tel:8903493280" class="phone"  target="_blank">+91 89034 93280</a>

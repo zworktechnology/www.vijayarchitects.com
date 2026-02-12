@@ -3366,8 +3366,6 @@ input[type="checkbox"] {
     min-height: 500px;
     width: 100%;
     position: relative;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
 }
 
 .google-maps iframe {

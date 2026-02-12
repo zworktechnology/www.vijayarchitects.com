@@ -18,18 +18,7 @@
         @include('pages.frontend.layouts.preloader')
 
         @include('pages.frontend.layouts.header')
-        <!-- Header Banner -->
-        <div class="banner-header valign bg-img bg-fixed" data-overlay-dark="4"
-            data-background="{{ asset('assets/frontend/img/5.JPG') }}">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 caption mt-60 text-end">
-                        <div class="subtitle"><a href="projects.html">Projects</a></div>
-                        <div class="title">Creative Projects</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!-- Projects -->
         <section class="projects section-padding">
             <div class="container">

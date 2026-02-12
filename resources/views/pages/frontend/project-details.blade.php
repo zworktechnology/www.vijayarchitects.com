@@ -50,7 +50,7 @@
             line-height: 1;
         }
 
-      
+
         .nav-arrow {
             position: absolute;
             top: 50%;
@@ -85,18 +85,7 @@
         @include('pages.frontend.layouts.preloader')
 
         @include('pages.frontend.layouts.header')
-        <!-- Header Banner -->
-        <div class="banner-header valign bg-img bg-fixed" data-overlay-dark="4"
-            data-background="{{ asset('assets/frontend/img/slider/2.jpg') }}">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 caption mt-60 text-end">
-                        <div class="subtitle"><a href="projects.html">Projects</a></div>
-                        <div class="title">Ultra-Modern House Design</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- Project Page  -->
         <section class="project-page section-padding">
             <div class="container">
@@ -114,7 +103,7 @@
                             <div class="col-md-8">
                                 <div class="project-bar">
                                     <div class="row justify-content-between align-items-center text-left text-lg-start">
-                                        
+
                                         <div class="col-md-3 mb-3">
                                             <h5>Location</h5>
                                             <h6>Coimbatore</h6>
@@ -442,12 +431,12 @@
             overlay.classList.add('active');
         }
 
-       
+
         closeBtn.addEventListener('click', () => {
             overlay.classList.remove('active');
         });
 
-    
+
         prevBtn.addEventListener('click', (e) => {
             e.stopPropagation();
             currentIndex = (currentIndex - 1 + images.length) % images.length;
@@ -460,12 +449,12 @@
             showImage();
         });
 
-       
+
         overlay.addEventListener('click', (e) => {
             if (e.target === overlay) overlay.classList.remove('active');
         });
 
-        
+
         document.addEventListener('keydown', (e) => {
             if (!overlay.classList.contains('active')) return;
             if (e.key === 'ArrowLeft') currentIndex = (currentIndex - 1 + images.length) % images.length;

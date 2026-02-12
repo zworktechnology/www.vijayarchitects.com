@@ -23,14 +23,6 @@
         <!-- Header Banner -->
         <div class="banner-header valign bg-img" data-overlay-dark="4"
             data-background="{{ asset('assets/frontend/img/4.jpg') }}" style="background-size: cover">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 caption mt-60 text-end">
-                        <div class="subtitle">Contact</div>
-                        <div class="title">Get in touch</div>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!-- Contact -->
@@ -117,7 +109,7 @@
         </div>
 
     </div>
-    
+
     @include('pages.frontend.layouts.footer')
 
     @include('pages.frontend.layouts.script')
