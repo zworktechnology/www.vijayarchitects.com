@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
 <head>
@@ -30,8 +30,9 @@
         }
 
         .fullscreen-overlay img {
-            max-width: auto;
-            max-height: auto;
+            max-width: 90%;
+            max-height: 90vh;
+            object-fit: contain;
             border-radius: 10px;
             transition: transform 0.3s ease;
         }
@@ -76,6 +77,26 @@
 
         .nav-right {
             right: 30px;
+        }
+
+        /* Masonry Gallery Styles */
+        .gallery-masonry {
+            column-count: 3;
+            column-gap: 16px;
+        }
+        .gallery-masonry .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 16px;
+        }
+        .gallery-masonry img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .gallery-masonry {
+                column-count: 2;
+            }
         }
     </style>
 </head>
@@ -160,41 +181,38 @@
                     </div>
                 </div>
                 <div>
-                    <div class="portfolio-item row">
-                        <div class="col-md-4 col-6 p-md-2 p-2">
+                    <div class="gallery-masonry">
+                        <div class="gallery-item">
                             <img class="img-fluid enlargeable"
                                 src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/01.JPG') }}"
-                                alt="" width="auto">
+                                alt="">
                         </div>
-                        <div class="col-md-4 col-6 p-md-2 p-2">
+                        <div class="gallery-item">
                             <img class="img-fluid enlargeable"
                                 src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/02.jpeg') }}"
                                 alt="">
                         </div>
-                        <div class="col-md-4 col-6 p-md-2 p-2">
+                        <div class="gallery-item">
                             <img class="img-fluid enlargeable"
                                 src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/04.JPG') }}"
-                                alt="" width="auto">
+                                alt="">
                         </div>
-                    </div>
-                    <div class="portfolio-item row">
-                        <div class="col-md-4 col-6 p-md-2 p-2">
+                        <div class="gallery-item">
                             <img class="img-fluid enlargeable"
                                 src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/09.jpg') }}"
-                                alt="" width="auto">
+                                alt="">
                         </div>
-                        <div class="col-md-4 col-6 p-md-2 p-2">
+                        <div class="gallery-item">
                             <img class="img-fluid enlargeable"
                                 src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/14..JPG') }}"
                                 alt="">
                         </div>
-                        <div class="col-md-4 col-6 p-md-2 p-2">
+                        <div class="gallery-item">
                             <img class="img-fluid enlargeable"
                                 src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/06.jpeg') }}"
-                                alt="" style="">
+                                alt="">
                         </div>
                     </div>
-
                 </div>
                 <!-- Fullscreen Overlay -->
                 <div class="fullscreen-overlay" id="imageOverlay">

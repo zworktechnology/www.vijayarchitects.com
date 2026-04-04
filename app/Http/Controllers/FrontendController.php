@@ -67,13 +67,12 @@ class FrontendController extends Controller
         return view('pages.frontend.service-details', compact('metaog'));
     }
 
-    public function projectdetails()
+    public function arulmanihouse()
     {
         $metaog = Meta::where('page_id', '=', 8)->first();
 
-        return view('pages.frontend.project-details', compact('metaog'));
+        return view('pages.frontend.arulmanihouse', compact('metaog'));
     }
-
 
     public function blogs()
     {
@@ -99,5 +98,40 @@ class FrontendController extends Controller
             $categor->totalBlog = count(collect($count_Blog));
         }
         return view('pages.frontend.blog-details', compact('metaog', 'blogs', 'categories', 'randomBlogs'));
+    }
+
+    public function thethinnaihouse()
+    {
+        $metaog = Meta::where('page_id', '=', 11)->first();
+
+        return view('pages.frontend.thethinnaihouse', compact('metaog'));
+    }
+
+    public function ravichandranhouse()
+    {
+        $metaog = Meta::where('page_id', '=', 12)->first();
+
+        return view('pages.frontend.ravichandranhouse', compact('metaog'));
+    }
+
+    public function baskershanthiresidence()
+    {
+        $metaog = Meta::where('page_id', '=', 13)->first();
+
+        return view('pages.frontend.baskershanthiresidence', compact('metaog'));
+    }
+
+    public function hindustanschoolofarchitecture()
+    {
+        $metaog = Meta::where('page_id', '=', 14)->first();
+
+        return view('pages.frontend.hindustanschoolofarchitecture', compact('metaog'));
+    }
+
+    public function yercaudhouse()
+    {
+        $metaog = Meta::where('page_id', '=', 15)->first();
+
+        return view('pages.frontend.yercaudhouse', compact('metaog'));
     }
 }

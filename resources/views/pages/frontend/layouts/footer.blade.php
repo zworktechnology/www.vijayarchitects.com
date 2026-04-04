@@ -6,9 +6,7 @@
                  <div class="col-md-4 mb-30">
                      <a class="logo" href="{{ route('index') }}"> <img src="{{ asset('assets/frontend/img/logo-new-2.jpg') }}"
                              class="logo-img" alt="" style="width:200px !important;height:100px"> </a>
-                     <p>We transform ideas into spaces that
-                         inspire, captivate, and endure. Every project begins with a vision, and we bring it to life
-                         through innovation, precision, and passion.
+                     <p>Building spaces creating memories
                      </p>
                  </div>
                  <div class="col-md-4">

@@ -29,7 +29,15 @@ Route::get('/service', [FrontendController::class, 'service'])->name('service');
 Route::get('/service-details', [FrontendController::class, 'servicedetails'])->name('servicedetails');
 
 Route::get('/projects', [FrontendController::class, 'projects'])->name('projects');
-Route::get('/project-details', [FrontendController::class, 'projectdetails'])->name('projectdetails');
+
+// PROJECT DETAILS
+
+Route::get('/arulmani-house', [FrontendController::class, 'arulmanihouse'])->name('arulmanihouse');
+Route::get('/the-thinnai-house', [FrontendController::class, 'thethinnaihouse'])->name('thethinnaihouse');
+Route::get('/ravichandran-house', [FrontendController::class, 'ravichandranhouse'])->name('ravichandranhouse');
+Route::get('/basker-shanthi-residence', [FrontendController::class, 'baskershanthiresidence'])->name('baskershanthiresidence');
+Route::get('/hindustan-school-of-architecture', [FrontendController::class, 'hindustanschoolofarchitecture'])->name('hindustanschoolofarchitecture');
+Route::get('/yercaud-house', [FrontendController::class, 'yercaudhouse'])->name('yercaudhouse');
 
 Route::get('/blogs', [FrontendController::class, 'blogs'])->name('blogs');
 Route::get('/blog/info/{blog_id}', [FrontendController::class, 'blogdetails'])->name('blog.info');
