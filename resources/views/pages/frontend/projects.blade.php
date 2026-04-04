@@ -1,4 +1,48 @@
-﻿<!DOCTYPE html>
+@php
+    $projectAsset = static function (string $path): string {
+        return asset(implode('/', array_map('rawurlencode', explode('/', $path))));
+    };
+
+    $projects = [
+        [
+            'route' => 'arulmanihouse',
+            'title' => 'Mr. Arulmani House',
+            'location' => 'Coimbatore',
+            'image' => 'assets/frontend/img/projects/1.Mr.Arulmani/1.Top Cover Photo & fact sheet/01 - Copy.png',
+        ],
+        [
+            'route' => 'thethinnaihouse',
+            'title' => 'The Thinnai House',
+            'location' => 'Trichy',
+            'image' => 'assets/frontend/img/projects/2.The Thinnai house (Dr.Anand House_/2. Detail Photos - 6 nos/01.png',
+        ],
+        [
+            'route' => 'ravichandranhouse',
+            'title' => 'Mr. Ravichandran House',
+            'location' => 'Trichy',
+            'image' => 'assets/frontend/img/projects/3.Mr. Ravichandran House/1.Top Cover Photo/01.png',
+        ],
+        [
+            'route' => 'baskershanthiresidence',
+            'title' => 'Er. Basker & Mrs. Shanthi Residence',
+            'location' => 'Trichy',
+            'image' => 'assets/frontend/img/projects/4. Er. Basker and Mrs.Shanthi residence/1.Top Cover Photo/01.png',
+        ],
+        [
+            'route' => 'hindustanschoolofarchitecture',
+            'title' => 'Hindustan School of Architecture',
+            'location' => 'Coimbatore',
+            'image' => 'assets/frontend/img/projects/5.Hindustan school of architecture/1.Top Cover Photo/03_THIRD .jpg',
+        ],
+        [
+            'route' => 'yercaudhouse',
+            'title' => 'Yercaud House',
+            'location' => 'Yercaud',
+            'image' => 'assets/frontend/img/projects/6.Yercaud Guest  House/2. Detail Photos - 6 nos/01.jpg',
+        ],
+    ];
+@endphp
+<!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
 <head>
@@ -10,7 +54,6 @@
 
     @include('pages.frontend.layouts.headerstyle')
     @turnstileScripts()
-
 </head>
 
 <body>
@@ -19,110 +62,31 @@
 
         @include('pages.frontend.layouts.header')
 
-        <!-- Projects -->
         <section class="projects section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <a href="{{ route('arulmanihouse') }}">
-                        <div class="items mb-4">
-                            <div class="con">
-                                <div class="img">
-                                    <img src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/01.JPG') }}"
-                                        alt="">
+                    @foreach ($projects as $project)
+                        <div class="col-lg-4 col-md-6">
+                            <a href="{{ route($project['route']) }}">
+                                <div class="items mb-4">
+                                    <div class="con">
+                                        <div class="img">
+                                            <img src="{{ $projectAsset($project['image']) }}"
+                                                alt="{{ $project['title'] }}">
+                                        </div>
+                                        <div class="info">
+                                            <span class="category mb-0">{{ $project['location'] }}</span>
+                                            <h6>{{ $project['title'] }}</h6>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="info">
-                                    <span class="category mb-0">Coimbatore</span>
-                                    <h6><a href="{{ route('arulmanihouse') }}">Mr. Arulmani House</a></h6>
-                                </div>
-                            </div>
+                            </a>
                         </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <a href="{{ route('thethinnaihouse') }}">
-                        <div class="items mb-4">
-                            <div class="con">
-                                <div class="img">
-                                    <img src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/01.JPG') }}"
-                                        alt="">
-                                </div>
-                                <div class="info">
-                                    <span class="category mb-0">Tiruchirappalli</span>
-                                    <h6><a href="{{ route('thethinnaihouse') }}">The Thinnai House</a></h6>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <a href="{{ route('ravichandranhouse') }}">
-                        <div class="items mb-4">
-                            <div class="con">
-                                <div class="img">
-                                    <img src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/01.JPG') }}"
-                                        alt="">
-                                </div>
-                                <div class="info">
-                                    <span class="category mb-0">Tiruchirappalli</span>
-                                    <h6><a href="{{ route('ravichandranhouse') }}">Mr.Ravichandran  House</a></h6>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <a href="{{ route('baskershanthiresidence') }}">
-                        <div class="items mb-4">
-                            <div class="con">
-                                <div class="img">
-                                    <img src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/01.JPG') }}"
-                                        alt="">
-                                </div>
-                                <div class="info">
-                                    <span class="category mb-0">Tiruchirappalli</span>
-                                    <h6><a href="{{ route('baskershanthiresidence') }}">Er.Basker & Mrs.Shanthi Residence</a></h6>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <a href="{{ route('hindustanschoolofarchitecture') }}">
-                        <div class="items mb-4">
-                            <div class="con">
-                                <div class="img">
-                                    <img src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/01.JPG') }}"
-                                        alt="">
-                                </div>
-                                <div class="info">
-                                    <span class="category mb-0">Coimbatore</span>
-                                    <h6><a href="{{ route('hindustanschoolofarchitecture') }}">Hindustan School of Architecture</a></h6>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <a href="{{ route('yercaudhouse') }}">
-                        <div class="items mb-4">
-                            <div class="con">
-                                <div class="img">
-                                    <img src="{{ asset('assets/frontend/img/projects/ARULMANI_RESIDENCE/photos/01.JPG') }}"
-                                        alt="">
-                                </div>
-                                <div class="info">
-                                    <span class="category mb-0">Yercaud</span>
-                                    <h6><a href="{{ route('yercaudhouse') }}">Yercaud House</a></h6>
-                                </div>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </section>
-        <!-- Lets Talk -->
+
         @include('pages.frontend.layouts.cta')
     </div>
     @include('pages.frontend.layouts.footer')
