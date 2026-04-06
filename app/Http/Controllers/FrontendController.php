@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Models\Blogmaster;
 use App\Models\Meta;
-use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 
 class FrontendController extends Controller
 {
@@ -19,8 +20,10 @@ class FrontendController extends Controller
     public function about()
     {
         $metaog = Meta::where('page_id', '=', 2)->first();
+        $teamMembers = $this->getTeamMembers();
+        $featuredTeamMember = $teamMembers->first();
 
-        return view('pages.frontend.about', compact('metaog'));
+        return view('pages.frontend.about', compact('metaog', 'teamMembers', 'featuredTeamMember'));
     }
 
     public function service()
@@ -133,5 +136,66 @@ class FrontendController extends Controller
         $metaog = Meta::where('page_id', '=', 15)->first();
 
         return view('pages.frontend.yercaudhouse', compact('metaog'));
+    }
+
+    private function getTeamMembers()
+    {
+        $teamDirectory = public_path('assets/frontend/img/teams');
+
+        if (! File::isDirectory($teamDirectory)) {
+            return collect();
+        }
+
+        return collect(File::files($teamDirectory))
+            ->filter(fn ($file) => in_array(strtolower($file->getExtension()), ['jpg', 'jpeg', 'png', 'webp'], true))
+            ->sortBy(fn ($file) => sprintf('%05d-%s', $this->extractTeamOrder($file->getFilename()), $file->getFilename()), SORT_NATURAL)
+            ->values()
+            ->map(function ($file) {
+                [$name, $position] = $this->extractTeamDetails($file->getFilename());
+                $name = $this->formatTeamName($name);
+                $displayName = trim($name . ($position !== '' ? ' - ' . $position : ''));
+
+                return [
+                    'name' => $name,
+                    'position' => $position,
+                    'display_name' => $displayName,
+                    'image' => asset($this->encodeAssetPath('assets/frontend/img/teams/' . $file->getFilename())),
+                ];
+            });
+    }
+
+    private function extractTeamOrder(string $filename): int
+    {
+        if (preg_match('/^(\d+)/', $filename, $matches) === 1) {
+            return (int) $matches[1];
+        }
+
+        return PHP_INT_MAX;
+    }
+
+    private function extractTeamDetails(string $filename): array
+    {
+        $label = pathinfo($filename, PATHINFO_FILENAME);
+        $label = preg_replace('/^\d+[._-]*/', '', $label);
+        $label = preg_replace('/\s+/', ' ', trim($label));
+        $parts = preg_split('/\s*-\s*/', $label, 2);
+
+        return [
+            trim($parts[0] ?? ''),
+            trim($parts[1] ?? ''),
+        ];
+    }
+
+    private function formatTeamName(string $name): string
+    {
+        $name = preg_replace('/\.(?=\S)/u', '. ', trim($name));
+        $name = preg_replace('/\s+/', ' ', $name);
+
+        return Str::title(Str::lower($name));
+    }
+
+    private function encodeAssetPath(string $path): string
+    {
+        return implode('/', array_map('rawurlencode', explode('/', $path)));
     }
 }

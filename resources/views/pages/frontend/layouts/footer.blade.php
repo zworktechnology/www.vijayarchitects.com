@@ -4,7 +4,7 @@
          <div class="container">
              <div class="row">
                  <div class="col-md-4 mb-30">
-                     <a class="logo" href="{{ route('index') }}"> <img src="{{ asset('assets/frontend/img/logo-new-2.jpg') }}"
+                     <a class="logo" href="{{ route('index') }}"> <img src="{{ asset('assets/frontend/img/logo-new-2.png') }}"
                              class="logo-img" alt="" style="width:200px !important;height:100px"> </a>
                      <p>Building spaces creating memories
                      </p>
@@ -16,7 +16,7 @@
                              <ul class="col-md-6 navbar-nav ms-auto px-5">
                                  <li class="nav-item "><a class="nav-link" href="{{route('index')}}">Home</a></li>
                                  <li class="nav-item"><a class="nav-link" href="{{route('about')}}">About</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{route('blogs')}}">Blog</a></li>
+                                <li class="nav-item" hidden><a class="nav-link" href="{{route('blogs')}}">Blog</a></li>
 
                              </ul>
 

@@ -22,34 +22,35 @@
 
         <!-- Header Banner -->
         <div class="banner-header valign bg-img bg-fixed" data-overlay-dark="4"
-            data-background="{{ asset('assets/frontend/img/SIVAGAMIARKNAGAR.jpg') }}"
+            data-background="{{ asset('assets/frontend/img/about_banner.jpg') }}"
             style="background-position: top top">
         </div>
 
         <!-- About -->
-        <section class="about mt-5">
-            <div class="container py-5">
+        <section class="about">
+            <div class="container pt-5">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 mb-30 animate-box" data-animate-effect="fadeInUp">
-                        <div class="sub-title border-bot-light">About Us</div>
-                    </div>
-                    <div class="col-lg-4 col-md-8 animate-box" data-animate-effect="fadeInUp">
+                    <div class="col-lg-8 col-md-8 animate-box" data-animate-effect="fadeInUp">
                         <div class="section-title">VIJAY <span>ARCHITECTS</span></div>
-                        <p>At Vijay Architect, we believe architecture is more than design — it’s the art of giving form
-                            to imagination. Based in Trichy, Tamil Nadu, our award-winning team of architects and
-                            designers specialize in creating luxurious residences, contemporary commercial spaces, and
-                            sustainable developments that redefine modern living. </p>
+                        <p>Vijay architects established in the year 1986 as “Functional Forms”, a design-build firm
+                            primarily focusing on aesthetic and functionality. Over years the firm was reestablished as
+                            Vijay Architects, a design firm, engaged in striving to create a built environment that
+                            achieves better thermal comfort through passive design techniques.</p>
 
-                        <p>Every project we design reflects a fusion of functionality, aesthetics, and cultural essence,
-                            crafted with precision to deliver timeless elegance. From initial concept to final detail,
-                            we ensure your vision transforms into a masterpiece that stands as a landmark.</p>
+                        <p>Our focus has since been on creating a sustainable built environment that is context
+                            specific, environmentally sensitive and uses appropriate materials, natural lighting and
+                            ventilation to achieve thermal comfort.</p>
+
+                        <p>We are a multidisciplinary practice, offering design services encompassing Residential,
+                            Institutional, Interior design and architectural intervention in Urban public spaces and
+                            water bodies.</p>
                     </div>
                     <div class="col-lg-4 col-md-6 animate-box" data-animate-effect="fadeInUp">
                         <div class="wrap">
-                            <div class="con"> <img src="{{ asset('assets/frontend/img/teams/01_VIJAYKUMAR SENGOTTUVELAN.jpg') }}"
+                            <div class="con"> <img src="{{ asset('assets/frontend/img/about_person.jpg') }}"
                                     class="img-fluid" alt="">
                                 <div class="info">
-                                    <h4 class="name">Ar. VIJAY</h4>
+                                    <h4 class="name">Vijaykumar - FOUNDER</h4>
                                 </div>
                             </div>
                         </div>
@@ -59,9 +60,9 @@
         </section>
 
         <!-- Services -->
-        <section class="services section-padding">
+        <section class="services">
             <div class="container">
-                <div class="row mb-4">
+                <div class="row">
                     <div class="col-md-8">
                         <div class="section-title">Our <span>Services</span></div>
 
@@ -105,127 +106,28 @@
                 </div>
             </div>
         </section>
+
         <!-- Team -->
-        <section class="team section-padding">
+        <section class="team">
             <div class="container">
                 <div class="row mb-4">
                     <div class="col-md-8">
-                        <div class="section-title">Our <span>Teams</span></div>
+                        <div class="section-title">Our <span>Team</span></div>
 
                     </div>
                 </div>
                 <div class="row mb-5 animate-box" data-animate-effect="fadeInUp">
-                    <div class="col-md-4">
-                        <div class="card shadow-sm">
-                            <img src="{{ asset('assets/frontend/img/teams/01_VIJAYKUMAR SENGOTTUVELAN.jpg') }}"
-                                class="" alt="w-100 h-100 rounded-sm" />
+                    @foreach ($teamMembers as $member)
+                        <div class="col-md-4 mt-4">
+                            <div class="card shadow-sm">
+                                <img src="{{ $member['image'] }}" class="w-100 h-100 rounded-sm"
+                                    alt="{{ $member['display_name'] }}" />
+                            </div>
+                            <div class="text-center mt-2">
+                                <strong>{{ $member['name'] }}{{ $member['position'] !== '' ? ' - ' . $member['position'] : '' }}</strong>
+                            </div>
                         </div>
-                        <div class="text-center mt-2"><strong>Ar. Vijay - Founder</strong></div>
-                    </div>
-                    <div class="col-md-4 mt-md-0 mt-4">
-                        <div class="card shadow-sm ">
-                            <img src="{{ asset('assets/frontend/img/teams/01A_R.BASKER.jpg') }}" class=""
-                                alt="w-100 h-100 rounded-sm" />
-                        </div>
-                        <div class="text-center mt-2"><strong>Ar. Vijay - Founder</strong></div>
-                    </div>
-                    <div class="col-md-4 mt-md-0 mt-4">
-                        <div class="card shadow-sm">
-                            <img src="{{ asset('assets/frontend/img/teams/02_K.SHANTHI.jpg') }}" class=""
-                                alt="w-100 h-100 rounded-sm" />
-                        </div>
-                        <div class="text-center mt-2"><strong>Ar. Vijay - Founder</strong></div>
-                    </div>
-                    <div class="col-md-4 mt-4">
-                        <div class="card shadow-sm">
-                            <img src="{{ asset('assets/frontend/img/teams/03_K.SHIVAKUMAR.jpg') }}" class=""
-                                alt="w-100 h-100 rounded-sm" />
-                        </div>
-                        <div class="text-center mt-2"><strong>Ar. Vijay - Founder</strong></div>
-                    </div>
-                    <div class="col-md-4 mt-4">
-                        <div class="card shadow-sm">
-                            <img src="{{ asset('assets/frontend/img/teams/04_ANITHA CATHERINE.jpg') }}"
-                                class="" alt="w-100 h-100 rounded-sm" />
-                        </div>
-                    </div>
-                    <div class="col-md-4 mt-4">
-                        <div class="card shadow-sm">
-                            <img src="{{ asset('assets/frontend/img/teams/05_SUDHAMAN ARPUTHAVEL.jpg') }}"
-                                class="" alt="w-100 h-100 rounded-sm" />
-                        </div>
-                        <div class="text-center mt-2"><strong>Ar. Vijay - Founder</strong></div>
-                    </div>
-                    <div class="col-md-4 mt-4">
-                        <div class="card shadow-sm">
-                            <img src="{{ asset('assets/frontend/img/teams/06_R. RAMESHWARI.jpg') }}" class=""
-                                alt="w-100 h-100 rounded-sm" />
-                        </div>
-                        <div class="text-center mt-2"><strong>Ar. Vijay - Founder</strong></div>
-                    </div>
-                    <div class="col-md-4 mt-4">
-                        <div class="card shadow-sm">
-                            <img src="{{ asset('assets/frontend/img/teams/07_D. SELVI.jpg') }}" class=""
-                                alt="w-100 h-100 rounded-sm" />
-                        </div>
-                        <div class="text-center mt-2"><strong>Ar. Vijay - Founder</strong></div>
-                    </div>
-                    <div class="col-md-4 mt-4">
-                        <div class="card shadow-sm">
-                            <img src="{{ asset('assets/frontend/img/teams/08_THEISHINYAA EMPERUMAL.jpg') }}"
-                                class="" alt="w-100 h-100 rounded-sm" />
-                        </div>
-                        <div class="text-center mt-2"><strong>Ar. Vijay - Founder</strong></div>
-                    </div>
-                    <div class="col-md-4 mt-4">
-                        <div class="card shadow-sm">
-                            <img src="{{ asset('assets/frontend/img/teams/09_DEEPAK KUMAR.jpg') }}" class=""
-                                alt="w-100 h-100 rounded-sm" />
-                        </div>
-                        <div class="text-center mt-2"><strong>Ar. Vijay - Founder</strong></div>
-                    </div>
-                    <div class="col-md-4 mt-4">
-                        <div class="card shadow-sm">
-                            <img src="{{ asset('assets/frontend/img/teams/11_M. SATHIYA MOORTHY.jpg') }}"
-                                class="" alt="w-100 h-100 rounded-sm" />
-                        </div>
-                        <div class="text-center mt-2"><strong>Ar. Vijay - Founder</strong></div>
-                    </div>
-                    <div class="col-md-4 mt-4">
-                        <div class="card shadow-sm">
-                            <img src="{{ asset('assets/frontend/img/teams/13_K.MOHAN BALAJI.jpg') }}" class=""
-                                alt="w-100 h-100 rounded-sm" />
-                        </div>
-                        <div class="text-center mt-2"><strong>Ar. Vijay - Founder</strong></div>
-                    </div>
-                    <div class="col-md-4 mt-4">
-                        <div class="card shadow-sm">
-                            <img src="{{ asset('assets/frontend/img/teams/14_SAHAYARAJ.jpg') }}" class=""
-                                alt="w-100 h-100 rounded-sm" />
-                        </div>
-                        <div class="text-center mt-2"><strong>Ar. Vijay - Founder</strong></div>
-                    </div>
-                    <div class="col-md-4 mt-4">
-                        <div class="card shadow-sm">
-                            <img src="{{ asset('assets/frontend/img/teams/15_DIXON.jpg') }}" class=""
-                                alt="w-100 h-100 rounded-sm" />
-                        </div>
-                        <div class="text-center mt-2"><strong>Ar. Vijay - Founder</strong></div>
-                    </div>
-                    <div class="col-md-4 mt-4">
-                        <div class="card shadow-sm">
-                            <img src="{{ asset('assets/frontend/img/teams/16_SASIKUMAR.jpg') }}" class=""
-                                alt="w-100 h-100 rounded-sm" />
-                        </div>
-                        <div class="text-center mt-2"><strong>Ar. Vijay - Founder</strong></div>
-                    </div>
-                    <div class="col-md-4 mt-4">
-                        <div class="card shadow-sm">
-                            <img src="{{ asset('assets/frontend/img/teams/17.PEPPER.jpg') }}" class=""
-                                alt="w-100 h-100 rounded-sm" />
-                        </div>
-                        <div class="text-center mt-2"><strong>Ar. Vijay - Founder</strong></div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </section>

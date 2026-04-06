@@ -4,10 +4,10 @@
                 <!-- Logo -->
                 <div class="logo-wrapper">
                             @if (request()->routeIs('index'))
-                                 <a class="logo" href="{{ route('index') }}"> <img src="{{ asset('assets/frontend/img/logo-new-2.jpg') }}"
+                                 <a class="logo" href="{{ route('index') }}"> <img src="{{ asset('assets/frontend/img/logo-new-2.png') }}"
                             class="logo-img" alt=""> </a>
                             @else
-                                 <a class="logo" href="{{ route('index') }}"> <img src="{{ asset('assets/frontend/img/logo-new-2.jpg') }}"
+                                 <a class="logo" href="{{ route('index') }}"> <img src="{{ asset('assets/frontend/img/logo-new-2.png') }}"
                             class="logo-img-2" alt=""> </a>
                             @endif
                     <!-- <a class="logo" href="index.html"> <h2>ArchSan <span>Architecture</span></h2> </a> -->
