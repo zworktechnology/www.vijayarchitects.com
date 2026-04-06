@@ -104,7 +104,7 @@
         }
 
         .project-gallery-thumb {
-            height: 200px !important;
+            height: 300px !important;
             object-fit: cover;
             object-position: center center;
         }
