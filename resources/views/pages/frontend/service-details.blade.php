@@ -134,16 +134,7 @@
         <section class="service-detail-section">
             <div class="container">
                 <div class="row g-5">
-                    <div class="col-lg-4">
-                        <div class="service-detail-card">
-                            <div class="sub-title border-bot-light">OUR SERVICES</div>
-                            <div class="section-title">{{ strtoupper($serviceDetail['title']) }}</div>
-                            @if (!empty($serviceDetail['tagline']))
-                                <p class="service-detail-tagline">{{ $serviceDetail['tagline'] }}</p>
-                            @endif
-                        </div>
-                    </div>
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         <div class="service-detail-body">
                             @foreach ($serviceDetail['paragraphs'] ?? [] as $paragraph)
                                 <p>{{ $paragraph }}</p>
