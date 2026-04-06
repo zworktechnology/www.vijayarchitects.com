@@ -69,8 +69,6 @@
                 </div>
             </div>
         </section>
-
-        @include('pages.frontend.layouts.cta')
     </div>
 
     @include('pages.frontend.layouts.footer')
