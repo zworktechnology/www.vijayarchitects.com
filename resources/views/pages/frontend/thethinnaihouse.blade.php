@@ -17,7 +17,6 @@
             [
                 'label' => 'Design team',
                 'value' => 'Ar. Vijaykumar, Ar. Sudhaman, Ar. Rameshwari, Anitha, Ar. Srinidhi',
-                'class' => 'col-md-6 mb-3',
             ],
         ],
         'gallery_images' => [
