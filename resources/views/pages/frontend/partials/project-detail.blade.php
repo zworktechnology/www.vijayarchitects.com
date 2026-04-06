@@ -150,7 +150,7 @@
                                     <div class="project-bar">
                                         <div class="row justify-content-between align-items-start text-left text-lg-start">
                                             @foreach ($project['facts'] as $fact)
-                                                <div class="{{ $fact['class'] ?? 'col-md-3 mb-3' }}">
+                                                <div class="{{ $fact['class'] ?? 'col-md-3 mb-3 col-3' }}">
                                                     <h5>{{ $fact['label'] }}</h5>
                                                     <h6>{!! nl2br(e($fact['value'])) !!}</h6>
                                                 </div>
