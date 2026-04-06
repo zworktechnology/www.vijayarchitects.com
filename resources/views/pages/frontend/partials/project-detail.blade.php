@@ -148,7 +148,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="project-bar">
-                                        <div class="row justify-content-between align-items-start text-left text-lg-start">
+                                        <div class="row align-items-start text-left text-lg-start">
                                             @foreach ($project['facts'] as $fact)
                                                 <div class="{{ $fact['class'] ?? 'col-md-3 mb-3 col-3' }}">
                                                     <h5>{{ $fact['label'] }}</h5>

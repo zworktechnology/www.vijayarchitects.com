@@ -34,7 +34,7 @@
                          <h3>Vijay <span>Architects</span></h3>
                          <p>No.14, Alexandria Road, Cantonment,<br>
                              Tiruchirappalli, Tamil Nadu, India - 620001</p>
-                         <a href="tel:+919171711513" class="phone"  target="_blank">+91 91717 11513</a>
+                         <a href="tel:+919171711513" class="phone"  target="_blank">9171711513, 8903493280</a>
                          <a href="mailto:vijayarchitects@hotmail.com" class="mail"  target="_blank">vijayarchitects@hotmail.com</a>
                          <div class="social mt-2">
                              <a href="https://www.facebook.com/share/1CMP1sZigT/" target="_blank"><i class="ti-facebook"></i></a>
