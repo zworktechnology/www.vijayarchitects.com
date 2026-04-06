@@ -21,7 +21,7 @@
         @include('pages.frontend.layouts.header')
 
         <!-- Header Banner -->
-        <div class="banner-header valign bg-img bg-fixed" data-overlay-dark="4"
+        <div class="banner-header about-banner-header valign bg-img bg-fixed" data-overlay-dark="4"
             data-background="{{ asset('assets/frontend/img/about_banner.jpg') }}"
             style="background-position: top top">
         </div>
@@ -71,34 +71,37 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-2 animate-box" data-animate-effect="fadeInUp">
                         <div class="item bg-1">
-                            <div class="con">
-                                <a href="#">
+                            <div class="con service-card-content">
+                                <div>
                                     <h5>Architecture</h5>
                                     <p>We craft spaces that inspire — blending modern design, structural precision, and
                                         timeless aesthetics to create iconic residential and commercial landmarks.</p>
-                                </a>
+                                </div>
+                                <a href="{{ route('servicedetails.show', 'architecture') }}" class="service-more-btn">Know More</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-2 animate-box" data-animate-effect="fadeInUp">
                         <div class="item bg-2">
-                            <div class="con">
-                                <a href="#">
+                            <div class="con service-card-content">
+                                <div>
                                     <h5>Interior Design</h5>
                                     <p>From concept to finishing touches, our interiors reflect your personality —
                                         merging elegance, functionality, and luxury in every corner.</p>
-                                </a>
+                                </div>
+                                <a href="{{ route('servicedetails.show', 'interiors') }}" class="service-more-btn">Know More</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-2 animate-box" data-animate-effect="fadeInUp">
                         <div class="item bg-3">
-                            <div class="con">
-                                <a href="#">
+                            <div class="con service-card-content">
+                                <div>
                                     <h5>Public Projects</h5>
                                     <p>We shape vibrant urban environments through thoughtful planning, sustainable
                                         layouts, and human-centered architectural vision.</p>
-                                </a>
+                                </div>
+                                <a href="{{ route('servicedetails.show', 'public-projects') }}" class="service-more-btn">Know More</a>
                             </div>
                         </div>
                     </div>

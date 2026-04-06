@@ -3,7 +3,7 @@
 
     $project = [
         'title' => 'Yercaud House',
-        'cover_image' => "{$base}/2. Detail Photos - 6 nos/01.jpg",
+        'cover_image' => "{$base}/1.Top Cover Photo/1. Photo/2.JPG",
         'facts' => [
             ['label' => 'Location', 'value' => 'Yercaud'],
             ['label' => 'Client', 'value' => 'Dr. Ravindran'],

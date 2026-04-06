@@ -84,12 +84,16 @@
         }
 
         .gallery-masonry {
-            column-count: 3;
-            column-gap: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -8px;
+            margin-right: -8px;
         }
 
         .gallery-masonry .gallery-item {
-            break-inside: avoid;
+            width: 33.333333%;
+            padding-left: 8px;
+            padding-right: 8px;
             margin-bottom: 16px;
         }
 
@@ -99,13 +103,25 @@
             display: block;
         }
 
+        .project-gallery-thumb {
+            height: 200px !important;
+            object-fit: cover;
+            object-position: center center;
+        }
+
         .project-copy p:last-child {
             margin-bottom: 0;
         }
 
         @media (max-width: 768px) {
-            .gallery-masonry {
-                column-count: 2;
+            .gallery-masonry .gallery-item {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .gallery-masonry .gallery-item {
+                width: 100%;
             }
         }
     </style>
@@ -119,11 +135,6 @@
 
         <section class="project-page section-padding">
             <div class="container">
-                <div class="row mb-5">
-                    <div class="col-md-12">
-                        <div class="section-title">{{ $project['title'] }}</div>
-                    </div>
-                </div>
 
                 <div class="row justify-content-center">
                     <div class="col-md-12">
@@ -153,7 +164,7 @@
                 </div>
 
                 @if (!empty($project['gallery_images']))
-                    <div class="row mb-5 mt-5">
+                    <div class="row mb-5">
                         <div class="col-md-4">
                             <div class="sub-title border-bot-light">Gallery</div>
                         </div>
@@ -161,7 +172,7 @@
                     <div class="gallery-masonry mb-5">
                         @foreach ($project['gallery_images'] as $index => $image)
                             <div class="gallery-item">
-                                <img class="img-fluid enlargeable"
+                                <img class="img-fluid enlargeable project-gallery-thumb"
                                     src="{{ $projectAsset($image) }}"
                                     alt="{{ $project['title'] }} gallery image {{ $index + 1 }}">
                             </div>

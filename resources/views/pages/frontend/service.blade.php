@@ -36,76 +36,43 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 mb-5 animate-box" data-animate-effect="fadeInUp">
                         <div class="item bg-1">
-                            <div class="con">
-                                <a href="services-page.html">
+                            <div class="con service-card-content">
+                                <div>
                                     <div class="numb">01</div>
                                     <h5>Architecture</h5>
                                     <p>We craft spaces that inspire — blending modern design, structural precision, and
                                         timeless aesthetics to create iconic residential and commercial landmarks.</p>
-                                </a>
+                                </div>
+                                <a href="{{ route('servicedetails.show', 'architecture') }}" class="service-more-btn">Know More</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-5 animate-box" data-animate-effect="fadeInUp">
                         <div class="item bg-2">
-                            <div class="con">
-                                <a href="services-page.html">
+                            <div class="con service-card-content">
+                                <div>
                                     <div class="numb">02</div>
                                     <h5>Interior Design</h5>
                                     <p>From concept to finishing touches, our interiors reflect your personality —
                                         merging elegance, functionality, and luxury in every corner.</p>
-                                </a>
+                                </div>
+                                <a href="{{ route('servicedetails.show', 'interiors') }}" class="service-more-btn">Know More</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-5 animate-box" data-animate-effect="fadeInUp">
                         <div class="item bg-3">
-                            <div class="con">
-                                <a href="services-page.html">
+                            <div class="con service-card-content">
+                                <div>
                                     <div class="numb">03</div>
                                     <h5>Public Projects</h5>
                                     <p>We shape vibrant urban environments through thoughtful planning, sustainable
                                         layouts, and human-centered architectural vision.</p>
-                                </a>
+                                </div>
+                                <a href="{{ route('servicedetails.show', 'public-projects') }}" class="service-more-btn">Know More</a>
                             </div>
                         </div>
                     </div>
-                    {{-- <div class="col-lg-4 col-md-6 mb-5 animate-box" data-animate-effect="fadeInUp">
-                        <div class="item bg-4">
-                            <div class="con">
-                                <a href="services-page.html">
-                                    <div class="numb">04</div>
-                                    <h5>Planing</h5>
-                                    <p>Every great design begins with a master plan. We deliver detailed, efficient, and
-                                        future-ready planning that maximizes your site’s potential.</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-5 animate-box" data-animate-effect="fadeInUp">
-                        <div class="item bg-5">
-                            <div class="con">
-                                <a href="services-page.html">
-                                    <div class="numb">05</div>
-                                    <h5>3D Modelling</h5>
-                                    <p>Experience your project before it’s built — with immersive 3D visualizations that
-                                        bring architectural ideas to life in stunning detail.</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-5 animate-box" data-animate-effect="fadeInUp">
-                        <div class="item bg-6">
-                            <div class="con">
-                                <a href="services-page.html">
-                                    <div class="numb">06</div>
-                                    <h5>Decor Plans</h5>
-                                    <p>Our décor concepts elevate every space with curated textures, tones, and
-                                        materials — ensuring harmony between design and lifestyle</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div> --}}
                 </div>
             </div>
         </section>

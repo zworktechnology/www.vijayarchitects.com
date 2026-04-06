@@ -3,7 +3,7 @@
 
     $project = [
         'title' => 'The Thinnai House',
-        'cover_image' => "{$base}/2. Detail Photos - 6 nos/01.png",
+        'cover_image' => "{$base}/1.Top Cover Photo & fact sheet/1.Cover image/COVER IMAGE.jpg",
         'facts' => [
             ['label' => 'Location', 'value' => 'Trichy'],
             ['label' => 'Year of completion', 'value' => '2016'],

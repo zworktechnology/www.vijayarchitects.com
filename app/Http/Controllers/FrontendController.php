@@ -63,11 +63,15 @@ class FrontendController extends Controller
         return view('pages.frontend.contact', compact('metaog'));
     }
 
-    public function servicedetails()
+    public function servicedetails(string $service)
     {
         $metaog = Meta::where('page_id', '=', 7)->first();
+        $services = $this->getServiceDetails();
+        $serviceDetail = $services[$service] ?? null;
 
-        return view('pages.frontend.service-details', compact('metaog'));
+        abort_if($serviceDetail === null, 404);
+
+        return view('pages.frontend.service-details', compact('metaog', 'serviceDetail'));
     }
 
     public function arulmanihouse()
@@ -192,6 +196,66 @@ class FrontendController extends Controller
         $name = preg_replace('/\s+/', ' ', $name);
 
         return Str::title(Str::lower($name));
+    }
+
+    private function getServiceDetails(): array
+    {
+        return [
+            'architecture' => [
+                'title' => 'Architecture',
+                'tagline' => '',
+                'paragraphs' => [
+                    'Creating spaces Nurturing memories.',
+                    'Our approach to architecture is based our philosophy in creating spaces using sustainable methods and appropriate materials to design spaces that are naturally lit, ventilated & that which offer thermal comfort. We believe that the quality of built environment has a significant influence on the user. We strive to make our projects reflect our core values and needs & aspirations of "the client and his family."',
+                    'We strive towards simplicity less complex the design, better the spaces & the clearer the volume.',
+                ],
+                'subheading' => 'Our architectural practice is inspired by:',
+                'quotes' => [
+                    [
+                        'author' => 'Ar. Laurie baker',
+                        'text' => '“Good or bad design, or good or bad taste has little to do with colour, or form, or texture, or costliness—but that it has only to do with honesty and truth in the choice of materials and the method of using them.”',
+                    ],
+                    [
+                        'author' => 'Ar. Jaisim',
+                        'text' => "“Value recognized rather than inherent leads to innovation and provokes the imagination.”",
+                    ],
+                    [
+                        'author' => 'Ar. Sanjay mohe',
+                        'text' => '“Light as a building material adds a new dimension to build spaces, keeping it dynamic."',
+                    ],
+                ],
+            ],
+            'interiors' => [
+                'title' => 'Interiors',
+                'paragraphs' => [
+                    'We believe that Interior design should help in accentuating the architectural spaces and not dominate them. It can be achieved through the use of design tools such as natural light, an appropriate scale & material and a simple approach. A responsible interior is one that considers comfort and aesthetics as primary and trend and costliness as secondary.',
+                ],
+            ],
+            'public-projects' => [
+                'title' => 'Public Projects',
+                'sections' => [
+                    [
+                        'title' => 'Urban Spaces',
+                        'paragraphs' => [
+                            'In India public spaces are left undefined and undesigned. The public are not introduced and exposed to well-designed public spaces that provide safety & comfort and that is aesthetically appealing as well, unlike the cities in the developed countries.',
+                            'We actively engage with the public and the administration to identify, study and design defunct public spaces and waterbodies, collaborate with other professionals and try to make them as active spaces contributing to the betterment of the city and the environment.',
+                        ],
+                        'quotes' => [
+                            [
+                                'text' => '“At every instant, there is more than the eye can see, more than the ear can hear, a setting or a view waiting to be explored. Nothing is experienced by itself, but always in relation to its surroundings, the sequences of events leading up to it, the memory of past experiences”- by Kevin lynch.',
+                            ],
+                        ],
+                    ],
+                    [
+                        'title' => 'Water Bodies',
+                        'paragraphs' => [
+                            'The water edges are the city’s biggest asset. There is a need to identify, revive, restore and reutilize these spaces for public engagement. They improve biodiversity, serve as a vital ecological asset, and promote the mental, cultural, and recreational well-being. They serve as an important and proud identity for the city and it populates areas are under threat from invasion, pollution, and rapid urbanization.',
+                            'We believe tat reviving historic water systems and incorporating them into the city planning are key components of effective, sustainable development. We collaborate with other professionals and engage with the city administration in an effort to identify and revive them.',
+                        ],
+                    ],
+                ],
+            ],
+        ];
     }
 
     private function encodeAssetPath(string $path): string

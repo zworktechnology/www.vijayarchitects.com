@@ -3,7 +3,7 @@
 
     $project = [
         'title' => 'Mr. Arulmani House',
-        'cover_image' => "{$base}/1.Top Cover Photo & fact sheet/01 - Copy.png",
+        'cover_image' => "{$base}/1.Top Cover Photo & fact sheet/2.Inside image/arulmani elelvation.jpeg",
         'facts' => [
             ['label' => 'Location', 'value' => 'Coimbatore'],
             ['label' => 'Client', 'value' => 'Arul Mani'],

@@ -3,7 +3,7 @@
 
     $project = [
         'title' => 'Hindustan School of Architecture',
-        'cover_image' => "{$base}/1.Top Cover Photo/03_THIRD .jpg",
+        'cover_image' => "{$base}/1.Top Cover Photo/2. Inside image/03_THIRD .jpg",
         'facts' => [
             ['label' => 'Location', 'value' => 'Coimbatore'],
             ['label' => 'Client', 'value' => 'Hindustan Group of Schools, Coimbatore'],

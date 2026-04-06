@@ -6,39 +6,39 @@
     $projects = [
         [
             'route' => 'arulmanihouse',
-            'title' => 'Mr. Arulmani House',
+            'title' => 'ARULAMNI RESIDENCE',
             'location' => 'Coimbatore',
-            'image' => 'assets/frontend/img/projects/1.Mr.Arulmani/1.Top Cover Photo & fact sheet/01 - Copy.png',
+            'image' => 'assets/frontend/img/projects/1.Mr.Arulmani/1.Top Cover Photo & fact sheet/1.Cover image/01000.jpg',
         ],
         [
             'route' => 'thethinnaihouse',
             'title' => 'The Thinnai House',
             'location' => 'Trichy',
-            'image' => 'assets/frontend/img/projects/2.The Thinnai house (Dr.Anand House_/2. Detail Photos - 6 nos/01.png',
+            'image' => 'assets/frontend/img/projects/2.The Thinnai house (Dr.Anand House_/1.Top Cover Photo & fact sheet/1.Cover image/COVER IMAGE.jpg',
         ],
         [
             'route' => 'ravichandranhouse',
-            'title' => 'Mr. Ravichandran House',
+            'title' => 'RAVICHANDRAN RESIDENCE',
             'location' => 'Trichy',
-            'image' => 'assets/frontend/img/projects/3.Mr. Ravichandran House/1.Top Cover Photo/01.png',
+            'image' => 'assets/frontend/img/projects/3.Mr. Ravichandran House/1.Top Cover Photo/1. Cover image/cover image_Size changed_Ravichandran residence.jpg',
         ],
         [
             'route' => 'baskershanthiresidence',
             'title' => 'Er. Basker & Mrs. Shanthi Residence',
             'location' => 'Trichy',
-            'image' => 'assets/frontend/img/projects/4. Er. Basker and Mrs.Shanthi residence/1.Top Cover Photo/01.png',
+            'image' => 'assets/frontend/img/projects/4. Er. Basker and Mrs.Shanthi residence/1.Top Cover Photo/1. cover image/size change_Basker residence.jpg',
         ],
         [
             'route' => 'hindustanschoolofarchitecture',
             'title' => 'Hindustan School of Architecture',
             'location' => 'Coimbatore',
-            'image' => 'assets/frontend/img/projects/5.Hindustan school of architecture/1.Top Cover Photo/03_THIRD .jpg',
+            'image' => 'assets/frontend/img/projects/5.Hindustan school of architecture/1.Top Cover Photo/1. Cover image/Size changed_Hindustan school of architecture.jpg',
         ],
         [
             'route' => 'yercaudhouse',
-            'title' => 'Yercaud House',
+            'title' => 'YERCAUD GUEST HOUSE',
             'location' => 'Yercaud',
-            'image' => 'assets/frontend/img/projects/6.Yercaud Guest  House/2. Detail Photos - 6 nos/01.jpg',
+            'image' => 'assets/frontend/img/projects/6.Yercaud Guest  House/1.Top Cover Photo/01.jpg',
         ],
     ];
 @endphp
@@ -87,7 +87,6 @@
             </div>
         </section>
 
-        @include('pages.frontend.layouts.cta')
     </div>
     @include('pages.frontend.layouts.footer')
     @include('pages.frontend.layouts.script')
