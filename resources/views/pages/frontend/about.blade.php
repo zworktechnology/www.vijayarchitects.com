@@ -21,9 +21,9 @@
         @include('pages.frontend.layouts.header')
 
         <!-- Header Banner -->
-        <div class="banner-header about-banner-header valign bg-img bg-fixed" data-overlay-dark="4"
-            data-background="{{ asset('assets/frontend/img/about_banner.jpg') }}"
-            style="background-position: top top">
+        <div class="banner-header about-banner-header" data-overlay-dark="4">
+            <img src="{{ asset('assets/frontend/img/about_banner.jpg') }}" class="about-banner-header__image"
+                alt="Vijay Architects about banner">
         </div>
 
         <!-- About -->

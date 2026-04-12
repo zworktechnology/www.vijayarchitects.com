@@ -33,7 +33,7 @@
         .service-detail-card {
             padding: 34px 30px;
             background: #fff;
-            border-left: 4px solid #c53b32;
+            border-left: 4px solid #E9912C;
             box-shadow: 0 20px 45px rgba(17, 17, 17, 0.06);
         }
 
@@ -65,7 +65,7 @@
             text-transform: uppercase;
         }
 
-        .service-subsection + .service-subsection {
+        .service-subsection+.service-subsection {
             margin-top: 48px;
         }
 
@@ -73,13 +73,13 @@
             margin-top: 24px;
             padding: 24px 26px;
             background: #fff;
-            border-left: 4px solid #c53b32;
+            border-left: 4px solid #E9912C;
             box-shadow: 0 14px 35px rgba(17, 17, 17, 0.05);
         }
 
         .service-quote-block h6 {
             margin-bottom: 12px;
-            color: #c53b32;
+            color: #E9912C;
             text-transform: uppercase;
             letter-spacing: 1.5px;
         }
