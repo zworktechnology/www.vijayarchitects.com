@@ -150,10 +150,12 @@
                                     <div class="project-bar">
                                         <div class="row align-items-start text-left text-lg-start">
                                             @foreach ($project['facts'] as $fact)
-                                                <div class="{{ $fact['class'] ?? 'col-md-3 mb-3 col-3' }}">
-                                                    <h5>{{ $fact['label'] }}</h5>
-                                                    <h6>{!! nl2br(e($fact['value'])) !!}</h6>
-                                                </div>
+                                                @if (!empty($fact['label']) && !empty($fact['value']))
+                                                    <div class="{{ $fact['class'] ?? 'col-md-3 mb-3 col-3' }}">
+                                                        <h5>{{ $fact['label'] }}</h5>
+                                                        <h6>{!! nl2br(e($fact['value'])) !!}</h6>
+                                                    </div>
+                                                @endif
                                             @endforeach
                                         </div>
                                     </div>
