@@ -13,7 +13,7 @@
     </style>
     <link rel="stylesheet" href="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/default_thank_you.css">
 
-    <meta http-equiv="refresh" content="3; url=https://vijayarchitects.zworktechnology.in/" />
+    <meta http-equiv="refresh" content="3; url=https://vijayarchitects.com/" />
 </head>
 
 <body>

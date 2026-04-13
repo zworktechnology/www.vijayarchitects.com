@@ -21,7 +21,7 @@
         @include('pages.frontend.layouts.header')
 
         <!-- Header Banner -->
-        <div class="banner-header about-banner-header" data-overlay-dark="4">
+        <div class="banner-header about-banner-header">
             <img src="{{ asset('assets/frontend/img/about_banner.jpg') }}" class="about-banner-header__image"
                 alt="Vijay Architects contactus banner">
         </div>
@@ -60,24 +60,46 @@
                                     <div class="alert alert-success contact__msg" style="display: none" role="alert">
                                         Your message was sent successfully. </div>
                                 </div>
+                                @if (session('error'))
+                                    <div class="col-12">
+                                        <div class="alert alert-danger" role="alert">
+                                            {{ session('error') }}
+                                        </div>
+                                    </div>
+                                @endif
+                                @if ($errors->any())
+                                    <div class="col-12">
+                                        <div class="alert alert-danger" role="alert">
+                                            <ul class="mb-0 ps-3">
+                                                @foreach ($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    </div>
+                                @endif
                             </div>
                             <!-- Form elements -->
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <input name="name" type="text" placeholder="Your Name *" required="">
+                                    <input name="name" type="text" placeholder="Your Name *"
+                                        value="{{ old('name') }}" required="">
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <input name="phone" type="text" placeholder="Your Number *" required="">
+                                    <input name="phone" type="text" placeholder="Your Number *"
+                                        value="{{ old('phone') }}" required="">
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <input name="email" type="email" placeholder="Your Email" required="">
+                                    <input name="email" type="email" placeholder="Your Email"
+                                        value="{{ old('email') }}" required="">
                                 </div>
 
                                 <div class="col-md-6 form-group">
-                                    <input name="subject" type="text" placeholder="Subject *" required="">
+                                    <input name="subject" type="text" placeholder="Subject *"
+                                        value="{{ old('subject') }}" required="">
                                 </div>
                                 <div class="col-md-12 form-group">
-                                    <textarea name="message" id="message" cols="30" rows="4" placeholder="Message *" required=""></textarea>
+                                    <textarea name="message" id="message" cols="30" rows="4" placeholder="Message *" required="">{{ old('message') }}</textarea>
                                 </div>
                                 <div class="row align-items-start justify-content-between col-md-12 mt-2">
                                     <div class="col-md-6">

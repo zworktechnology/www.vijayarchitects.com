@@ -30,6 +30,14 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+    'whatsapp' => [
+        'api_url' => env('WHATSAPP_API_URL', 'https://graph.facebook.com/v21.0'),
+        'access_token' => env('WHATSAPP_ACCESS_TOKEN'),
+        'phone_number_id' => env('WHATSAPP_PHONE_NUMBER_ID'),
+        'recipient_number' => env('WHATSAPP_RECIPIENT_NUMBER'),
+        'template_name' => env('WHATSAPP_TEMPLATE_NAME', 'website_form_admin_alert'),
+        'template_language' => env('WHATSAPP_TEMPLATE_LANGUAGE', 'en_US'),
+    ],
     'turnstile' => [
         'secret' => env('TURNSTILE_SECRET_KEY'),
     ],
