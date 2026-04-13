@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Models\Blogmaster;
 use App\Models\Meta;
+use App\Support\ProjectCatalog;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 
@@ -34,11 +35,22 @@ class FrontendController extends Controller
     }
 
 
-    public function projects()
+    public function projects(ProjectCatalog $projectCatalog)
     {
         $metaog = Meta::where('page_id', '=', 4)->first();
+        $projects = $projectCatalog->all();
 
-        return view('pages.frontend.projects', compact('metaog'));
+        return view('pages.frontend.projects', compact('metaog', 'projects'));
+    }
+
+    public function projectShow(ProjectCatalog $projectCatalog, string $project)
+    {
+        $metaog = Meta::where('page_id', '=', 4)->first();
+        $project = $projectCatalog->findBySlug($project);
+
+        abort_if($project === null, 404);
+
+        return view('pages.frontend.partials.project-detail', compact('metaog', 'project'));
     }
 
     public function amcplans()
@@ -76,9 +88,7 @@ class FrontendController extends Controller
 
     public function arulmanihouse()
     {
-        $metaog = Meta::where('page_id', '=', 8)->first();
-
-        return view('pages.frontend.arulmanihouse', compact('metaog'));
+        return redirect()->route('projects.show', ['project' => 'arulmani-residence']);
     }
 
     public function blogs()
@@ -109,37 +119,27 @@ class FrontendController extends Controller
 
     public function thethinnaihouse()
     {
-        $metaog = Meta::where('page_id', '=', 11)->first();
-
-        return view('pages.frontend.thethinnaihouse', compact('metaog'));
+        return redirect()->route('projects.show', ['project' => 'the-thinnai-house']);
     }
 
     public function ravichandranhouse()
     {
-        $metaog = Meta::where('page_id', '=', 12)->first();
-
-        return view('pages.frontend.ravichandranhouse', compact('metaog'));
+        return redirect()->route('projects.show', ['project' => 'ravichandran-residence']);
     }
 
     public function baskershanthiresidence()
     {
-        $metaog = Meta::where('page_id', '=', 13)->first();
-
-        return view('pages.frontend.baskershanthiresidence', compact('metaog'));
+        return redirect()->route('projects.show', ['project' => 'basker-and-shanthi-residence']);
     }
 
     public function hindustanschoolofarchitecture()
     {
-        $metaog = Meta::where('page_id', '=', 14)->first();
-
-        return view('pages.frontend.hindustanschoolofarchitecture', compact('metaog'));
+        return redirect()->route('projects.show', ['project' => 'hindustan-school-of-architecture']);
     }
 
     public function yercaudhouse()
     {
-        $metaog = Meta::where('page_id', '=', 15)->first();
-
-        return view('pages.frontend.yercaudhouse', compact('metaog'));
+        return redirect()->route('projects.show', ['project' => 'yercaud-guest-house']);
     }
 
     private function getTeamMembers()

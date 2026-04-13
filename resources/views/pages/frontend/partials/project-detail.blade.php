@@ -198,18 +198,18 @@
                     </div>
                 @endif
 
-                @if (!empty($project['plan_images']))
+                @if (!empty($project['design_images']))
                     <div class="row mb-5 mt-5">
                         <div class="col-md-4">
-                            <div class="sub-title border-bot-light">Plans</div>
+                            <div class="sub-title border-bot-light">Design Concept</div>
                         </div>
                     </div>
                     <div class="gallery-masonry">
-                        @foreach ($project['plan_images'] as $index => $image)
+                        @foreach ($project['design_images'] as $index => $image)
                             <div class="gallery-item">
                                 <img class="img-fluid enlargeable"
                                     src="{{ $projectAsset($image) }}"
-                                    alt="{{ $project['title'] }} plan {{ $index + 1 }}">
+                                    alt="{{ $project['title'] }} design concept image {{ $index + 1 }}">
                             </div>
                         @endforeach
                     </div>
@@ -223,8 +223,6 @@
                 </div>
             </div>
         </section>
-
-        @include('pages.frontend.layouts.cta')
     </div>
     @include('pages.frontend.layouts.footer')
     @include('pages.frontend.layouts.script')

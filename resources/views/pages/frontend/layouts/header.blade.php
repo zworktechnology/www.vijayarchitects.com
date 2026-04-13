@@ -25,7 +25,7 @@
                                 href="{{ route('about') }}">About</a></li>
                         {{-- <li class="nav-item"><a class="nav-link {{ request()->routeIs('service') ? 'active' : '' }}"
                                 href="{{ route('service') }}">Services</a></li> --}}
-                        <li class="nav-item "><a class="nav-link {{ request()->routeIs('projects','projectdetails') ? 'active' : '' }}"
+                        <li class="nav-item "><a class="nav-link {{ request()->routeIs('projects', 'projects.show', 'projectdetails') ? 'active' : '' }}"
                                 href="{{ route('projects') }}">Projects</a></li>
                         <li class="nav-item" hidden><a class="nav-link {{ request()->routeIs('blogs','blog.info') ? 'active' : '' }}"
                                 href="{{ route('blogs') }}">Blog</a></li>
