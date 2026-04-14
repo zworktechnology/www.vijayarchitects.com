@@ -45,7 +45,7 @@ Route::get('/blogs', [FrontendController::class, 'blogs'])->name('blogs');
 Route::get('/blog/info/{blog_id}', [FrontendController::class, 'blogdetails'])->name('blog.info');
 // Route::get('/blog-details', [FrontendController::class, 'blogdetails'])->name('blogdetails');
 
-Route::get('/amc-plans', [FrontendController::class, 'amcplans'])->name('amcplans');
+Route::redirect('/amc-plans', '/service', 301)->name('amcplans');
 
 // Route::get('/amc', [FrontendController::class, 'amc'])->name('amc');
 

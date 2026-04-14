@@ -55,21 +55,6 @@ class FrontendController extends Controller
         return view('pages.frontend.partials.project-detail', compact('metaog', 'project'));
     }
 
-    public function amcplans()
-    {
-        $metaog = $this->getMetaForPage(5);
-
-        return view('pages.frontend.amc', compact('metaog'));
-    }
-
-    // public function amc()
-    // {
-    //     $metaog = Meta::where('page_id', '=', 8)->first();
-
-    //     return view('pages.frontend.amc', compact('metaog'));
-    // }
-
-
     public function contact()
     {
         $metaog = $this->getMetaForPage(6);
