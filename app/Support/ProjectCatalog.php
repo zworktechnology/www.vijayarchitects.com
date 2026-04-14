@@ -4,7 +4,9 @@ namespace App\Support;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
+use Throwable;
 use ZipArchive;
 
 class ProjectCatalog
@@ -30,7 +32,18 @@ class ProjectCatalog
                 ),
                 SORT_NATURAL
             )
-            ->map(fn (string $directory) => $this->buildProject($directory))
+            ->map(function (string $directory) {
+                try {
+                    return $this->buildProject($directory);
+                } catch (Throwable $exception) {
+                    Log::warning('Skipping project directory because its content could not be parsed.', [
+                        'directory' => $directory,
+                        'error' => $exception->getMessage(),
+                    ]);
+
+                    return null;
+                }
+            })
             ->filter()
             ->values();
     }
@@ -166,17 +179,34 @@ class ProjectCatalog
     {
         $extension = strtolower(pathinfo($path, PATHINFO_EXTENSION));
 
-        return match ($extension) {
-            'docx' => $this->readZipTextDocument($path, 'word/document.xml', ['</w:p>' => "\n\n", '<w:tab/>' => "\t", '<w:br/>' => "\n"]),
-            'odt' => $this->readZipTextDocument($path, 'content.xml', ['</text:h>' => "\n\n", '</text:p>' => "\n\n", '<text:tab/>' => "\t", '<text:line-break/>' => "\n"]),
-            'txt' => File::get($path),
-            'doc' => $this->readLegacyDoc($path),
-            default => null,
-        };
+        try {
+            return match ($extension) {
+                'docx' => $this->readZipTextDocument($path, 'word/document.xml', ['</w:p>' => "\n\n", '<w:tab/>' => "\t", '<w:br/>' => "\n"]),
+                'odt' => $this->readZipTextDocument($path, 'content.xml', ['</text:h>' => "\n\n", '</text:p>' => "\n\n", '<text:tab/>' => "\t", '<text:line-break/>' => "\n"]),
+                'txt' => File::get($path),
+                'doc' => $this->readLegacyDoc($path),
+                default => null,
+            };
+        } catch (Throwable $exception) {
+            Log::warning('Project document could not be read; continuing without document content.', [
+                'path' => $path,
+                'error' => $exception->getMessage(),
+            ]);
+
+            return null;
+        }
     }
 
     private function readZipTextDocument(string $path, string $entryName, array $replacements): ?string
     {
+        if (! class_exists(ZipArchive::class)) {
+            Log::warning('ZIP extension is unavailable; skipping ZIP-based project document parsing.', [
+                'path' => $path,
+            ]);
+
+            return null;
+        }
+
         $zip = new ZipArchive();
 
         if ($zip->open($path) !== true) {
