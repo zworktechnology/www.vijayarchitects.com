@@ -219,8 +219,6 @@
                                     </div>
                                 @endif
                                 <div class="service-overview-card__content">
-                                    <div class="sub-title">Service</div>
-                                    <div class="section-title">{{ $serviceDetail['title'] }}</div>
                                     @foreach ($serviceDetail['paragraphs'] ?? [] as $paragraph)
                                         <p>{{ $paragraph }}</p>
                                     @endforeach
