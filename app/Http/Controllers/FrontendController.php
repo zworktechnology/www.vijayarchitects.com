@@ -39,7 +39,7 @@ class FrontendController extends Controller
 
     public function projects(ProjectCatalog $projectCatalog)
     {
-        $metaog = $this->getMetaForPage(4);
+        $metaog = null;
         $projects = $projectCatalog->all();
 
         return view('pages.frontend.projects', compact('metaog', 'projects'));
@@ -47,7 +47,7 @@ class FrontendController extends Controller
 
     public function projectShow(ProjectCatalog $projectCatalog, string $project)
     {
-        $metaog = $this->getMetaForPage(4);
+        $metaog = null;
         $project = $projectCatalog->findBySlug($project);
 
         abort_if($project === null, 404);

@@ -12,6 +12,90 @@
 
     @turnstileScripts()
 
+    <style>
+        .about-services .section-title {
+            margin-bottom: 30px;
+        }
+
+        .about-service-item {
+            margin-bottom: 30px;
+        }
+
+        .about-service-card {
+            position: relative;
+            display: block;
+            min-height: 360px;
+            overflow: hidden;
+            background: #111;
+            border-radius: 0;
+            box-shadow: 0 22px 48px rgba(17, 17, 17, 0.14);
+        }
+
+        .about-service-card::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.74) 100%);
+            pointer-events: none;
+        }
+
+        .about-service-card__media,
+        .about-service-card__media img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .about-service-card__media {
+            min-height: 360px;
+        }
+
+        .about-service-card__media img {
+            display: block;
+            object-fit: cover;
+            object-position: center;
+            transition: transform .6s ease;
+        }
+
+        .about-service-card:hover .about-service-card__media img {
+            transform: scale(1.05);
+        }
+
+        .about-service-card__info {
+            position: absolute;
+            right: 24px;
+            bottom: 24px;
+            left: 24px;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .about-service-card__info h6 {
+            margin: 0;
+            color: #fff;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: none;
+        }
+
+        @media (max-width: 767px) {
+            .about-service-card,
+            .about-service-card__media {
+                min-height: 300px;
+            }
+
+            .about-service-card__info {
+                right: 18px;
+                bottom: 18px;
+                left: 18px;
+            }
+
+            .about-service-card__info h6 {
+                font-size: 22px;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
