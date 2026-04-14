@@ -1,3 +1,12 @@
+@php
+    $serviceAsset = static function (?string $path): ?string {
+        if ($path === null || $path === '') {
+            return null;
+        }
+
+        return asset(implode('/', array_map('rawurlencode', explode('/', $path))));
+    };
+@endphp
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
 
@@ -56,6 +65,30 @@
             margin-bottom: 18px;
         }
 
+        .service-overview-card {
+            display: flex;
+            gap: 28px;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: #faf6f1;
+        }
+
+        .service-overview-card__icon {
+            flex: 0 0 110px;
+            max-width: 110px;
+        }
+
+        .service-overview-card__icon img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .service-overview-card__content {
+            flex: 1 1 auto;
+        }
+
         .service-detail-subhead {
             margin: 34px 0 18px;
             color: #1b1b1b;
@@ -91,6 +124,32 @@
             line-height: 1.9em;
         }
 
+        .service-projects {
+            margin-top: 54px;
+        }
+
+        .service-project-card+.service-project-card {
+            margin-top: 46px;
+        }
+
+        .service-project-grid {
+            margin-top: 20px;
+        }
+
+        .service-project-image {
+            height: 260px;
+            overflow: hidden;
+            background: #f3eee8;
+        }
+
+        .service-project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
         @media (max-width: 767px) {
             .service-page-banner {
                 min-height: 220px;
@@ -107,6 +166,22 @@
             .service-detail-card,
             .service-quote-block {
                 padding: 24px 20px;
+            }
+
+            .service-overview-card {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 18px;
+                padding: 22px 20px;
+            }
+
+            .service-overview-card__icon {
+                flex-basis: auto;
+                max-width: 84px;
+            }
+
+            .service-project-image {
+                height: 220px;
             }
         }
     </style>
@@ -136,9 +211,21 @@
                 <div class="row g-5">
                     <div class="col-lg-12">
                         <div class="service-detail-body">
-                            @foreach ($serviceDetail['paragraphs'] ?? [] as $paragraph)
-                                <p>{{ $paragraph }}</p>
-                            @endforeach
+                            <div class="service-overview-card">
+                                @if (!empty($serviceDetail['main_icon']))
+                                    <div class="service-overview-card__icon">
+                                        <img src="{{ $serviceAsset($serviceDetail['main_icon']) }}"
+                                            alt="{{ $serviceDetail['title'] }}">
+                                    </div>
+                                @endif
+                                <div class="service-overview-card__content">
+                                    <div class="sub-title">Service</div>
+                                    <div class="section-title">{{ $serviceDetail['title'] }}</div>
+                                    @foreach ($serviceDetail['paragraphs'] ?? [] as $paragraph)
+                                        <p>{{ $paragraph }}</p>
+                                    @endforeach
+                                </div>
+                            </div>
 
                             @if (!empty($serviceDetail['subheading']))
                                 <div class="service-detail-subhead">{{ $serviceDetail['subheading'] }}</div>
@@ -171,6 +258,29 @@
                                     @endforeach
                                 </div>
                             @endforeach
+
+                            @if (!empty($serviceDetail['projects']))
+                                <div class="service-projects">
+                                    <div class="service-detail-subhead">Projects</div>
+
+                                    @foreach ($serviceDetail['projects'] as $project)
+                                        <div class="service-project-card">
+                                            <h5>{{ $project['title'] }}</h5>
+
+                                            <div class="row g-4 service-project-grid">
+                                                @foreach ($project['images'] as $index => $image)
+                                                    <div class="col-lg-4 col-md-6">
+                                                        <div class="service-project-image">
+                                                            <img src="{{ $serviceAsset($image) }}"
+                                                                alt="{{ $project['title'] }} image {{ $index + 1 }}">
+                                                        </div>
+                                                    </div>
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            @endif
                         </div>
                     </div>
                 </div>

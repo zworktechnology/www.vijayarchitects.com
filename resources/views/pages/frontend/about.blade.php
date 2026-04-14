@@ -31,6 +31,10 @@
             box-shadow: 0 22px 48px rgba(17, 17, 17, 0.14);
         }
 
+        .about-service-card:hover {
+            color: inherit;
+        }
+
         .about-service-card::after {
             content: "";
             position: absolute;
@@ -155,7 +159,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="items about-service-item mb-4 animate-box" data-animate-effect="fadeInUp">
-                            <div class="con about-service-card">
+                            <a href="{{ route('servicedetails.show', 'architecture') }}" class="con about-service-card">
                                 <div class="img about-service-card__media">
                                     <img src="{{ asset('assets/frontend/img/services/Architecture/Main Icon.jpg') }}"
                                         alt="Architecture">
@@ -163,12 +167,12 @@
                                 <div class="info about-service-card__info">
                                     <h6>Architecture</h6>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="items about-service-item mb-4 animate-box" data-animate-effect="fadeInUp">
-                            <div class="con about-service-card">
+                            <a href="{{ route('servicedetails.show', 'interiors') }}" class="con about-service-card">
                                 <div class="img about-service-card__media">
                                     <img src="{{ asset('assets/frontend/img/services/Interior Design/Main Icon.jpg') }}"
                                         alt="Interior Design">
@@ -176,12 +180,12 @@
                                 <div class="info about-service-card__info">
                                     <h6>Interior Design</h6>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="items about-service-item mb-4 animate-box" data-animate-effect="fadeInUp">
-                            <div class="con about-service-card">
+                            <a href="{{ route('servicedetails.show', 'public-projects') }}" class="con about-service-card">
                                 <div class="img about-service-card__media">
                                     <img src="{{ asset('assets/frontend/img/services/Public Projects/Main Icon.jpg') }}"
                                         alt="Public Projects">
@@ -189,7 +193,7 @@
                                 <div class="info about-service-card__info">
                                     <h6>Public Projects</h6>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>

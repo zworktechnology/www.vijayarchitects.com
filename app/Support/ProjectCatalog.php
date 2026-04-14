@@ -15,6 +15,8 @@ class ProjectCatalog
 
     private const DOCUMENT_EXTENSIONS = ['doc', 'docx', 'odt', 'txt'];
 
+    private const CONTENT_FILE = 'projects-content.json';
+
     public function all(): Collection
     {
         $baseDirectory = public_path('assets/frontend/img/projects');
@@ -55,6 +57,18 @@ class ProjectCatalog
 
     private function buildProject(string $projectDirectory): ?array
     {
+        $folderTitle = $this->humanizeProjectFolderName(basename($projectDirectory));
+        $slug = Str::slug($this->folderNameWithoutPrefix(basename($projectDirectory)));
+
+        if ($slug === '') {
+            $slug = Str::slug($folderTitle);
+        }
+
+        $fallbackContent = $this->content()[$slug] ?? [];
+        $fallbackTitle = $this->normalizeContentTitle($fallbackContent['title'] ?? null);
+        $fallbackFacts = $this->normalizeFallbackFacts($fallbackContent['facts'] ?? []);
+        $fallbackConceptSections = $this->normalizeFallbackConceptSections($fallbackContent['concept_sections'] ?? []);
+
         $photoDirectory = $this->findChildDirectory($projectDirectory, 'photo');
         $documentDirectory = $this->findChildDirectory($projectDirectory, 'document');
 
@@ -74,32 +88,56 @@ class ProjectCatalog
 
         $detailsText = $this->readFirstDocument($projectDetailsDirectory);
         $details = $this->parseProjectDetails($detailsText);
+        $facts = $this->mergeFacts($details['facts'], $fallbackFacts);
 
-        $folderTitle = $this->humanizeProjectFolderName(basename($projectDirectory));
-        $title = $folderTitle !== '' ? $folderTitle : ($details['title'] ?? null);
-        $slug = Str::slug($this->folderNameWithoutPrefix(basename($projectDirectory)));
-
-        if ($slug === '') {
-            $slug = Str::slug($title);
-        }
+        $title = $folderTitle !== ''
+            ? $folderTitle
+            : ($details['title'] ?? $fallbackTitle);
 
         if ($slug === '' || ($thumbnailImage === null && $coverImage === null && $galleryImages->isEmpty())) {
             return null;
         }
 
         $conceptText = $this->readFirstDocument($conceptDocumentDirectory);
+        $conceptSections = $this->parseConceptSections($conceptText);
+
+        if ($conceptSections === []) {
+            $conceptSections = $fallbackConceptSections;
+        }
 
         return [
             'slug' => $slug,
             'title' => $title,
-            'location' => $this->extractFactValue($details['facts'], 'location'),
+            'location' => $this->extractFactValue($facts, 'location'),
             'thumbnail_image' => $this->toAssetPath($thumbnailImage ?? $coverImage),
             'cover_image' => $this->toAssetPath($coverImage ?? $thumbnailImage),
             'gallery_images' => $galleryImages->map(fn (string $path) => $this->toAssetPath($path))->values()->all(),
             'design_images' => $designImages->map(fn (string $path) => $this->toAssetPath($path))->values()->all(),
-            'facts' => $details['facts'],
-            'concept_sections' => $this->parseConceptSections($conceptText),
+            'facts' => $facts,
+            'concept_sections' => $conceptSections,
         ];
+    }
+
+    private function content(): array
+    {
+        $path = public_path('assets/frontend/img/projects/' . self::CONTENT_FILE);
+
+        if (! File::exists($path)) {
+            return [];
+        }
+
+        try {
+            $decoded = json_decode(File::get($path), true, 512, JSON_THROW_ON_ERROR);
+        } catch (Throwable $exception) {
+            Log::warning('Project content file could not be decoded.', [
+                'path' => $path,
+                'error' => $exception->getMessage(),
+            ]);
+
+            return [];
+        }
+
+        return is_array($decoded) ? $decoded : [];
     }
 
     private function extractOrder(string $directoryName): int
@@ -423,6 +461,119 @@ class ProjectCatalog
     private function normalizeParagraph(string $paragraph): string
     {
         return trim((string) preg_replace('/\s+/u', ' ', $paragraph));
+    }
+
+    private function normalizeContentTitle(mixed $title): ?string
+    {
+        if (! is_string($title) && ! is_numeric($title)) {
+            return null;
+        }
+
+        $title = $this->cleanTitle((string) $title);
+
+        return $title !== '' ? $title : null;
+    }
+
+    private function normalizeFallbackFacts(mixed $facts): array
+    {
+        if (! is_array($facts)) {
+            return [];
+        }
+
+        return collect($facts)
+            ->filter(fn ($fact) => is_array($fact))
+            ->map(function (array $fact) {
+                $label = $fact['label'] ?? null;
+                $value = $fact['value'] ?? null;
+
+                if (! is_string($label) && ! is_numeric($label)) {
+                    return null;
+                }
+
+                if (! is_string($value) && ! is_numeric($value)) {
+                    return null;
+                }
+
+                $label = $this->normalizeFactLabel((string) $label);
+                $value = $this->normalizeFactValue((string) $value);
+
+                if ($value === null) {
+                    return null;
+                }
+
+                return [
+                    'label' => $label,
+                    'value' => $value,
+                ];
+            })
+            ->filter()
+            ->values()
+            ->all();
+    }
+
+    private function normalizeFallbackConceptSections(mixed $sections): array
+    {
+        if (! is_array($sections)) {
+            return [];
+        }
+
+        return collect($sections)
+            ->filter(fn ($section) => is_array($section))
+            ->map(function (array $section) {
+                $title = $section['title'] ?? null;
+                $paragraphs = $section['paragraphs'] ?? [];
+
+                if (! is_string($title) && ! is_numeric($title)) {
+                    $title = 'Design Concept';
+                }
+
+                if (! is_array($paragraphs)) {
+                    $paragraphs = [];
+                }
+
+                $paragraphs = collect($paragraphs)
+                    ->filter(fn ($paragraph) => is_string($paragraph) || is_numeric($paragraph))
+                    ->map(fn ($paragraph) => $this->normalizeParagraph((string) $paragraph))
+                    ->filter()
+                    ->values()
+                    ->all();
+
+                if ($paragraphs === []) {
+                    return null;
+                }
+
+                return [
+                    'title' => $this->cleanTitle((string) $title),
+                    'paragraphs' => $paragraphs,
+                ];
+            })
+            ->filter()
+            ->values()
+            ->all();
+    }
+
+    private function mergeFacts(array $facts, array $fallbackFacts): array
+    {
+        if ($facts === []) {
+            return $fallbackFacts;
+        }
+
+        if ($fallbackFacts === []) {
+            return $facts;
+        }
+
+        $existingLabels = collect($facts)
+            ->pluck('label')
+            ->filter()
+            ->values()
+            ->all();
+
+        return collect($facts)
+            ->merge(collect($fallbackFacts)->reject(function (array $fact) use ($existingLabels) {
+                return in_array($fact['label'], $existingLabels, true);
+            }))
+            ->values()
+            ->all();
     }
 
     private function cleanTitle(string $title): string
