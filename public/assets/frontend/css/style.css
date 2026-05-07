@@ -4727,3 +4727,60 @@ input[type="checkbox"] {
         font-size: 22px;
     }
 }
+
+
+/* ======= Careers Page style ======= */
+.careers-content {
+    padding-bottom: 60px;
+}
+
+.careers-heading {
+    color: #e9912c;
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.careers-subheading {
+    color: #1b1b1b;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.careers-text {
+    font-size: 15px;
+    color: #777;
+    line-height: 1.75em;
+    margin-bottom: 10px;
+}
+
+.careers-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.careers-list li {
+    font-size: 15px;
+    color: #777;
+    line-height: 2em;
+    position: relative;
+}
+
+.careers-email {
+    color: #e9912c;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.careers-email:hover {
+    color: #1b1b1b;
+    text-decoration: underline;
+}

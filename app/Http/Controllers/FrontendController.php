@@ -37,6 +37,12 @@ class FrontendController extends Controller
         return view('pages.frontend.service', compact('metaog'));
     }
 
+    public function careers()
+    {
+        $metaog = $this->getMetaForPage(4);
+
+        return view('pages.frontend.careers', compact('metaog'));
+    }
 
     public function projects(ProjectCatalog $projectCatalog)
     {

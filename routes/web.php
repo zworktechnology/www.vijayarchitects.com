@@ -26,6 +26,8 @@ Route::get('/about', [FrontendController::class, 'about'])->name('about');
 
 Route::get('/service', [FrontendController::class, 'service'])->name('service');
 
+Route::get('/careers', [FrontendController::class, 'careers'])->name('careers');
+
 Route::redirect('/service-details', '/service')->name('servicedetails');
 Route::get('/service-details/{service}', [FrontendController::class, 'servicedetails'])->name('servicedetails.show');
 
