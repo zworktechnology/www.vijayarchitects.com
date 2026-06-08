@@ -353,5 +353,265 @@
         ]
       }
     ]
+  },
+  "care-admin": {
+    "title": "Care International School Admin",
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Thayanur Village"
+      },
+      {
+        "label": "Client",
+        "value": "TVH"
+      },
+      {
+        "label": "Year of completion",
+        "value": "2025"
+      },
+      {
+        "label": "Built-up area",
+        "value": "2600 Sq.Ft"
+      },
+      {
+        "label": "Site area",
+        "value": "Extension of school"
+      },
+      {
+        "label": "Design team",
+        "value": "Vijaykumar, Sudhaman, Selvi"
+      },
+      {
+        "label": "Contractor",
+        "value": "TVH"
+      },
+      {
+        "label": "Structural consultant",
+        "value": "J.Ragavendran"
+      }
+    ],
+    "concept_sections": []
+  },
+  "kutralam-guest-house": {
+    "title": "Kutralam Guest House",
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Kutralam"
+      },
+      {
+        "label": "Client",
+        "value": "TVH"
+      },
+      {
+        "label": "Year of completion",
+        "value": "2008"
+      },
+      {
+        "label": "Built-up area",
+        "value": "4900 Sq.Ft"
+      },
+      {
+        "label": "Site area",
+        "value": "41900 Sq.Ft"
+      },
+      {
+        "label": "Design team",
+        "value": "Vijaykumar, Senthil, Santhi"
+      },
+      {
+        "label": "Contractor",
+        "value": "Basker"
+      },
+      {
+        "label": "Site engineer",
+        "value": "Manikandan"
+      },
+      {
+        "label": "Structural consultant",
+        "value": "Ponkumar"
+      }
+    ],
+    "concept_sections": []
+  },
+  "jeyavelu-residence": {
+    "title": "Jeyavelu Residence",
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Trichy"
+      },
+      {
+        "label": "Client",
+        "value": "Jeyavelu"
+      },
+      {
+        "label": "Year of completion",
+        "value": "2023"
+      },
+      {
+        "label": "Built-up area",
+        "value": "3000 Sq.Ft"
+      },
+      {
+        "label": "Site area",
+        "value": "2400 Sq.Ft"
+      },
+      {
+        "label": "Design team",
+        "value": "Vijaykumar, Ramya, Shanthi"
+      },
+      {
+        "label": "Contractor",
+        "value": "Basker"
+      },
+      {
+        "label": "Site engineer",
+        "value": "Dixon"
+      },
+      {
+        "label": "Structural consultant",
+        "value": "J.Ragavendran"
+      },
+      {
+        "label": "Electrical consultant",
+        "value": "Alfa associates"
+      }
+    ],
+    "concept_sections": []
+  },
+  "sivagami-residence": {
+    "title": "Sivagami Residence",
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Trichy"
+      },
+      {
+        "label": "Client",
+        "value": "Sivagami"
+      },
+      {
+        "label": "Year of completion",
+        "value": "2021"
+      },
+      {
+        "label": "Built-up area",
+        "value": "6200 Sq.Ft"
+      },
+      {
+        "label": "Site area",
+        "value": "4800 Sq.Ft"
+      },
+      {
+        "label": "Design team",
+        "value": "Vijaykumar, Aadarsh, Rameshwari"
+      },
+      {
+        "label": "Site engineer",
+        "value": "Karthik"
+      },
+      {
+        "label": "Structural consultant",
+        "value": "J.Ragavendran"
+      },
+      {
+        "label": "Electrical consultant",
+        "value": "Alfa associates"
+      },
+      {
+        "label": "Plumbing consultant",
+        "value": "Alfa associates"
+      }
+    ],
+    "concept_sections": []
+  },
+  "dr-shilpa-terrace": {
+    "title": "Dr. Shilpa Terrace",
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Trichy"
+      },
+      {
+        "label": "Client",
+        "value": "Dr. Shilpa"
+      },
+      {
+        "label": "Year of completion",
+        "value": "2018"
+      },
+      {
+        "label": "Built-up area",
+        "value": "1740 Sq.Ft"
+      },
+      {
+        "label": "Site area",
+        "value": "10000 Sq.Ft"
+      },
+      {
+        "label": "Design team",
+        "value": "Vijaykumar, Sudhaman, Gajendran"
+      },
+      {
+        "label": "Contractor",
+        "value": "Basker"
+      },
+      {
+        "label": "Site engineer",
+        "value": "Sivakumar"
+      },
+      {
+        "label": "Structural consultant",
+        "value": "J.Ragavendran"
+      }
+    ],
+    "concept_sections": []
+  },
+  "mahesh": {
+    "title": "Mahesh Residence",
+    "facts": [
+      {
+        "label": "Location",
+        "value": "Coimbatore"
+      },
+      {
+        "label": "Client",
+        "value": "Mahesh Babu"
+      },
+      {
+        "label": "Year of completion",
+        "value": "2018"
+      },
+      {
+        "label": "Built-up area",
+        "value": "4900 Sq.Ft"
+      },
+      {
+        "label": "Site area",
+        "value": "3940 Sq.Ft"
+      },
+      {
+        "label": "Design team",
+        "value": "Vijaykumar, Sudhaman, Anitha, Navaneetha"
+      },
+      {
+        "label": "Contractor",
+        "value": "Vijaya Builders"
+      },
+      {
+        "label": "Structural consultant",
+        "value": "Ganesh Kannan"
+      },
+      {
+        "label": "Electrical consultant",
+        "value": "Alfa associates"
+      },
+      {
+        "label": "Plumbing consultant",
+        "value": "Privals"
+      }
+    ],
+    "concept_sections": []
   }
 }
